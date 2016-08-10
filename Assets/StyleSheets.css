@@ -1,3 +1,64 @@
 @import 'https://fonts.googleapis.com/css?family=Montserrat:700|Roboto:500';
+* {
+  margin: 0px; }
+
+body:before, body:after {
+  content: "";
+  position: fixed;
+  background: black;
+  left: 0;
+  right: 0;
+  height: 10px; }
+
+body:before {
+  top: 0; }
+
+body:after {
+  bottom: 0; }
+
 body {
-  background-color: #F4F4F4; }
+  background-color: #F4F4F4;
+  border-left: 10px solid black;
+  border-right: 10px solid black; }
+
+.container {
+  margin: 0px auto;
+  width: 90%;
+  max-width: 1024px;
+  height: auto;
+  padding-top: 60px; }
+
+ul {
+  list-style-type: none;
+  margin: 0 auto; }
+
+li {
+  position: relative;
+  margin-left: 2%;
+  border: 4px solid black;
+  display: inline-block;
+  padding: 5px 15px;
+  font-family: Montserrat;
+  font-size: 16px;
+  background: transparent;
+  z-index: 999; }
+
+.navShadow {
+  z-index: 1;
+  border-color: #EFD800;
+  position: absolute;
+  margin: -35px 0px 0px 0px;
+  background: transparent;
+  color: transparent; }
+
+#navSob {
+  margin-left: 22px; }
+
+#navQua {
+  margin-left: 141px; }
+
+#navHab {
+  margin-left: 394px; }
+
+#navPor {
+  margin-left: 568px; }
