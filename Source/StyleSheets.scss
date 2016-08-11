@@ -8,10 +8,6 @@ $main-color: #F4F4F4;
 $second-color: black;
 $third-color: #EFD800;
 
-* {
-	margin:0px;
-}
-
 body:before, body:after {
     content: "";
     position: fixed;
@@ -31,6 +27,7 @@ body {
 	background-color: $main-color;
 	border-left: 10px solid $second-color;
     border-right: 10px solid $second-color;  
+    margin:0px;
 }
 
 .container {
@@ -41,16 +38,24 @@ body {
 	padding-top:60px;
 }
 
+#header {
+	padding:0;
+	height: 100px;
+	width:100%;
+}
+
 ul {
 	list-style-type: none;
 	margin:0 auto;
+	width:805px;
+	padding:0px;
 }
 
 li {
 	position: relative;
-	margin-left:2%;
+	margin:50px 1% 0px 1%;
 	border: 4px solid $second-color;
-	display: inline-block;
+	float:left;
 	padding: 5px 15px;
 	font-family: $Title-font;
 	font-size: 16px;
@@ -58,27 +63,32 @@ li {
 	z-index:999;
 }
 
+#logo {
+	margin:17px 1% 0px 1%;	
+	float:left;
+}
+
 .navShadow {
 	z-index:1;
 	border-color:$third-color;
 	position:absolute;
-	margin:-35px 0px 0px 0px;
+	margin:52px 0px 0px 0px;
 	background:  rgba(0, 0, 0, 0.0);
     color: rgba(0, 0, 0, 0.0);
 }
 
 #navSob {
-	margin-left: 22px;
+	margin-left: 11px;
 }
 
 #navQua {
-	margin-left: 141px;
+	margin-left: 122px;
 }
 
 #navHab {
-	margin-left: 394px;
+	margin-left: 422px;
 }
 
 #navPor {
-	margin-left: 568px;
+	margin-left: 588px;
 }
