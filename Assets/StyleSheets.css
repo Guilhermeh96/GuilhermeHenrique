@@ -1,4 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Montserrat:700|Roboto:500';
+/*  SITE BORDER */
 body:before, body:after {
   content: "";
   position: fixed;
@@ -19,16 +20,18 @@ body {
   border-right: 10px solid black;
   margin: 0px; }
 
+/* OVERRAL CONTAINER */
 .container {
   margin: 0px auto;
   width: 90%;
   max-width: 1024px;
   height: auto;
-  padding-top: 60px; }
+  padding-top: 30px; }
 
+/*  HEADER */
 #header {
   padding: 0;
-  height: 100px;
+  height: 130px;
   width: 100%; }
 
 ul {
@@ -40,13 +43,20 @@ ul {
 li {
   position: relative;
   margin: 50px 1% 0px 1%;
-  border: 4px solid black;
+  border: 5px solid black;
   float: left;
   padding: 5px 15px;
   font-family: Montserrat;
   font-size: 16px;
   background: transparent;
   z-index: 999; }
+
+a {
+  color: black; }
+
+li:hover {
+  background: black;
+  color: #F4F4F4; }
 
 #logo {
   margin: 17px 1% 0px 1%;
@@ -56,18 +66,26 @@ li {
   z-index: 1;
   border-color: #EFD800;
   position: absolute;
-  margin: 52px 0px 0px 0px;
+  margin: 53px 0px 0px 0px;
   background: transparent;
-  color: transparent; }
+  color: transparent;
+  pointer-events: none; }
 
 #navSob {
   margin-left: 11px; }
 
 #navQua {
-  margin-left: 122px; }
+  margin-left: 124px; }
 
 #navHab {
-  margin-left: 422px; }
+  margin-left: 425px; }
 
 #navPor {
-  margin-left: 588px; }
+  margin-left: 593px; }
+
+/*  CONTENT */
+/*  Sobre */
+#sobre {
+  padding-top: 50px;
+  height: 500px;
+  width: 100%; }
