@@ -20,7 +20,7 @@ body {
   border-right: 10px solid black;
   margin: 0px; }
 
-/* OVERRAL CONTAINER */
+/* OVERALL CONTAINER */
 .container {
   margin: 0px auto;
   width: 90%;
@@ -42,7 +42,7 @@ ul {
 
 li {
   position: relative;
-  margin: 50px 1% 0px 1%;
+  margin: 50px 1.7% 0px 2.2%;
   border: 5px solid black;
   float: left;
   padding: 5px 15px;
@@ -72,20 +72,67 @@ li:hover {
   pointer-events: none; }
 
 #navSob {
-  margin-left: 11px; }
+  margin-left: 21px; }
 
 #navQua {
-  margin-left: 124px; }
+  margin-left: 149px; }
 
 #navHab {
-  margin-left: 425px; }
+  margin-left: 465px; }
 
 #navPor {
-  margin-left: 593px; }
+  margin-left: 648px; }
 
 /*  CONTENT */
 /*  Sobre */
-#sobre {
+#sobreContent {
   padding-top: 50px;
   height: 500px;
   width: 100%; }
+
+.svgFoto {
+  fill: none;
+  stroke: #EFD800;
+  stroke-width: 5;
+  stroke-miterlimit: 10; }
+
+.foto {
+  float: left;
+  width: 170px;
+  margin-top: 40px; }
+
+.svgLinkedin {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 15px;
+  stroke-miterlimit: 10; }
+
+.linkedin {
+  width: 40px;
+  margin: 200px 0px 0px -30px;
+  position: absolute; }
+
+.linkedin:hover > .svgLinkedin {
+  fill: #0077b5;
+  stroke: none; }
+
+.linkedin:hover .in {
+  fill: #F4F4F4; }
+
+.title {
+  font-family: Montserrat;
+  text-shadow: 2px 2px #EFD800;
+  font-size: 3em; }
+
+#sobreTitle {
+  margin: 0px 0px 0px 30px;
+  float: left; }
+
+p {
+  float: left;
+  width: 710px;
+  margin-left: 90px;
+  font-size: 0.9em;
+  font-family: Roboto;
+  border: 5px solid black;
+  padding: 20px; }
