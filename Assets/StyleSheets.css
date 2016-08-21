@@ -42,7 +42,7 @@ ul {
 
 li {
   position: relative;
-  margin: 50px 1.7% 0px 2.2%;
+  margin: 50px 2.1% 0px 2.6%;
   border: 5px solid black;
   float: left;
   padding: 5px 15px;
@@ -72,16 +72,16 @@ li:hover {
   pointer-events: none; }
 
 #navSob {
-  margin-left: 21px; }
+  margin-left: 25px; }
 
 #navQua {
-  margin-left: 149px; }
+  margin-left: 159px; }
 
 #navHab {
-  margin-left: 465px; }
+  margin-left: 457px; }
 
 #navPor {
-  margin-left: 648px; }
+  margin-left: 647px; }
 
 /*  CONTENT */
 /*  Sobre */
@@ -112,6 +112,12 @@ li:hover {
   margin: 200px 0px 0px -30px;
   position: absolute; }
 
+@-moz-document url-prefix() {
+  .linkedin {
+    width: 40px;
+    margin: 200px 0px 0px -231px;
+    position: absolute; } }
+
 .linkedin:hover > .svgLinkedin {
   fill: #0077b5;
   stroke: none; }
@@ -130,8 +136,8 @@ li:hover {
 
 p {
   float: left;
-  width: 710px;
-  margin-left: 90px;
+  width: 754px;
+  margin-left: 50px;
   font-size: 0.9em;
   font-family: Roboto;
   border: 5px solid black;
