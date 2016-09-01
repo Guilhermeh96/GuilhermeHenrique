@@ -19,7 +19,8 @@ body {
   background-color: #F4F4F4;
   border-left: 10px solid black;
   border-right: 10px solid black;
-  margin: 0px; }
+  margin: 0px;
+  padding-bottom: 50px; }
 
 /* OVERALL CONTAINER */
 .container {
@@ -63,6 +64,9 @@ a {
   margin: 17px 1% 0px 1%;
   float: left; }
 
+#logoColor {
+  fill: black; }
+
 .navShadow {
   z-index: 1;
   border-color: #EFD800;
@@ -97,6 +101,12 @@ a {
   stroke-width: 5;
   stroke-miterlimit: 10; }
 
+#fotoBorder {
+  fill: none;
+  stroke: black;
+  stroke-width: 5;
+  overflow: visible; }
+
 .foto {
   float: left;
   width: 170px;
@@ -104,9 +114,12 @@ a {
 
 .svgLinkedin {
   fill: none;
-  stroke: #000000;
+  stroke: black;
   stroke-width: 15px;
   stroke-miterlimit: 10; }
+
+.in {
+  fill: black; }
 
 .linkedin {
   width: 40px;
@@ -130,13 +143,15 @@ a {
   font-family: Montserrat;
   text-shadow: 2px 2px #EFD800;
   font-size: 3em;
-  float: left; }
+  float: left;
+  color: black; }
 
 #sobreTitle {
   margin: 0px 0px 0px 30px; }
 
-p {
+#sobreText {
   float: left;
+  color: black;
   width: 754px;
   margin-left: 50px;
   font-size: 0.9em;
@@ -149,7 +164,8 @@ p {
   font-family: Montserrat;
   text-shadow: -2px 2px #EFD800;
   font-size: 3em;
-  float: right; }
+  float: right;
+  color: black; }
 
 .info {
   height: 300px; }
@@ -165,7 +181,7 @@ p {
 #pana {
   margin-left: 50px;
   float: left;
-  bottom: 113px;
+  margin-top: 214px;
   position: absolute;
   height: 90px;
   width: 463px;
@@ -179,7 +195,7 @@ p {
 .infoColor {
   fill: #EFD800; }
 
-.svgColor2 {
+.infoColor2 {
   opacity: 0.7;
   fill: black; }
 
@@ -194,13 +210,14 @@ p {
   width: 100%; }
 
 .portBox {
-  width: 250px;
+  width: 260px;
   height: 320px;
   background: black;
   position: relative;
-  margin: 125px 0px 0px 70px;
+  margin: 150px 0px 0px 63px;
   box-shadow: 8px 8px 0 #EFD800;
-  float: left; }
+  float: left;
+  position: relative; }
 
 .portBox::before {
   content: "";
@@ -222,3 +239,35 @@ p {
   bottom: -35px;
   right: -20.5px;
   transform: rotate(45deg); }
+
+.portTitle {
+  color: #F4F4F4;
+  font-family: Montserrat;
+  text-align: center;
+  margin-top: 35px; }
+
+.portText {
+  color: #F4F4F4;
+  font-family: Roboto;
+  font-size: 0.8em;
+  margin: 0 auto;
+  width: 199px; }
+
+.plusButton {
+  width: 25px;
+  margin: 20px 0px 0px 115px;
+  position: absolute; }
+
+.plusColor {
+  fill: none;
+  stroke: #EFD800;
+  stroke-width: 5px; }
+
+.plusColor2 {
+  fill: #EFD800; }
+
+.plusButton:hover .plusColor2 {
+  fill: black; }
+
+.plusButton:hover .plusColor {
+  fill: #EFD800; }

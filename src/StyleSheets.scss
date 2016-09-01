@@ -30,6 +30,7 @@ body {
 	border-left: 10px solid $second-color;
     border-right: 10px solid $second-color;  
     margin:0px;
+    padding-bottom: 50px;
 }
 
 /* OVERALL CONTAINER */
@@ -85,6 +86,10 @@ a {
 	float:left;
 }
 
+#logoColor {
+	fill:$second-color;
+}
+
 .navShadow {
 	z-index:1;
 	border-color:$third-color;
@@ -128,6 +133,13 @@ a {
 	stroke-miterlimit:10;
 }
 
+#fotoBorder {
+	fill: none; 
+	stroke: $second-color;
+	stroke-width: 5;  
+	overflow: visible;
+}
+
 .foto {
 	float: left;
 	width: 170px;
@@ -136,9 +148,13 @@ a {
 
 .svgLinkedin{
 	fill:none;
-	stroke:#000000;
+	stroke:$second-color;
 	stroke-width:15px;
 	stroke-miterlimit:10;
+}
+
+.in {
+	fill: $second-color;
 }
 
 .linkedin {
@@ -170,14 +186,16 @@ a {
 	text-shadow: 2px 2px $third-color;
 	font-size: 3em;
 	float:left;
+	color: $second-color;
 }
 
 #sobreTitle {
 	margin:0px 0px 0px 30px;
 }
 
-p {
+#sobreText {
 	float:left;
+	color: $second-color;
 	width:754px;
 	margin-left: 50px;
 	font-size:0.9em;
@@ -193,6 +211,7 @@ p {
 	text-shadow: -2px 2px $third-color;
 	font-size: 3em;
 	float:right;
+ 	color: $second-color;
 }
 
 .info {
@@ -200,23 +219,23 @@ p {
 }
 
 #upInfo {
-	border-bottom:2px solid black;
+	border-bottom:2px solid $second-color;
 	height:300px;
 }
 
 #downInfo {
-	border-top:2px solid black;
+	border-top:2px solid $second-color;
 	height:200px;
 }
 
 #pana {	
     margin-left: 50px;
     float: left;
-    bottom: 113px;
+	margin-top:214px;
     position: absolute;
     height: 90px;
     width: 463px;
-    border-left: 4px solid black;
+    border-left: 4px solid $second-color;
 
 }
 
@@ -230,10 +249,11 @@ p {
 	fill: $third-color;
 }
 
-.svgColor2{
-	opacity:0.7;
-	fill:$second-color;
+.infoColor2{
+	opacity: 0.7;
+	fill: $second-color;
 }
+
 /*  Habilidades */
 
 #habiContent {
@@ -249,13 +269,14 @@ p {
 }
 
 .portBox {
-	width: 250px;
+	width: 260px;
   	height: 320px;
   	background: $second-color;
   	position: relative;
-  	margin: 125px 0px 0px 70px;
+  	margin: 150px 0px 0px 63px;
   	box-shadow: 8px 8px 0 $third-color;
-  	float:left
+  	float: left;
+  	position: relative;
 }
 
 .portBox::before {
@@ -279,4 +300,43 @@ p {
     bottom: -35px;
     right: -20.5px;
     transform: rotate(45deg);
+}
+
+.portTitle {
+	color: $main-color;
+	font-family: $Title-font;
+	text-align: center;
+	margin-top: 35px;
+}
+
+.portText {
+	color: $main-color;
+	font-family: $Text-font;
+	font-size: 0.8em;
+	margin: 0 auto;
+	width: 199px;
+}
+
+.plusButton {
+	width: 25px;
+	margin: 20px 0px 0px 115px;
+	position: absolute;
+}
+
+.plusColor {
+	fill:none;
+	stroke:$third-color;
+	stroke-width:5px;
+}
+
+.plusColor2 {
+	fill:$third-color;
+}
+
+.plusButton:hover .plusColor2 {
+	fill:$second-color;
+}
+
+.plusButton:hover  .plusColor{
+	fill:$third-color;
 }
