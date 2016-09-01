@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import 'https://fonts.googleapis.com/css?family=Montserrat:700|Roboto:500';
 /*  SITE BORDER */
 body:before, body:after {
@@ -23,7 +24,7 @@ body {
 /* OVERALL CONTAINER */
 .container {
   margin: 0px auto;
-  width: 90%;
+  width: 100%;
   max-width: 1024px;
   height: auto;
   padding-top: 30px; }
@@ -51,12 +52,12 @@ li {
   background: transparent;
   z-index: 999; }
 
-a {
-  color: black; }
-
 li:hover {
   background: black;
   color: #F4F4F4; }
+
+a {
+  color: black; }
 
 #logo {
   margin: 17px 1% 0px 1%;
@@ -87,7 +88,7 @@ li:hover {
 /*  Sobre */
 #sobreContent {
   padding-top: 50px;
-  height: 500px;
+  height: 300px;
   width: 100%; }
 
 .svgFoto {
@@ -125,14 +126,14 @@ li:hover {
 .linkedin:hover .in {
   fill: #F4F4F4; }
 
-.title {
+.titleLeft {
   font-family: Montserrat;
   text-shadow: 2px 2px #EFD800;
-  font-size: 3em; }
+  font-size: 3em;
+  float: left; }
 
 #sobreTitle {
-  margin: 0px 0px 0px 30px;
-  float: left; }
+  margin: 0px 0px 0px 30px; }
 
 p {
   float: left;
@@ -142,3 +143,45 @@ p {
   font-family: Roboto;
   border: 5px solid black;
   padding: 20px; }
+
+/*  Experiência */
+.titleRight {
+  font-family: Montserrat;
+  text-shadow: -2px 2px #EFD800;
+  font-size: 3em;
+  float: right; }
+
+.info {
+  height: 300px; }
+
+#upInfo {
+  border-bottom: 2px solid black;
+  height: 300px; }
+
+#downInfo {
+  border-top: 2px solid black;
+  height: 200px; }
+
+#pana {
+  margin-left: 50px;
+  float: left;
+  bottom: 113px;
+  position: absolute;
+  height: 90px;
+  width: 463px;
+  border-left: 3px solid black; }
+
+#panaSvg {
+  height: 50px;
+  position: absolute;
+  bottom: 4px; }
+
+/*  Habilidades */
+#habiContent {
+  height: 500px;
+  width: 100%; }
+
+/*  Portfólio */
+#portContent {
+  height: 500px;
+  width: 100%; }
