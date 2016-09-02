@@ -3,6 +3,7 @@
 /*  SITE BORDER */
 body::before, body::after {
   content: "";
+  z-index: 999;
   position: fixed;
   background: black;
   left: 0;
@@ -134,7 +135,7 @@ a {
 
 .linkedin:hover > .svgLinkedin {
   fill: #0077b5;
-  stroke: none; }
+  stroke: #0077b5; }
 
 .linkedin:hover .in {
   fill: #F4F4F4; }
@@ -178,6 +179,51 @@ a {
   border-top: 2px solid black;
   height: 200px; }
 
+.infoBox {
+  width: 180px;
+  height: 90px;
+  border: 4px solid black;
+  position: absolute; }
+
+.infoBox::after {
+  content: "";
+  position: absolute;
+  height: 40px;
+  border-left: 4px black solid;
+  border-right: 21px #F4F4F4 solid;
+  bottom: -15.8px;
+  right: -8.3px;
+  transform: rotate(45deg); }
+
+.infoBox::before {
+  content: "";
+  position: absolute;
+  height: 40px;
+  border-right: 4px black solid;
+  border-left: 21px #F4F4F4 solid;
+  top: -15.8px;
+  left: -8.4px;
+  transform: rotate(45deg); }
+
+.infoText {
+  width: 160px;
+  font-family: Roboto;
+  font-size: 0.8em;
+  color: black;
+  text-align: center;
+  margin: 12px auto 0px auto; }
+
+.dateText {
+  font-family: Roboto;
+  font-size: 0.9em; }
+
+#datePana {
+  margin: 5px 0px 0px 5px;
+  font-weight: bold; }
+
+#panaBox {
+  margin: 120px 0px 0px 20px; }
+
 #pana {
   margin-left: 50px;
   float: left;
@@ -187,10 +233,55 @@ a {
   width: 463px;
   border-left: 4px solid black; }
 
+#pana::after {
+  content: "";
+  position: absolute;
+  right: 8px;
+  bottom: 0px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 3.5px 30px 3.5px;
+  border-color: transparent transparent black transparent;
+  -webkit-transform: rotate(360deg); }
+
 #panaSvg {
   height: 50px;
   position: absolute;
   bottom: 4px; }
+
+#dateMelies {
+  margin: 80px 0px 0px 5px;
+  font-weight: bold; }
+
+#meliesBox {
+  margin: 100px 0px 0px 200px;
+  height: 100px; }
+
+#melies {
+  margin-left: 250px;
+  float: left;
+  position: absolute;
+  height: 100px;
+  width: 140px;
+  border-left: 4px solid black; }
+
+#melies::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: -1px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 3.5px 0px 3.5px;
+  border-color: black transparent transparent transparent;
+  -webkit-transform: rotate(360deg); }
+
+#meliesSvg {
+  height: 78px;
+  position: absolute;
+  bottom: 22.6px; }
 
 .infoColor {
   fill: #EFD800; }
@@ -214,7 +305,7 @@ a {
   height: 320px;
   background: black;
   position: relative;
-  margin: 150px 0px 0px 63px;
+  margin: 120px 0px 0px 63px;
   box-shadow: 8px 8px 0 #EFD800;
   float: left;
   position: relative; }

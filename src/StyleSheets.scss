@@ -12,6 +12,7 @@ $third-color: #EFD800;
 
 body::before, body::after {
     content: "";
+    z-index: 999;
     position: fixed;
     background: $second-color;
     left: 0;
@@ -33,7 +34,15 @@ body {
     padding-bottom: 50px;
 }
 
+
+
+
+
 /* OVERALL CONTAINER */
+
+
+
+
 
 .container {
 	margin: 0px auto;
@@ -43,7 +52,15 @@ body {
 	padding-top:30px;
 }
 
+
+
+
+
 /*  HEADER */
+
+
+
+
 
 #header {
 	padding:0;
@@ -116,9 +133,21 @@ a {
 	margin-left: 647px;
 }
 
+
+
+
+
 /*  CONTENT */
 
+
+
+
+
 /*  Sobre */
+
+
+
+
 
 #sobreContent {
 	padding-top:50px;
@@ -174,7 +203,7 @@ a {
 
 .linkedin:hover > .svgLinkedin {
 	fill:#0077b5;
-	stroke:none;
+	stroke:#0077b5;
 }
 
 .linkedin:hover .in {
@@ -204,7 +233,15 @@ a {
 	padding:20px;
 }
 
+
+
+
+
 /*  Experiência */
+
+
+
+
 
 .titleRight {
 	font-family: $Title-font;
@@ -228,6 +265,58 @@ a {
 	height:200px;
 }
 
+.infoBox{
+	width:180px;
+	height:90px;
+	border:4px solid $second-color;
+	position:absolute;
+}
+
+.infoBox::after{
+    content: "";
+    position: absolute;
+    height: 40px;
+    border-left: 4px $second-color solid;
+    border-right: 21px $main-color solid;
+    bottom: -15.8px;
+    right: -8.3px;
+    transform: rotate(45deg);
+}
+
+.infoBox::before{
+    content: "";
+    position: absolute;
+    height: 40px;
+    border-right: 4px $second-color solid;
+    border-left: 21px $main-color solid;
+    top: -15.8px;
+    left: -8.4px;
+    transform: rotate(45deg);
+}
+
+.infoText {
+	width: 160px;
+	font-family: $Text-font;
+	font-size: 0.8em;
+	color: $second-color;
+	text-align: center;
+	margin: 12px auto 0px auto;
+}
+
+.dateText {
+	font-family: $Text-font;
+	font-size: 0.9em;
+}
+
+#datePana {
+	margin: 5px 0px 0px 5px;
+	font-weight: bold;
+}
+
+#panaBox {
+	margin:120px 0px 0px 20px;
+}
+
 #pana {	
     margin-left: 50px;
     float: left;
@@ -236,13 +325,65 @@ a {
     height: 90px;
     width: 463px;
     border-left: 4px solid $second-color;
+}
 
+#pana::after {
+	content: "";
+    position: absolute;
+    right: 8px;
+    bottom: 0px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 3.5px 30px 3.5px;
+	border-color: transparent transparent $second-color transparent;
+	-webkit-transform:rotate(360deg);
 }
 
 #panaSvg {
     height: 50px;
     position: absolute;
     bottom: 4px;
+}
+
+#dateMelies {
+	margin: 80px 0px 0px 5px;
+	font-weight: bold;
+}
+
+
+#meliesBox {
+	margin:100px 0px 0px 200px;
+	height:100px;
+}
+
+
+#melies {
+	margin-left: 250px;
+    float: left;
+    position: absolute;
+    height: 100px;
+    width: 140px;
+    border-left: 4px solid $second-color;
+}
+
+#melies::after {
+	content: "";
+    position: absolute;
+    right: 0px;
+    top: -1px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 30px 3.5px 0px 3.5px;
+	border-color: $second-color transparent transparent transparent;
+	-webkit-transform:rotate(360deg);
+}
+
+#meliesSvg {
+    height: 78px;
+    position: absolute;
+    bottom: 22.6px;
 }
 
 .infoColor {
@@ -254,14 +395,30 @@ a {
 	fill: $second-color;
 }
 
+
+
+
+
 /*  Habilidades */
+
+
+
+
 
 #habiContent {
 	height: 500px;
 	width:100%;
 }
 
+
+
+
+
 /*  Portfólio */
+
+
+
+
 
 #portContent {
 	height: 500px;
@@ -273,7 +430,7 @@ a {
   	height: 320px;
   	background: $second-color;
   	position: relative;
-  	margin: 150px 0px 0px 63px;
+  	margin: 120px 0px 0px 63px;
   	box-shadow: 8px 8px 0 $third-color;
   	float: left;
   	position: relative;
