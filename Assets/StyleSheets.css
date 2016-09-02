@@ -172,12 +172,20 @@ a {
   height: 300px; }
 
 #upInfo {
-  border-bottom: 2px solid black;
-  height: 300px; }
+  width: 960px;
+  border-style: solid;
+  border-width: 0 6px 3px 6px;
+  border-color: transparent transparent black transparent;
+  height: 200px;
+  margin: 100px auto 0px auto; }
 
 #downInfo {
-  border-top: 2px solid black;
-  height: 200px; }
+  width: 960px;
+  border-style: solid;
+  border-width: 3px 6px 0px 6px;
+  border-color: black transparent transparent transparent;
+  height: 200px;
+  margin: 0px auto; }
 
 .infoBox {
   width: 180px;
@@ -213,21 +221,24 @@ a {
   text-align: center;
   margin: 12px auto 0px auto; }
 
-.dateText {
+.dateUp {
   font-family: Roboto;
-  font-size: 0.9em; }
-
-#datePana {
+  font-size: 0.9em;
   margin: 5px 0px 0px 5px;
   font-weight: bold; }
 
+.dateDown {
+  font-family: Roboto;
+  font-size: 0.9em;
+  margin: 80px 0px 0px 5px;
+  font-weight: bold; }
+
 #panaBox {
-  margin: 120px 0px 0px 20px; }
+  margin: 20px 0px 0px 20px; }
 
 #pana {
   margin-left: 50px;
-  float: left;
-  margin-top: 214px;
+  margin-top: 114px;
   position: absolute;
   height: 90px;
   width: 463px;
@@ -250,9 +261,34 @@ a {
   position: absolute;
   bottom: 4px; }
 
-#dateMelies {
-  margin: 80px 0px 0px 5px;
-  font-weight: bold; }
+#anheBox {
+  margin: 50px 0px 0px 525px;
+  height: 70px; }
+
+#anhe {
+  margin-left: 550px;
+  margin-top: 124px;
+  position: absolute;
+  height: 80px;
+  width: 175px;
+  border-left: 4px solid black; }
+
+#anhe::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 3.5px 30px 3.5px;
+  border-color: transparent transparent black transparent;
+  -webkit-transform: rotate(360deg); }
+
+#anheSvg {
+  height: 30px;
+  position: absolute;
+  bottom: 4px; }
 
 #meliesBox {
   margin: 100px 0px 0px 200px;
@@ -260,7 +296,6 @@ a {
 
 #melies {
   margin-left: 250px;
-  float: left;
   position: absolute;
   height: 100px;
   width: 140px;
@@ -282,6 +317,34 @@ a {
   height: 78px;
   position: absolute;
   bottom: 22.6px; }
+
+#senacBox {
+  margin: 100px 0px 0px 600px;
+  height: 90px; }
+
+#senac {
+  margin-left: 755px;
+  position: absolute;
+  height: 100px;
+  width: 204px;
+  border-left: 4px solid black; }
+
+#senac::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: -1px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 3.5px 0px 3.5px;
+  border-color: black transparent transparent transparent;
+  -webkit-transform: rotate(360deg); }
+
+#senacSvg {
+  height: 78px;
+  position: absolute;
+  bottom: 24.6px; }
 
 .infoColor {
   fill: #EFD800; }
