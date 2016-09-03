@@ -209,7 +209,7 @@ a {
 @-moz-document url-prefix() { 
 	.linkedin {
 		width: 40px;
-		margin: 200px 0px 0px -231px;
+		margin: 200px 0px 0px -30px;
 		position:absolute;
 	}
 
@@ -245,6 +245,29 @@ a {
 	font-family:$Text-font;
 	border: 5px solid $second-color;
 	padding:20px;
+}
+
+#sobreText::before{
+    content: "";
+    position: absolute;
+    height: 40px;
+    top:270px;
+    left:334px;
+    border-right: 4px $second-color solid;
+    border-left: 21px $main-color solid;
+    transform: rotate(45deg);
+}
+
+
+#sobreText::after{
+    content: "";
+    position: absolute;
+    height: 40px;
+    bottom:461px;
+    right:113px;
+    border-left: 4px $second-color solid;
+    border-right: 21px $main-color solid;
+    transform: rotate(45deg);
 }
 
 
@@ -651,28 +674,37 @@ a {
 	width: 199px;
 }
 
-.plusButton {
-	width: 25px;
-	margin: 20px 0px 0px 115px;
-	position: absolute;
+.portAcess {
+	color:$third-color;
+	font-family: $Title-font;
+	font-size:1.6em;
+	width: auto;
+	height: 52px;
+	padding: 10px 0px 0px 40px;
 }
 
-.plusColor {
-	fill:none;
-	stroke:$third-color;
-	stroke-width:5px;
+#cjrn {
+	margin-top: 35px;
 }
 
-.plusColor2 {
-	fill:$third-color;
+#guaxinim {
+	margin-top: 44px;
 }
 
-.plusLink:hover > .plusColor2 {
-	fill:$second-color;
+@-moz-document url-prefix() { 
+	#cjrn {
+		margin-top: 18px;
+	}	
+
+	#guaxinim {
+		margin-top: 32px;
+	}
+
 }
 
-.plusLink:hover > .plusColor{
-	fill:$third-color;
+.portAcess:hover {
+	color: $second-color;
+	background-color:$third-color;
 }
 
 .portSvg {
