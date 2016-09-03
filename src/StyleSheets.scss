@@ -4,9 +4,9 @@
 
 $Title-font: Montserrat;
 $Text-font: Roboto;
-$main-color: #F4F4F4;
+$main-color: #FFFFFF;
 $second-color: black;
-$third-color: #EFD800;
+$third-color: #EED912;
 
 /*  SITE BORDER */
 
@@ -328,6 +328,7 @@ a {
 .dateUp {
 	font-family: $Text-font;
 	font-size: 0.9em;
+	color: $second-color;
 	margin: 5px 0px 0px 5px;
 	font-weight: bold;
 }
@@ -335,6 +336,7 @@ a {
 .dateDown {
 	font-family: $Text-font;
 	font-size: 0.9em;
+	color: $second-color;
 	margin: 80px 0px 0px 5px;
 	font-weight: bold;
 }
@@ -498,7 +500,8 @@ a {
 .habiTitle {
 	font-family: $Text-font;
 	font-size:1.1em;
-	margin: 21px 0px 0px 100px;
+	color: $second-color;
+	margin: 23px 0px 0px 97px;
 	text-align: center;
 	position: absolute;
 	-webkit-transform: rotate(30deg);
@@ -541,6 +544,10 @@ a {
 	fill:$third-color;
 }
 
+.habiColor3 {
+	fill: $second-color;
+}
+
 .habiInfo {
   position: absolute;
   width: 32px; 
@@ -579,6 +586,7 @@ a {
 .habiText {
 	font-family: $Text-font;
 	font-size:1em;
+	color: $second-color;
 	margin-top: 0.5px;
 	text-align: center;
 }
