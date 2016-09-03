@@ -175,26 +175,6 @@ a {
   border: 5px solid black;
   padding: 20px; }
 
-#sobreText::before {
-  content: "";
-  position: absolute;
-  height: 40px;
-  top: 270px;
-  left: 334px;
-  border-right: 4px black solid;
-  border-left: 21px #FFFFFF solid;
-  transform: rotate(45deg); }
-
-#sobreText::after {
-  content: "";
-  position: absolute;
-  height: 40px;
-  bottom: 461px;
-  right: 113px;
-  border-left: 4px black solid;
-  border-right: 21px #FFFFFF solid;
-  transform: rotate(45deg); }
-
 /*  Experiência */
 .titleRight {
   font-family: Montserrat;

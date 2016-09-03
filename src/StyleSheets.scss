@@ -247,28 +247,6 @@ a {
 	padding:20px;
 }
 
-#sobreText::before{
-    content: "";
-    position: absolute;
-    height: 40px;
-    top:270px;
-    left:334px;
-    border-right: 4px $second-color solid;
-    border-left: 21px $main-color solid;
-    transform: rotate(45deg);
-}
-
-
-#sobreText::after{
-    content: "";
-    position: absolute;
-    height: 40px;
-    bottom:461px;
-    right:113px;
-    border-left: 4px $second-color solid;
-    border-right: 21px $main-color solid;
-    transform: rotate(45deg);
-}
 
 
 
