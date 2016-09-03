@@ -23,13 +23,23 @@ body {
   margin: 0px;
   padding-bottom: 50px; }
 
-/* OVERALL CONTAINER */
+/* OVERALL */
 .container {
   margin: 0px auto;
   width: 100%;
   max-width: 1024px;
   height: auto;
   padding-top: 30px; }
+
+::selection {
+  background: #EFD800;
+  /* WebKit/Blink Browsers */
+  color: #F4F4F4; }
+
+::-moz-selection {
+  background: #EFD800;
+  /* Gecko Browsers */
+  color: #F4F4F4; }
 
 /*  HEADER */
 #header {
@@ -43,7 +53,7 @@ ul {
   width: 805px;
   padding: 0px; }
 
-li {
+.menuItem {
   position: relative;
   margin: 50px 2.1% 0px 2.6%;
   border: 5px solid black;
@@ -54,12 +64,13 @@ li {
   background: transparent;
   z-index: 999; }
 
-li:hover {
+.menuItem:hover {
   background: black;
   color: #F4F4F4; }
 
 a {
-  color: black; }
+  color: black;
+  text-decoration: none; }
 
 #logo {
   margin: 17px 1% 0px 1%;
@@ -69,13 +80,17 @@ a {
   fill: black; }
 
 .navShadow {
-  z-index: 1;
-  border-color: #EFD800;
   position: absolute;
   margin: 53px 0px 0px 0px;
   background: transparent;
   color: transparent;
-  pointer-events: none; }
+  pointer-events: none;
+  border: 5px solid #EFD800;
+  float: left;
+  padding: 5px 15px;
+  font-family: Montserrat;
+  font-size: 16px;
+  background: transparent; }
 
 #navSob {
   margin-left: 25px; }
@@ -144,7 +159,7 @@ a {
   font-family: Montserrat;
   text-shadow: 2px 2px #EFD800;
   font-size: 3em;
-  float: left;
+  text-align: left;
   color: black; }
 
 #sobreTitle {
@@ -165,7 +180,7 @@ a {
   font-family: Montserrat;
   text-shadow: -2px 2px #EFD800;
   font-size: 3em;
-  float: right;
+  text-align: right;
   color: black; }
 
 .info {
@@ -177,7 +192,7 @@ a {
   border-width: 0 6px 3px 6px;
   border-color: transparent transparent black transparent;
   height: 200px;
-  margin: 100px auto 0px auto; }
+  margin: 0px auto 0px auto; }
 
 #downInfo {
   width: 960px;
@@ -316,7 +331,7 @@ a {
 #meliesSvg {
   height: 78px;
   position: absolute;
-  bottom: 22.6px; }
+  bottom: 23.6px; }
 
 #senacBox {
   margin: 100px 0px 0px 600px;
@@ -344,7 +359,7 @@ a {
 #senacSvg {
   height: 78px;
   position: absolute;
-  bottom: 24.6px; }
+  bottom: 25.6px; }
 
 .infoColor {
   fill: #EFD800; }
@@ -355,8 +370,86 @@ a {
 
 /*  Habilidades */
 #habiContent {
-  height: 500px;
+  height: 585px;
   width: 100%; }
+
+.habiTitle {
+  font-family: Roboto;
+  font-size: 1.1em;
+  margin: 21px 0px 0px 100px;
+  text-align: center;
+  position: absolute;
+  -webkit-transform: rotate(30deg);
+  /* Firefox */
+  -moz-transform: rotate(30deg);
+  /* IE */
+  -ms-transform: rotate(30deg);
+  /* Opera */
+  -o-transform: rotate(30deg); }
+
+.habiBox {
+  height: 205px;
+  width: 180px;
+  float: left;
+  margin-left: 20px; }
+
+.habiBox2 {
+  height: 225px;
+  width: 180px;
+  float: left;
+  margin-top: 20px;
+  margin-left: 20px; }
+
+.habiSvg {
+  height: 180px;
+  width: 160px;
+  margin: 20px auto 0px auto;
+  display: block; }
+
+.habiColor {
+  fill: none;
+  stroke: black;
+  stroke-width: 2px; }
+
+.habiColor2 {
+  fill: #EFD800; }
+
+.habiInfo {
+  position: absolute;
+  width: 32px;
+  height: 22px;
+  margin: -12px 0px 0px 123px;
+  border-left: solid 5px #EFD800;
+  border-right: solid 5px #EFD800; }
+
+.habiInfo::before,
+.habiInfo::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 22.63px;
+  height: 22.63px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 1px; }
+
+.habiInfo::before {
+  top: -14.84px;
+  border-top: solid 7.0711px #EFD800;
+  border-right: solid 7.0711px #EFD800; }
+
+.habiInfo::after {
+  bottom: -14.98px;
+  border-bottom: solid 7.0711px #EFD800;
+  border-left: solid 7.0711px #EFD800; }
+
+.habiText {
+  font-family: Roboto;
+  font-size: 1em;
+  margin-top: 0.5px;
+  text-align: center; }
 
 /*  Portfólio */
 #portContent {
@@ -368,7 +461,7 @@ a {
   height: 320px;
   background: black;
   position: relative;
-  margin: 120px 0px 0px 63px;
+  margin-left: 63px;
   box-shadow: 8px 8px 0 #EFD800;
   float: left;
   position: relative; }
