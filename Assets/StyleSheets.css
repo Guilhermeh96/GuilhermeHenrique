@@ -148,11 +148,11 @@ a {
     margin: 200px 0px 0px -231px;
     position: absolute; } }
 
-.linkedin:hover > .svgLinkedin {
+.linkedinLink:hover > .svgLinkedin {
   fill: #0077b5;
   stroke: #0077b5; }
 
-.linkedin:hover .in {
+.linkedinLink:hover > .in {
   fill: #FFFFFF; }
 
 .titleLeft {
@@ -520,8 +520,32 @@ a {
 .plusColor2 {
   fill: #EED912; }
 
-.plusButton:hover .plusColor2 {
+.plusLink:hover > .plusColor2 {
   fill: black; }
 
-.plusButton:hover .plusColor {
+.plusLink:hover > .plusColor {
   fill: #EED912; }
+
+.portSvg {
+  width: 140px;
+  margin-left: 150px; }
+
+.portColor {
+  fill: none;
+  stroke: #EED912;
+  stroke-width: 5; }
+
+.portColor2 {
+  fill: none;
+  stroke: black;
+  stroke-width: 5; }
+
+.portColor3 {
+  fill: black; }
+
+.portLink:hover > .portColor2 {
+  fill: black;
+  stroke: black; }
+
+.portLink:hover > .portColor3 {
+  fill: #FFFFFF; }

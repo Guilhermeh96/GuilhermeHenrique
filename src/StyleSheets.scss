@@ -215,12 +215,12 @@ a {
 
 }
 
-.linkedin:hover > .svgLinkedin {
+.linkedinLink:hover > .svgLinkedin {
 	fill:#0077b5;
 	stroke:#0077b5;
 }
 
-.linkedin:hover .in {
+.linkedinLink:hover > .in {
 	fill:$main-color;
 }
 
@@ -667,10 +667,40 @@ a {
 	fill:$third-color;
 }
 
-.plusButton:hover .plusColor2 {
+.plusLink:hover > .plusColor2 {
 	fill:$second-color;
 }
 
-.plusButton:hover  .plusColor{
+.plusLink:hover > .plusColor{
 	fill:$third-color;
+}
+
+.portSvg {
+	width: 140px;
+	margin-left: 150px;
+}
+
+.portColor {
+	fill: none;
+	stroke: $third-color;
+	stroke-width:5;
+}
+
+.portColor2 {
+	fill:none;
+	stroke: $second-color;
+	stroke-width:5;
+}
+
+.portColor3 {
+	fill: $second-color
+}
+
+.portLink:hover > .portColor2 {
+	fill:$second-color;
+	stroke: $second-color;
+}
+
+.portLink:hover > .portColor3 {
+	fill:$main-color;
 }
