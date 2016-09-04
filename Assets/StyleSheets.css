@@ -1,5 +1,4 @@
 @charset "UTF-8";
-@import 'https://fonts.googleapis.com/css?family=Montserrat:700|Roboto:500';
 /*  SITE BORDER */
 body::before, body::after {
   content: "";
