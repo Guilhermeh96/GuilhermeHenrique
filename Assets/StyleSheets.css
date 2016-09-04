@@ -157,6 +157,14 @@ a {
 .linkedinLink:hover > .in {
   fill: #FFFFFF; }
 
+#myName {
+  float: left;
+  color: black;
+  font-family: Montserrat;
+  width: 170px;
+  text-align: center;
+  margin-top: -45px; }
+
 .titleLeft {
   font-family: Montserrat;
   text-shadow: 2px 2px #EED912;

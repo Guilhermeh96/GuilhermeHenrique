@@ -190,8 +190,6 @@ a {
 	overflow: visible;
 }
 
-
-
 .svgLinkedin{
 	fill:none;
 	stroke:$second-color;
@@ -225,6 +223,15 @@ a {
 
 .linkedinLink:hover > .in {
 	fill:$main-color;
+}
+
+#myName {
+	float:left;
+	color: $second-color;
+	font-family: $Title-font;
+	width:170px;
+	text-align:center;
+	margin-top:-45px;
 }
 
 .titleLeft {
