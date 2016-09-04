@@ -189,6 +189,10 @@ a {
 	margin-top:40px;
 }
 
+#clipPath{
+	clip-path:url(#XMLID_3_);
+}
+
 .svgLinkedin{
 	fill:none;
 	stroke:$second-color;
@@ -547,6 +551,10 @@ a {
 
 .habiColor3 {
 	fill: $second-color;
+}
+
+#secondHabi {
+	margin-left: 120px;;
 }
 
 .habiInfo {
