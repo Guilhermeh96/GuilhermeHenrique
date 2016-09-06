@@ -5,9 +5,10 @@
 
 	<meta charset="UTF-8">
 	<title>Guilherme Henrique</title>
+	<link rel="stylesheet" type="text/css" href="Assets/css/StyleSheets.css">
 	<link rel="icon" href="Assets/images/Logo.png">
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:700|Roboto:500">
-	<link rel="stylesheet" type="text/css" href="Assets/StyleSheets.css">
+
 
 </head>
 
@@ -19,6 +20,15 @@
 	
 
 		<div class="container">
+
+			<div id="Konami">        
+			<a href="#" onclick="changeCSS('Assets/css/StyleSheets.css', 0);">
+			<div style="width:20px; height:20px;background-color:red;display:inline-block;"></div></a>
+		    <a href="#" onclick="changeCSS('Assets/css/Paleta1.css', 0);">
+			<div style="width:20px; height:20px;background-color:red;display:inline-block;"></div></a>
+			<a href="#" onclick="changeCSS('Assets/css/Paleta2.css', 0);">
+			<div style="width:20px; height:20px;background-color:red;display:inline-block;"></div></a>
+			</div>
 
 			<ul>
 
@@ -221,6 +231,35 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="Assets/js/all.min.js"></script>
+	<script>
+		  $('#Konami').hide();
+		  var els, i, len, title;
+		  var konamiCode = '38,38,40,40,37,39,37,39,66,65';
+		  var keyPresses = [];
+		  var checkKonami = function(e) {
+		    keyPresses.push(e.keyCode);
+		    if (keyPresses.slice(keyPresses.length-10).join() === konamiCode) {
+		      runKonami();
+		    }
+		  };
+		  var runKonami = function() {
+		    $('#Konami').show();
+		  };
+		  document.addEventListener('keyup', checkKonami);
+	</script>
+	<script type="text/javascript">
+		function changeCSS(cssFile, cssLinkIndex) {
+
+   		 var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+    	 var newlink = document.createElement("link");
+    	 newlink.setAttribute("rel", "stylesheet");
+    	 newlink.setAttribute("type", "text/css");
+    	 newlink.setAttribute("href", cssFile);
+
+    	 document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+}
+	</script>
 
 </body>
 

@@ -4,7 +4,7 @@ body::before, body::after {
   content: "";
   z-index: 999;
   position: fixed;
-  background: #000000;
+  background: white;
   left: 0;
   right: 0;
   height: 10px; }
@@ -16,11 +16,14 @@ body::after {
   bottom: 0; }
 
 body {
-  background-color: #FFFFFF;
-  border-left: 10px solid #000000;
-  border-right: 10px solid #000000;
+  background-color: black;
+  border-left: 10px solid white;
+  border-right: 10px solid white;
   margin: 0px;
   padding-bottom: 50px; }
+
+#Konami {
+  text-align: center; }
 
 /* OVERALL */
 .container {
@@ -32,14 +35,14 @@ body {
   zoom: 1; }
 
 ::selection {
-  background: #EED912;
+  background: red;
   /* WebKit/Blink Browsers */
-  color: #FFFFFF; }
+  color: black; }
 
 ::-moz-selection {
-  background: #EED912;
+  background: red;
   /* Gecko Browsers */
-  color: #FFFFFF; }
+  color: black; }
 
 ::-webkit-scrollbar {
   -webkit-appearance: none;
@@ -49,10 +52,10 @@ body {
   /* for horizontal scrollbars */ }
 
 ::-webkit-scrollbar-track {
-  background: #FFFFFF; }
+  background: black; }
 
 ::-webkit-scrollbar-thumb {
-  background: #EED912; }
+  background: red; }
 
 /*  HEADER */
 ul {
@@ -64,7 +67,7 @@ ul {
 .menuItem {
   position: relative;
   margin: 50px 2.1% 0px 2.6%;
-  border: 5px solid #000000;
+  border: 5px solid white;
   float: left;
   padding: 5px 15px;
   font-family: Montserrat;
@@ -73,11 +76,11 @@ ul {
   z-index: 999; }
 
 .menuItem:hover {
-  background: #000000;
-  color: #FFFFFF; }
+  background: white;
+  color: black; }
 
 a {
-  color: #000000;
+  color: white;
   text-decoration: none; }
 
 .logo {
@@ -85,7 +88,7 @@ a {
   float: left; }
 
 .logoColor {
-  fill: #000000; }
+  fill: white; }
 
 .navShadow {
   position: absolute;
@@ -93,7 +96,7 @@ a {
   background: transparent;
   color: transparent;
   pointer-events: none;
-  border: 5px solid #EED912;
+  border: 5px solid red;
   float: left;
   padding: 5px 15px;
   font-family: Montserrat;
@@ -116,13 +119,13 @@ a {
 /*  Sobre */
 .svgFoto {
   fill: none;
-  stroke: #EED912;
+  stroke: red;
   stroke-width: 5;
   stroke-miterlimit: 10; }
 
 .fotoBorder {
   fill: none;
-  stroke: #000000;
+  stroke: white;
   stroke-width: 5;
   overflow: visible; }
 
@@ -136,12 +139,12 @@ a {
 
 .svgLinkedin {
   fill: none;
-  stroke: #000000;
+  stroke: white;
   stroke-width: 15px;
   stroke-miterlimit: 10; }
 
 .in {
-  fill: #000000; }
+  fill: white; }
 
 .linkedin {
   width: 40px;
@@ -159,11 +162,11 @@ a {
   stroke: #0077b5; }
 
 .linkedinLink:hover > .in {
-  fill: #FFFFFF; }
+  fill: black; }
 
 .myName {
   float: left;
-  color: #000000;
+  color: white;
   font-family: Montserrat;
   width: 170px;
   text-align: center;
@@ -171,31 +174,31 @@ a {
 
 .titleLeft {
   font-family: Montserrat;
-  text-shadow: 2px 2px #EED912;
+  text-shadow: 2px 2px red;
   font-size: 3em;
   text-align: left;
-  color: #000000; }
+  color: white; }
 
 .sobreTitle {
   margin: 0px 0px 0px 30px; }
 
 .sobreText {
   float: left;
-  color: #000000;
+  color: white;
   width: 70%;
   margin-left: 50px;
   font-size: 0.9em;
   font-family: Roboto;
-  border: 5px solid #000000;
+  border: 5px solid white;
   padding: 20px; }
 
 /*  Experiência */
 .titleRight {
   font-family: Montserrat;
-  text-shadow: -2px 2px #EED912;
+  text-shadow: -2px 2px red;
   font-size: 3em;
   text-align: right;
-  color: #000000; }
+  color: white; }
 
 .info {
   height: 300px; }
@@ -204,7 +207,7 @@ a {
   width: 960px;
   border-style: solid;
   border-width: 0 6px 3px 6px;
-  border-color: transparent transparent #000000 transparent;
+  border-color: transparent transparent white transparent;
   height: 200px;
   margin: 0px auto 0px auto; }
 
@@ -212,22 +215,22 @@ a {
   width: 960px;
   border-style: solid;
   border-width: 3px 6px 0px 6px;
-  border-color: #000000 transparent transparent transparent;
+  border-color: white transparent transparent transparent;
   height: 200px;
   margin: 0px auto; }
 
 .infoBox {
   width: 180px;
   height: 90px;
-  border: 4px solid #000000;
+  border: 4px solid white;
   position: absolute; }
 
 .infoBox::after {
   content: "";
   position: absolute;
   height: 40px;
-  border-left: 4px #000000 solid;
-  border-right: 21px #FFFFFF solid;
+  border-left: 4px white solid;
+  border-right: 21px black solid;
   bottom: -15.8px;
   right: -8.3px;
   transform: rotate(45deg); }
@@ -236,8 +239,8 @@ a {
   content: "";
   position: absolute;
   height: 40px;
-  border-right: 4px #000000 solid;
-  border-left: 21px #FFFFFF solid;
+  border-right: 4px white solid;
+  border-left: 21px black solid;
   top: -15.8px;
   left: -8.4px;
   transform: rotate(45deg); }
@@ -246,21 +249,21 @@ a {
   width: 160px;
   font-family: Roboto;
   font-size: 0.8em;
-  color: #000000;
+  color: white;
   text-align: center;
   margin: 12px auto 0px auto; }
 
 .dateUp {
   font-family: Roboto;
   font-size: 0.9em;
-  color: #000000;
+  color: white;
   margin: 5px 0px 0px 5px;
   font-weight: bold; }
 
 .dateDown {
   font-family: Roboto;
   font-size: 0.9em;
-  color: #000000;
+  color: white;
   margin: 80px 0px 0px 5px;
   font-weight: bold; }
 
@@ -273,7 +276,7 @@ a {
   position: absolute;
   height: 90px;
   width: 463px;
-  border-left: 4px solid #000000; }
+  border-left: 4px solid white; }
 
 .pana::after {
   content: "";
@@ -284,7 +287,7 @@ a {
   height: 0;
   border-style: solid;
   border-width: 0 3.5px 30px 3.5px;
-  border-color: transparent transparent #000000 transparent;
+  border-color: transparent transparent white transparent;
   -webkit-transform: rotate(360deg); }
 
 .panaSvg {
@@ -302,7 +305,7 @@ a {
   position: absolute;
   height: 80px;
   width: 175px;
-  border-left: 4px solid #000000; }
+  border-left: 4px solid white; }
 
 .anhe::after {
   content: "";
@@ -313,7 +316,7 @@ a {
   height: 0;
   border-style: solid;
   border-width: 0 3.5px 30px 3.5px;
-  border-color: transparent transparent #000000 transparent;
+  border-color: transparent transparent white transparent;
   -webkit-transform: rotate(360deg); }
 
 .anheSvg {
@@ -330,7 +333,7 @@ a {
   position: absolute;
   height: 100px;
   width: 140px;
-  border-left: 4px solid #000000; }
+  border-left: 4px solid white; }
 
 .melies::after {
   content: "";
@@ -341,7 +344,7 @@ a {
   height: 0;
   border-style: solid;
   border-width: 30px 3.5px 0px 3.5px;
-  border-color: #000000 transparent transparent transparent;
+  border-color: white transparent transparent transparent;
   -webkit-transform: rotate(360deg); }
 
 .meliesSvg {
@@ -358,7 +361,7 @@ a {
   position: absolute;
   height: 100px;
   width: 204px;
-  border-left: 4px solid #000000; }
+  border-left: 4px solid white; }
 
 .senac::after {
   content: "";
@@ -369,7 +372,7 @@ a {
   height: 0;
   border-style: solid;
   border-width: 30px 3.5px 0px 3.5px;
-  border-color: #000000 transparent transparent transparent;
+  border-color: white transparent transparent transparent;
   -webkit-transform: rotate(360deg); }
 
 .senacSvg {
@@ -378,11 +381,11 @@ a {
   bottom: 25.6px; }
 
 .infoColor {
-  fill: #EED912; }
+  fill: red; }
 
 .infoColor2 {
   opacity: 0.7;
-  fill: #000000; }
+  fill: white; }
 
 /*  Habilidades */
 .habiAlign {
@@ -391,7 +394,7 @@ a {
 .habiTitle {
   font-family: Roboto;
   font-size: 1.1em;
-  color: #000000;
+  color: white;
   margin: 23px 0px 0px 97px;
   text-align: center;
   position: absolute;
@@ -415,22 +418,22 @@ a {
 
 .habiColor {
   fill: none;
-  stroke: #000000;
+  stroke: white;
   stroke-width: 2px; }
 
 .habiColor2 {
-  fill: #EED912; }
+  fill: red; }
 
 .habiColor3 {
-  fill: #000000; }
+  fill: white; }
 
 .habiInfo {
   position: absolute;
   width: 32px;
   height: 22px;
   margin: -12px 0px 0px 123px;
-  border-left: solid 5px #EED912;
-  border-right: solid 5px #EED912; }
+  border-left: solid 5px red;
+  border-right: solid 5px red; }
 
 .habiInfo::before,
 .habiInfo::after {
@@ -447,28 +450,28 @@ a {
 
 .habiInfo::before {
   top: -14.84px;
-  border-top: solid 7.0711px #EED912;
-  border-right: solid 7.0711px #EED912; }
+  border-top: solid 7.0711px red;
+  border-right: solid 7.0711px red; }
 
 .habiInfo::after {
   bottom: -14.98px;
-  border-bottom: solid 7.0711px #EED912;
-  border-left: solid 7.0711px #EED912; }
+  border-bottom: solid 7.0711px red;
+  border-left: solid 7.0711px red; }
 
 .habiText {
   font-family: Roboto;
   font-size: 1em;
-  color: #000000;
+  color: white;
   margin-top: 0.5px;
   text-align: center; }
 
 /*  Portfólio */
 .portBox {
   width: 260px;
-  background: #000000;
+  background: white;
   position: relative;
   margin-left: 63px;
-  box-shadow: 8px 8px 0 #EED912;
+  box-shadow: 8px 8px 0 red;
   float: left;
   position: relative; }
 
@@ -483,35 +486,35 @@ a {
   width: 90px;
   left: -46px;
   top: -46px;
-  background-color: #FFFFFF;
+  background-color: black;
   transform: rotate(45deg); }
 
 .portBox::after {
   content: "";
   position: absolute;
   height: 90px;
-  border-left: 10px #EED912 solid;
-  border-right: 50px #FFFFFF solid;
-  background-color: #FFFFFF;
+  border-left: 10px red solid;
+  border-right: 50px black solid;
+  background-color: black;
   bottom: -35px;
   right: -20.5px;
   transform: rotate(45deg); }
 
 .portTitle {
-  color: #FFFFFF;
+  color: black;
   font-family: Montserrat;
   text-align: center;
   margin-top: 35px; }
 
 .portText {
-  color: #FFFFFF;
+  color: black;
   font-family: Roboto;
   font-size: 0.8em;
   margin: 0 auto;
   width: 199px; }
 
 .portAcess {
-  color: #EED912;
+  color: red;
   font-family: Montserrat;
   font-size: 1.6em;
   width: auto;
@@ -520,8 +523,8 @@ a {
   margin-bottom: 0px; }
 
 .portAcess:hover {
-  color: #000000;
-  background-color: #EED912; }
+  color: white;
+  background-color: red; }
 
 .portSvg {
   width: 140px;
@@ -529,20 +532,20 @@ a {
 
 .portColor {
   fill: none;
-  stroke: #EED912;
+  stroke: red;
   stroke-width: 5; }
 
 .portColor2 {
   fill: none;
-  stroke: #000000;
+  stroke: white;
   stroke-width: 5; }
 
 .portColor3 {
-  fill: #000000; }
+  fill: white; }
 
 .portLink:hover > .portColor2 {
-  fill: #000000;
-  stroke: #000000; }
+  fill: white;
+  stroke: white; }
 
 .portLink:hover > .portColor3 {
-  fill: #FFFFFF; }
+  fill: black; }
