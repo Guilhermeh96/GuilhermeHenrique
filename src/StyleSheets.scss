@@ -24,6 +24,7 @@ body::after {
 }
 
 body {
+    font-size: 62.5%;
 	background-color: $main-color;
 	border-left: 10px solid $second-color;
     border-right: 10px solid $second-color;  
@@ -40,17 +41,16 @@ body {
 /* OVERALL */
 
 
-
-
-
 .container {
 	margin: 0px auto;
 	width:100%;
 	max-width:1024px;
-	padding-top:30px;
+	padding-top:15px;
 	overflow: auto;
   	zoom: 1;
 }
+
+
 
 ::selection {
   background: $third-color; /* WebKit/Blink Browsers */
@@ -185,7 +185,6 @@ a {
 }
 
 .foto {
-	float: left;
 	width: 170px;
 	margin-top:40px;
 }
@@ -207,17 +206,7 @@ a {
 
 .linkedin {
 	width: 40px;
-	margin: 200px 0px 0px -30px;
-	position:absolute;
-}
-
-@-moz-document url-prefix() { 
-	.linkedin {
-		width: 40px;
-		margin: 200px 0px 0px -30px;
-		position:absolute;
-	}
-
+	margin: -25px 0px 0px 120px;
 }
 
 .linkedinLink:hover > .svgLinkedin {
@@ -229,36 +218,42 @@ a {
 	fill:$main-color;
 }
 
-.myName {
+.sobreInfo {
+	display:inline-block;
 	float:left;
+	width:17.08984375%;
+}
+
+.myName {
 	color: $second-color;
 	font-family: $Title-font;
-	width:170px;
+	font-size:3em;
+	margin-top: 5px;
 	text-align:center;
-	margin-top:-45px;
 }
 
 .titleLeft {
 	font-family: $Title-font;
 	text-shadow: 2px 2px $third-color;
-	font-size: 3em;
+	font-size: 4.8em;
     text-align: left;
 	color: $second-color;
 }
 
 .sobreTitle {
 	margin:0px 0px 0px 30px;
+	display: inline-block;
 }
 
 .sobreText {
-	float:left;
 	color: $second-color;
 	width:70%;
 	margin-left: 50px;
-	font-size:0.9em;
+	font-size:1.4em;
 	font-family:$Text-font;
 	border: 5px solid $second-color;
 	padding:20px;
+	float:left;
 }
 
 
@@ -275,17 +270,13 @@ a {
 .titleRight {
 	font-family: $Title-font;
 	text-shadow: -2px 2px $third-color;
-	font-size: 3em;
+	font-size: 4.8em;
     text-align: right;
  	color: $second-color;
 }
 
-.info {
-	height:300px;
-}
-
 .upInfo {
-	width:960px;
+	height:200px;
 	border-style: solid;
 	border-width: 0 6px 3px 6px;
 	border-color: transparent transparent $second-color transparent;
@@ -294,19 +285,17 @@ a {
 }
 
 .downInfo {
-	width:960px;
+	height:230px;
 	border-style: solid;
 	border-width: 3px 6px 0px 6px;
 	border-color: $second-color transparent transparent transparent;	
-	height:200px;
 	margin: 0px auto;
 }
 
 .infoBox{
-	width:180px;
-	height:90px;
-	border:4px solid $second-color;
-	position:absolute;
+	width: 180px;
+    border: 4px solid #000000;
+    position: absolute;
 }
 
 .infoBox::after{
@@ -332,41 +321,37 @@ a {
 }
 
 .infoText {
-	width: 160px;
 	font-family: $Text-font;
-	font-size: 0.8em;
+	font-size: 1.4em;
 	color: $second-color;
 	text-align: center;
-	margin: 12px auto 0px auto;
+	padding:15px;
+	margin: 0px auto 0px auto;
 }
 
 .dateUp {
 	font-family: $Text-font;
-	font-size: 0.9em;
-	color: $second-color;
-	margin: 5px 0px 0px 5px;
-	font-weight: bold;
+    font-size: 1.4em;
+    color: $second-color;
+    margin: 5px 0px 0px 5px;
+    font-weight: bold;
 }
 
 .dateDown {
 	font-family: $Text-font;
-	font-size: 0.9em;
+	font-size: 1.4em;
 	color: $second-color;
 	margin: 80px 0px 0px 5px;
 	font-weight: bold;
 }
 
-.panaBox {
-	margin:20px 0px 0px 20px;
-}
-
 .pana {	
     margin-left: 50px;
-	margin-top:114px;
+    margin-top: 114px;
     position: absolute;
     height: 90px;
     width: 463px;
-    border-left: 4px solid $second-color;
+    border-left: 4px solid #000000;
 }
 
 .pana::after {
@@ -389,8 +374,7 @@ a {
 }
 
 .anheBox {
-	margin:50px 0px 0px 525px;
-	height:70px;
+	margin:32px 0px 0px 525px;
 }
 
 .anhe {
@@ -423,7 +407,6 @@ a {
 
 .meliesBox {
 	margin:100px 0px 0px 200px;
-	height:100px;
 }
 
 
@@ -456,7 +439,6 @@ a {
 
 .senacBox {
 	margin:100px 0px 0px 600px;
-	height:90px;
 }
 
 
@@ -513,7 +495,7 @@ a {
 
 .habiTitle {
 	font-family: $Text-font;
-	font-size:1.1em;
+	font-size:1.6em;
 	color: $second-color;
 	margin: 23px 0px 0px 97px;
 	text-align: center;
@@ -590,7 +572,7 @@ a {
 
 .habiText {
 	font-family: $Text-font;
-	font-size:1em;
+	font-size:1.6em;
 	color: $second-color;
 	margin-top: 0.5px;
 	text-align: center;
@@ -644,6 +626,7 @@ a {
 .portTitle {
 	color: $main-color;
 	font-family: $Title-font;
+	font-size:3em;
 	text-align: center;
 	margin-top: 35px;
 }
@@ -651,7 +634,7 @@ a {
 .portText {
 	color: $main-color;
 	font-family: $Text-font;
-	font-size: 0.8em;
+	font-size: 1.2em;
 	margin: 0 auto;
 	width: 199px;
 }
@@ -659,7 +642,7 @@ a {
 .portAcess {
 	color:$third-color;
 	font-family: $Title-font;
-	font-size:1.6em;
+	font-size:2.5em;
 	width: auto;
 	height: 52px;
 	padding: 10px 0px 0px 40px;
@@ -672,7 +655,7 @@ a {
 }
 
 .portSvg {
-	width: 140px;
+	width: 13.671875%;
 	margin-left: 150px;
 }
 

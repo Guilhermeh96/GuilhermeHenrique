@@ -4,6 +4,7 @@
 <head>
 
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Guilherme Henrique</title>
 	<link rel="stylesheet" type="text/css" href="Assets/css/StyleSheets.css">
 	<link rel="icon" href="Assets/images/Logo.png">
@@ -19,16 +20,7 @@
 
 	
 
-		<div class="container">
-
-			<div id="Konami">        
-			<a href="#" onclick="changeCSS('Assets/css/StyleSheets.css', 0);">
-			<div style="width:20px; height:20px;background-color:red;display:inline-block;"></div></a>
-		    <a href="#" onclick="changeCSS('Assets/css/Paleta1.css', 0);">
-			<div style="width:20px; height:20px;background-color:red;display:inline-block;"></div></a>
-			<a href="#" onclick="changeCSS('Assets/css/Paleta2.css', 0);">
-			<div style="width:20px; height:20px;background-color:red;display:inline-block;"></div></a>
-			</div>
+		<div class="container noScroll">
 
 			<ul>
 
@@ -59,12 +51,18 @@
 
 		<div class="container" id="sobre">
 
-			<svg class="foto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128 144" enable-background="new 0 0 128 144"><path d="M7.5 41L66 7.4 124.5 41v67.2L66 141.8 7.5 108.2z" class="svgFoto"/><clipPath id="XMLID_3_"><use xlink:href="#clipFoto" overflow="visible"/></clipPath><g clip-path="url(#XMLID_3_)"> <image class="fotoOverflow" width="504" height="416" xlink:href="Assets\images\me.jpg"  transform="matrix(0.3884 0 0 0.3884 -33.3451 -10.3912)"></image>
-			</g><path class="fotoBorder" id="clipFoto" d="M3.5 38.2L62.1 4.5l58.6 33.7v67.2L62.1 139 3.5 105.4z"/></svg>
-
-			<svg class="linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 148 164" enable-background="new 0 0 128 144" ><a target="_blank" class="linkedinLink" xlink:href="https://br.linkedin.com/in/guilherme-freitas-141466127"><path d="M3.5 37.3L64 2.4l60.5 34.9v69.9l-60.5 35-60.5-35z" class="svgLinkedin"/><path class="in" id="LinkedIn_8_" d="M95 75.8v20.8H83.4V77.2c0-4.9-1.7-8.2-5.9-8.2-3.2 0-5.1 2.2-6 4.4-.3.8-.4 1.9-.4 2.9v20.3H59.5s.2-32.9 0-36.3h11.6v5.1s-.1.1-.1.1h.1v-.1c1.5-2.5 4.3-6 10.5-6 7.7 0 13.4 5.2 13.4 16.4zm-47.6-33c-4 0-6.6 2.7-6.6 6.3 0 3.5 2.5 6.3 6.4 6.3h.1c4.1 0 6.6-2.8 6.6-6.3-.1-3.6-2.6-6.3-6.5-6.3zm-5.9 53.8h11.6V60.3H41.5v36.3z"/></a></svg>
-
 			<h1 class="titleLeft sobreTitle">SOBRE</h1>
+			
+			<div class="sobreInfo">
+
+				<svg class="foto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 128 144" enable-background="new 0 0 128 144"><path d="M7.5 41L66 7.4 124.5 41v67.2L66 141.8 7.5 108.2z" class="svgFoto"/><clipPath id="XMLID_3_"><use xlink:href="#clipFoto" overflow="visible"/></clipPath><g clip-path="url(#XMLID_3_)"> <image class="fotoOverflow" width="504" height="416" xlink:href="Assets\images\me.jpg"  transform="matrix(0.3884 0 0 0.3884 -33.3451 -10.3912)"></image>
+				</g><path class="fotoBorder" id="clipFoto" d="M3.5 38.2L62.1 4.5l58.6 33.7v67.2L62.1 139 3.5 105.4z"/></svg>
+
+				<svg class="linkedin" xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 148 164" enable-background="new 0 0 128 144" ><a target="_blank" class="linkedinLink" xlink:href="https://br.linkedin.com/in/guilherme-freitas-141466127"><path d="M3.5 37.3L64 2.4l60.5 34.9v69.9l-60.5 35-60.5-35z" class="svgLinkedin"/><path class="in" id="LinkedIn_8_" d="M95 75.8v20.8H83.4V77.2c0-4.9-1.7-8.2-5.9-8.2-3.2 0-5.1 2.2-6 4.4-.3.8-.4 1.9-.4 2.9v20.3H59.5s.2-32.9 0-36.3h11.6v5.1s-.1.1-.1.1h.1v-.1c1.5-2.5 4.3-6 10.5-6 7.7 0 13.4 5.2 13.4 16.4zm-47.6-33c-4 0-6.6 2.7-6.6 6.3 0 3.5 2.5 6.3 6.4 6.3h.1c4.1 0 6.6-2.8 6.6-6.3-.1-3.6-2.6-6.3-6.5-6.3zm-5.9 53.8h11.6V60.3H41.5v36.3z"/></a></svg>
+
+				<h1 class="myName"> Guilherme Henrique</h1>
+
+			</div>
 
 			<p class="sobreText">
 			Eu sou um amante das artes, seja filmes, música ou jogos, eu tento me envolver um pouco em todos os tipos de criação devido a isso. Este meu amor se reflete claramente nos meus trabalhos, seja inspirações de filmes cults ou projetos terminados noite a dentro com apenas música me acompanhando.<br> Comecei em design gráfico aonde percebi que este era meu futuro, e hoje em dia curso design digital, descobrindo na programação outra parte desse quebra-cabeça que é minha vocação. Se quiser entrar em contato em questão de orçamentos (ou apenas para dar um oi), só mandar um e-mail que respondo o quanto antes. 
@@ -73,8 +71,6 @@
 			Email: guilhermeh1996@gmail.com
 
 			</p>
-
-			<h1 class="myName"> Guilherme Henrique</h1>
 
 		</div>
 
@@ -87,7 +83,7 @@
 			
 			<div class="upInfo">
 				
-				<div class="infoBox panaBox">
+				<div class="infoBox">
 					<p class="infoText"> <strong>Escola Panamericana de Arte e Design</strong> <br><br>Design Gráfico</p>
 				</div>
 
@@ -231,35 +227,6 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="Assets/js/all.min.js"></script>
-	<script>
-		  $('#Konami').hide();
-		  var els, i, len, title;
-		  var konamiCode = '38,38,40,40,37,39,37,39,66,65';
-		  var keyPresses = [];
-		  var checkKonami = function(e) {
-		    keyPresses.push(e.keyCode);
-		    if (keyPresses.slice(keyPresses.length-10).join() === konamiCode) {
-		      runKonami();
-		    }
-		  };
-		  var runKonami = function() {
-		    $('#Konami').show();
-		  };
-		  document.addEventListener('keyup', checkKonami);
-	</script>
-	<script type="text/javascript">
-		function changeCSS(cssFile, cssLinkIndex) {
-
-   		 var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
-
-    	 var newlink = document.createElement("link");
-    	 newlink.setAttribute("rel", "stylesheet");
-    	 newlink.setAttribute("type", "text/css");
-    	 newlink.setAttribute("href", cssFile);
-
-    	 document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
-}
-	</script>
 
 </body>
 

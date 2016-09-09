@@ -16,6 +16,7 @@ body::after {
   bottom: 0; }
 
 body {
+  font-size: 62.5%;
   background-color: #FFFFFF;
   border-left: 10px solid #000000;
   border-right: 10px solid #000000;
@@ -30,7 +31,7 @@ body {
   margin: 0px auto;
   width: 100%;
   max-width: 1024px;
-  padding-top: 30px;
+  padding-top: 15px;
   overflow: auto;
   zoom: 1; }
 
@@ -130,7 +131,6 @@ a {
   overflow: visible; }
 
 .foto {
-  float: left;
   width: 170px;
   margin-top: 40px; }
 
@@ -148,14 +148,7 @@ a {
 
 .linkedin {
   width: 40px;
-  margin: 200px 0px 0px -30px;
-  position: absolute; }
-
-@-moz-document url-prefix() {
-  .linkedin {
-    width: 40px;
-    margin: 200px 0px 0px -30px;
-    position: absolute; } }
+  margin: -25px 0px 0px 120px; }
 
 .linkedinLink:hover > .svgLinkedin {
   fill: #0077b5;
@@ -164,47 +157,49 @@ a {
 .linkedinLink:hover > .in {
   fill: #FFFFFF; }
 
-.myName {
+.sobreInfo {
+  display: inline-block;
   float: left;
+  width: 17.08984375%; }
+
+.myName {
   color: #000000;
   font-family: Montserrat;
-  width: 170px;
-  text-align: center;
-  margin-top: -45px; }
+  font-size: 3em;
+  margin-top: 5px;
+  text-align: center; }
 
 .titleLeft {
   font-family: Montserrat;
   text-shadow: 2px 2px #EED912;
-  font-size: 3em;
+  font-size: 4.8em;
   text-align: left;
   color: #000000; }
 
 .sobreTitle {
-  margin: 0px 0px 0px 30px; }
+  margin: 0px 0px 0px 30px;
+  display: inline-block; }
 
 .sobreText {
-  float: left;
   color: #000000;
   width: 70%;
   margin-left: 50px;
-  font-size: 0.9em;
+  font-size: 1.4em;
   font-family: Roboto;
   border: 5px solid #000000;
-  padding: 20px; }
+  padding: 20px;
+  float: left; }
 
 /*  Experiência */
 .titleRight {
   font-family: Montserrat;
   text-shadow: -2px 2px #EED912;
-  font-size: 3em;
+  font-size: 4.8em;
   text-align: right;
   color: #000000; }
 
-.info {
-  height: 300px; }
-
 .upInfo {
-  width: 960px;
+  height: 200px;
   border-style: solid;
   border-width: 0 6px 3px 6px;
   border-color: transparent transparent #000000 transparent;
@@ -212,16 +207,14 @@ a {
   margin: 0px auto 0px auto; }
 
 .downInfo {
-  width: 960px;
+  height: 230px;
   border-style: solid;
   border-width: 3px 6px 0px 6px;
   border-color: #000000 transparent transparent transparent;
-  height: 200px;
   margin: 0px auto; }
 
 .infoBox {
   width: 180px;
-  height: 90px;
   border: 4px solid #000000;
   position: absolute; }
 
@@ -246,29 +239,26 @@ a {
   transform: rotate(45deg); }
 
 .infoText {
-  width: 160px;
   font-family: Roboto;
-  font-size: 0.8em;
+  font-size: 1.4em;
   color: #000000;
   text-align: center;
-  margin: 12px auto 0px auto; }
+  padding: 15px;
+  margin: 0px auto 0px auto; }
 
 .dateUp {
   font-family: Roboto;
-  font-size: 0.9em;
+  font-size: 1.4em;
   color: #000000;
   margin: 5px 0px 0px 5px;
   font-weight: bold; }
 
 .dateDown {
   font-family: Roboto;
-  font-size: 0.9em;
+  font-size: 1.4em;
   color: #000000;
   margin: 80px 0px 0px 5px;
   font-weight: bold; }
-
-.panaBox {
-  margin: 20px 0px 0px 20px; }
 
 .pana {
   margin-left: 50px;
@@ -296,8 +286,7 @@ a {
   bottom: 4px; }
 
 .anheBox {
-  margin: 50px 0px 0px 525px;
-  height: 70px; }
+  margin: 32px 0px 0px 525px; }
 
 .anhe {
   margin-left: 550px;
@@ -325,8 +314,7 @@ a {
   bottom: 4px; }
 
 .meliesBox {
-  margin: 100px 0px 0px 200px;
-  height: 100px; }
+  margin: 100px 0px 0px 200px; }
 
 .melies {
   margin-left: 250px;
@@ -353,8 +341,7 @@ a {
   bottom: 23.6px; }
 
 .senacBox {
-  margin: 100px 0px 0px 600px;
-  height: 90px; }
+  margin: 100px 0px 0px 600px; }
 
 .senac {
   margin-left: 755px;
@@ -393,7 +380,7 @@ a {
 
 .habiTitle {
   font-family: Roboto;
-  font-size: 1.1em;
+  font-size: 1.6em;
   color: #000000;
   margin: 23px 0px 0px 97px;
   text-align: center;
@@ -460,7 +447,7 @@ a {
 
 .habiText {
   font-family: Roboto;
-  font-size: 1em;
+  font-size: 1.6em;
   color: #000000;
   margin-top: 0.5px;
   text-align: center; }
@@ -503,20 +490,21 @@ a {
 .portTitle {
   color: #FFFFFF;
   font-family: Montserrat;
+  font-size: 3em;
   text-align: center;
   margin-top: 35px; }
 
 .portText {
   color: #FFFFFF;
   font-family: Roboto;
-  font-size: 0.8em;
+  font-size: 1.2em;
   margin: 0 auto;
   width: 199px; }
 
 .portAcess {
   color: #EED912;
   font-family: Montserrat;
-  font-size: 1.6em;
+  font-size: 2.5em;
   width: auto;
   height: 52px;
   padding: 10px 0px 0px 40px;
@@ -527,7 +515,7 @@ a {
   background-color: #EED912; }
 
 .portSvg {
-  width: 140px;
+  width: 13.671875%;
   margin-left: 150px; }
 
 .portColor {
