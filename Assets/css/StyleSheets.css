@@ -43,7 +43,7 @@ body::after {
 
 body {
   font-size: 62.5%;
-  background-color: #F4F4F4;
+  background-color: #FFFFFF;
   border-left: 10px solid #111111;
   border-right: 10px solid #111111;
   margin: 0px;
@@ -64,12 +64,12 @@ body {
 ::selection {
   background: #FFDC00;
   /* WebKit/Blink Browsers */
-  color: #F4F4F4; }
+  color: #FFFFFF; }
 
 ::-moz-selection {
   background: #FFDC00;
   /* Gecko Browsers */
-  color: #F4F4F4; }
+  color: #FFFFFF; }
 
 ::-webkit-scrollbar {
   -webkit-appearance: none;
@@ -79,7 +79,7 @@ body {
   /* for horizontal scrollbars */ }
 
 ::-webkit-scrollbar-track {
-  background: #F4F4F4; }
+  background: #FFFFFF; }
 
 ::-webkit-scrollbar-thumb {
   background: #FFDC00; }
@@ -126,7 +126,7 @@ ul {
 
 .menuItem:hover {
   background: #111111;
-  color: #F4F4F4; }
+  color: #FFFFFF; }
 
 a {
   color: #111111;
@@ -170,7 +170,7 @@ a {
   stroke: #0077b5; }
 
 .linkedinLink:hover > .secondFill {
-  fill: #F4F4F4; }
+  fill: #FFFFFF; }
 
 .sobreInfo {
   display: inline-block;
@@ -200,46 +200,47 @@ a {
 
 /*  Experiência */
 .upInfo {
-  height: 200px;
   border-style: solid;
   border-width: 0 6px 3px 6px;
   border-color: transparent transparent #111111 transparent;
-  height: 200px;
   margin: 0px auto 0px auto; }
 
 .downInfo {
-  height: 230px;
   border-style: solid;
   border-width: 3px 6px 0px 6px;
   border-color: #111111 transparent transparent transparent;
   margin: 0px auto; }
 
-.infoBox {
-  width: 180px;
-  border: 4px solid #111111;
-  position: absolute; }
+.infoContainer {
+  display: inline-block; }
 
-.infoBox::after {
-  content: "";
-  position: absolute;
-  height: 40px;
-  border-left: 4px #111111 solid;
-  border-right: 21px #F4F4F4 solid;
-  bottom: -15.8px;
-  right: -8.3px;
-  transform: rotate(45deg); }
+.infoBox {
+  display: inline-block;
+  position: relative;
+  border: 4px solid #111111; }
 
 .infoBox::before {
   content: "";
   position: absolute;
   height: 40px;
+  top: -16px;
+  left: -8px;
   border-right: 4px #111111 solid;
-  border-left: 21px #F4F4F4 solid;
-  top: -15.8px;
-  left: -8.4px;
+  border-left: 21px #FFFFFF solid;
+  transform: rotate(45deg); }
+
+.infoBox::after {
+  content: "";
+  position: absolute;
+  height: 40px;
+  bottom: -15.4px;
+  right: -8px;
+  border-left: 4px #111111 solid;
+  border-right: 21px #FFFFFF solid;
   transform: rotate(45deg); }
 
 .infoText {
+  width: 150px;
   font-family: Roboto;
   font-size: 1.4em;
   color: #111111;
@@ -251,22 +252,18 @@ a {
   font-family: Roboto;
   font-size: 1.4em;
   color: #111111;
-  margin: 5px 0px 0px 5px;
+  margin: 0px 0px 0px 5px;
   font-weight: bold; }
 
 .dateDown {
   font-family: Roboto;
   font-size: 1.4em;
   color: #111111;
-  margin: 80px 0px 0px 5px;
+  margin: 0px 0px 0px 5px;
   font-weight: bold; }
 
 .pana {
   margin-left: 50px;
-  margin-top: 114px;
-  position: absolute;
-  height: 90px;
-  width: 463px;
   border-left: 4px solid #111111; }
 
 .pana::after {
@@ -282,19 +279,10 @@ a {
   -webkit-transform: rotate(360deg); }
 
 .panaSvg {
-  height: 50px;
-  position: absolute;
-  bottom: 4px; }
-
-.anheBox {
-  margin: 32px 0px 0px 525px; }
+  height: 50px; }
 
 .anhe {
-  margin-left: 550px;
-  margin-top: 124px;
-  position: absolute;
-  height: 80px;
-  width: 175px;
+  margin-left: 50px;
   border-left: 4px solid #111111; }
 
 .anhe::after {
@@ -310,18 +298,13 @@ a {
   -webkit-transform: rotate(360deg); }
 
 .anheSvg {
-  height: 30px;
-  position: absolute;
-  bottom: 4px; }
+  height: 30px; }
 
 .meliesBox {
-  margin: 100px 0px 0px 200px; }
+  margin-left: 200px; }
 
 .melies {
   margin-left: 250px;
-  position: absolute;
-  height: 100px;
-  width: 140px;
   border-left: 4px solid #111111; }
 
 .melies::after {
@@ -337,18 +320,13 @@ a {
   -webkit-transform: rotate(360deg); }
 
 .meliesSvg {
-  height: 78px;
-  position: absolute;
-  bottom: 23.6px; }
+  height: 78px; }
 
 .senacBox {
-  margin: 100px 0px 0px 600px; }
+  margin-left: 250px; }
 
 .senac {
-  margin-left: 755px;
-  position: absolute;
-  height: 100px;
-  width: 204px;
+  margin-left: 380px;
   border-left: 4px solid #111111; }
 
 .senac::after {
@@ -364,11 +342,9 @@ a {
   -webkit-transform: rotate(360deg); }
 
 .senacSvg {
-  height: 78px;
-  position: absolute;
-  bottom: 25.6px; }
+  height: 78px; }
 
-.infoColor2 {
+.infoOpacity {
   opacity: 0.7;
   fill: #111111; }
 
@@ -443,7 +419,6 @@ a {
 .portBox {
   width: 260px;
   background: #111111;
-  position: relative;
   margin-left: 63px;
   box-shadow: 8px 8px 0 #FFDC00;
   float: left;
@@ -460,7 +435,7 @@ a {
   width: 90px;
   left: -46px;
   top: -46px;
-  background-color: #F4F4F4;
+  background-color: #FFFFFF;
   transform: rotate(45deg); }
 
 .portBox::after {
@@ -468,21 +443,21 @@ a {
   position: absolute;
   height: 90px;
   border-left: 10px #FFDC00 solid;
-  border-right: 50px #F4F4F4 solid;
-  background-color: #F4F4F4;
+  border-right: 50px #FFFFFF solid;
+  background-color: #FFFFFF;
   bottom: -35px;
   right: -20.5px;
   transform: rotate(45deg); }
 
 .portTitle {
-  color: #F4F4F4;
+  color: #FFFFFF;
   font-family: Montserrat;
   font-size: 3em;
   text-align: center;
   margin-top: 35px; }
 
 .portText {
-  color: #F4F4F4;
+  color: #FFFFFF;
   font-family: Roboto;
   font-size: 1.2em;
   margin: 0 auto;
@@ -510,4 +485,4 @@ a {
   stroke: #111111; }
 
 .portLink:hover > .secondFill {
-  fill: #F4F4F4; }
+  fill: #FFFFFF; }

@@ -12,7 +12,7 @@ $Text-font: Roboto;
 /*  Paletas */
 
 
-$main-color: #F4F4F4;
+$main-color: #FFFFFF;
 $second-color: #111111;
 $third-color: #FFDC00;
 
@@ -104,8 +104,6 @@ body {
   	zoom: 1;
 }
 
-
-
 ::selection {
   background: $third-color; /* WebKit/Blink Browsers */
   color: $main-color;
@@ -117,15 +115,17 @@ body {
 }
 
 ::-webkit-scrollbar {
-	    -webkit-appearance: none;
-	    width: 10px;    /* for vertical scrollbars */
-	    height: 10px;    /* for horizontal scrollbars */
-	}
-	::-webkit-scrollbar-track {  
-	    background: $main-color;
-	}
-	::-webkit-scrollbar-thumb {
-	    background: $third-color;
+	-webkit-appearance: none;
+	width: 10px;    /* for vertical scrollbars */
+	height: 10px;    /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track {  
+	background: $main-color;
+}
+
+::-webkit-scrollbar-thumb {
+	background: $third-color;
 }
 
 .titleLeft {
@@ -301,51 +301,53 @@ a {
 
 
 .upInfo {
-	height:200px;
 	border-style: solid;
 	border-width: 0 6px 3px 6px;
 	border-color: transparent transparent $second-color transparent;
-	height:200px;
 	margin: 0px auto 0px auto;
 }
 
 .downInfo {
-	height:230px;
 	border-style: solid;
 	border-width: 3px 6px 0px 6px;
 	border-color: $second-color transparent transparent transparent;	
 	margin: 0px auto;
 }
 
-.infoBox{
-	width: 180px;
-    border: 4px solid $second-color;
-    position: absolute;
+.infoContainer {
+	display: inline-block;
 }
 
-.infoBox::after{
-    content: "";
-    position: absolute;
-    height: 40px;
-    border-left: 4px $second-color solid;
-    border-right: 21px $main-color solid;
-    bottom: -15.8px;
-    right: -8.3px;
-    transform: rotate(45deg);
+.infoBox{
+	display:inline-block;
+	position: relative;
+    border: 4px solid $second-color;
 }
 
 .infoBox::before{
     content: "";
     position: absolute;
     height: 40px;
+    top:-16px;
+    left:-8px;
     border-right: 4px $second-color solid;
     border-left: 21px $main-color solid;
-    top: -15.8px;
-    left: -8.4px;
+    transform: rotate(45deg);
+}
+
+.infoBox::after{
+    content: "";
+    position: absolute;
+    height: 40px;
+    bottom:-15.4px;
+    right:-8px;
+    border-left: 4px $second-color solid;
+    border-right: 21px $main-color solid;
     transform: rotate(45deg);
 }
 
 .infoText {
+	width: 150px;
 	font-family: $Text-font;
 	font-size: 1.4em;
 	color: $second-color;
@@ -358,7 +360,7 @@ a {
 	font-family: $Text-font;
     font-size: 1.4em;
     color: $second-color;
-    margin: 5px 0px 0px 5px;
+    margin: 0px 0px 0px 5px;
     font-weight: bold;
 }
 
@@ -366,16 +368,12 @@ a {
 	font-family: $Text-font;
 	font-size: 1.4em;
 	color: $second-color;
-	margin: 80px 0px 0px 5px;
+	margin: 0px 0px 0px 5px;
 	font-weight: bold;
 }
 
 .pana {	
     margin-left: 50px;
-    margin-top: 114px;
-    position: absolute;
-    height: 90px;
-    width: 463px;
     border-left: 4px solid $second-color;
 }
 
@@ -394,20 +392,10 @@ a {
 
 .panaSvg {
     height: 50px;
-    position: absolute;
-    bottom: 4px;
-}
-
-.anheBox {
-	margin:32px 0px 0px 525px;
 }
 
 .anhe {
-    margin-left: 550px;
-	margin-top:124px;
-    position: absolute;
-    height: 80px;
-    width: 175px;
+	margin-left:50px;
     border-left: 4px solid $second-color;
 }
 
@@ -426,20 +414,14 @@ a {
 
 .anheSvg {
     height: 30px;
-    position: absolute;
-    bottom: 4px;
 }
 
 .meliesBox {
-	margin:100px 0px 0px 200px;
+	margin-left:200px;
 }
-
 
 .melies {
 	margin-left: 250px;
-    position: absolute;
-    height: 100px;
-    width: 140px;
     border-left: 4px solid $second-color;
 }
 
@@ -458,20 +440,14 @@ a {
 
 .meliesSvg {
     height: 78px;
-    position: absolute;
-    bottom: 23.6px;
 }
 
 .senacBox {
-	margin:100px 0px 0px 600px;
+	margin-left:250px;
 }
 
-
 .senac {
-	margin-left: 755px;
-    position: absolute;
-    height: 100px;
-    width: 204px;
+	margin-left: 380px;
     border-left: 4px solid $second-color;
 }
 
@@ -488,14 +464,11 @@ a {
 	-webkit-transform:rotate(360deg);
 }
 
-
 .senacSvg {
     height: 78px;
-    position: absolute;
-    bottom: 25.6px;
 }
 
-.infoColor2{
+.infoOpacity{
 	opacity: 0.7;
 	fill: $second-color;
 }
@@ -585,6 +558,11 @@ a {
 	text-align: center;
 }
 
+
+
+
+
+
 /*  Portfólio */
 
 
@@ -595,7 +573,6 @@ a {
 .portBox {
 	width: 260px;
   	background: $second-color;
-  	position: relative;
   	margin-left: 63px;
   	box-shadow: 8px 8px 0 $third-color;
   	float: left;
