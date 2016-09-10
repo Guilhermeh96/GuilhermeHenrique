@@ -1,9 +1,63 @@
 
 $Title-font: Montserrat;
 $Text-font: Roboto;
-$main-color: #FFFFFF;
-$second-color: #000000;
-$third-color: #EED912;
+
+
+
+
+
+
+
+
+/*  Paletas */
+
+
+$main-color: #F4F4F4;
+$second-color: #111111;
+$third-color: #FFDC00;
+
+
+
+.NavColor {
+	border: 5px solid $second-color;
+}
+
+.NavColor2{
+	border: 5px solid $third-color;
+}
+
+.secondFill {
+	fill: $second-color;
+}
+
+.thirdFill {
+	fill: $third-color;
+}
+
+.secondStroke {
+	fill:none;
+	stroke:$second-color;
+	stroke-width:5;
+	stroke-miterlimit:10;
+}
+
+.thirdStroke {
+	fill:none;
+	stroke:$third-color;
+	stroke-width:5;
+	stroke-miterlimit:10;
+}
+
+/*  Paletas */
+
+
+
+
+
+
+
+
+
 
 /*  SITE BORDER */
 
@@ -72,7 +126,23 @@ body {
 	}
 	::-webkit-scrollbar-thumb {
 	    background: $third-color;
-	}
+}
+
+.titleLeft {
+	font-family: $Title-font;
+	text-shadow: 2px 2px $third-color;
+	font-size: 4.8em;
+    text-align: left;
+	color: $second-color;
+}
+
+.titleRight {
+	font-family: $Title-font;
+	text-shadow: -2px 2px $third-color;
+	font-size: 4.8em;
+    text-align: right;
+ 	color: $second-color;
+}
 
 
 
@@ -94,7 +164,6 @@ ul {
 .menuItem {
 	position: relative;
 	margin:50px 2.1% 0px 2.6%;
-	border: 5px solid $second-color;
 	float:left;
 	padding: 5px 15px;
 	font-family: $Title-font;
@@ -103,6 +172,15 @@ ul {
 	z-index:999;
 }
 
+.navShadow {
+	position:absolute;
+	margin:53px 0px 0px 0px;
+	background:  rgba(0, 0, 0, 0.0);
+    color: rgba(0, 0, 0, 0.0);
+    pointer-events:none;
+	float:left;
+	background: transparent;
+}
 
 .menuItem:hover {
 	background: $second-color;
@@ -120,38 +198,24 @@ a {
 	float:left;
 }
 
-.logoColor {
-	fill:$second-color;
-}
-
-.navShadow {
-	position:absolute;
-	margin:53px 0px 0px 0px;
-	background:  rgba(0, 0, 0, 0.0);
-    color: rgba(0, 0, 0, 0.0);
-    pointer-events:none;
-	border: 5px solid $third-color;
-	float:left;
-	padding: 5px 15px;
-	font-family: $Title-font;
-	font-size: 16px;
-	background: transparent;
-}
-
 .navSob {
 	margin-left: 25px;
+	padding: 15px 43px;
 }
 
-.navQua {
+.navExp {
 	margin-left: 159px;
+	padding: 15px 71px;
 }
 
 .navHab {
-	margin-left: 457px;
+	margin-left: 456px;
+	padding: 15px 71px;
 }
 
 .navPor {
-	margin-left: 647px;
+	margin-left: 645px;
+	padding: 15px 63px;
 }
 
 
@@ -170,19 +234,6 @@ a {
 
 
 
-.svgFoto {
-	fill:none;
-	stroke:$third-color;
-	stroke-width:5;
-	stroke-miterlimit:10;
-}
-
-.fotoBorder {
-	fill: none; 
-	stroke: $second-color;
-	stroke-width: 5;  
-	overflow: visible;
-}
 
 .foto {
 	width: 170px;
@@ -193,29 +244,18 @@ a {
 	overflow: visible;
 }
 
-.svgLinkedin{
-	fill:none;
-	stroke:$second-color;
-	stroke-width:15px;
-	stroke-miterlimit:10;
-}
-
-.in {
-	fill: $second-color;
-}
-
 .linkedin {
 	width: 40px;
 	margin: -25px 0px 0px 120px;
 }
 
-.linkedinLink:hover > .svgLinkedin {
+.linkedinLink:hover > .secondStroke {
 	fill:#0077b5;
 	stroke:#0077b5;
 }
 
-.linkedinLink:hover > .in {
-	fill:$main-color;
+.linkedinLink:hover > .secondFill {
+	fill: $main-color;
 }
 
 .sobreInfo {
@@ -230,14 +270,6 @@ a {
 	font-size:3em;
 	margin-top: 5px;
 	text-align:center;
-}
-
-.titleLeft {
-	font-family: $Title-font;
-	text-shadow: 2px 2px $third-color;
-	font-size: 4.8em;
-    text-align: left;
-	color: $second-color;
 }
 
 .sobreTitle {
@@ -267,13 +299,6 @@ a {
 
 
 
-.titleRight {
-	font-family: $Title-font;
-	text-shadow: -2px 2px $third-color;
-	font-size: 4.8em;
-    text-align: right;
- 	color: $second-color;
-}
 
 .upInfo {
 	height:200px;
@@ -294,7 +319,7 @@ a {
 
 .infoBox{
 	width: 180px;
-    border: 4px solid #000000;
+    border: 4px solid $second-color;
     position: absolute;
 }
 
@@ -351,7 +376,7 @@ a {
     position: absolute;
     height: 90px;
     width: 463px;
-    border-left: 4px solid #000000;
+    border-left: 4px solid $second-color;
 }
 
 .pana::after {
@@ -470,10 +495,6 @@ a {
     bottom: 25.6px;
 }
 
-.infoColor {
-	fill: $third-color;
-}
-
 .infoColor2{
 	opacity: 0.7;
 	fill: $second-color;
@@ -519,20 +540,6 @@ a {
 	width:160px;
 	margin: 20px auto 0px auto;
 	display: block;
-}
-
-.habiColor {
-	fill:none;
-	stroke:$second-color;
-	stroke-width:2px;
-}
-
-.habiColor2 {
-	fill:$third-color;
-}
-
-.habiColor3 {
-	fill: $second-color;
 }
 
 .habiInfo {
@@ -659,27 +666,11 @@ a {
 	margin-left: 150px;
 }
 
-.portColor {
-	fill: none;
-	stroke: $third-color;
-	stroke-width:5;
-}
-
-.portColor2 {
-	fill:none;
-	stroke: $second-color;
-	stroke-width:5;
-}
-
-.portColor3 {
-	fill: $second-color
-}
-
-.portLink:hover > .portColor2 {
+.portLink:hover > .secondStroke {
 	fill:$second-color;
 	stroke: $second-color;
 }
 
-.portLink:hover > .portColor3 {
-	fill:$main-color;
+.portLink:hover > .secondFill {
+	fill: $main-color;
 }

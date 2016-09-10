@@ -1,10 +1,36 @@
 @charset "UTF-8";
+/*  Paletas */
+.NavColor {
+  border: 5px solid #111111; }
+
+.NavColor2 {
+  border: 5px solid #FFDC00; }
+
+.secondFill {
+  fill: #111111; }
+
+.thirdFill {
+  fill: #FFDC00; }
+
+.secondStroke {
+  fill: none;
+  stroke: #111111;
+  stroke-width: 5;
+  stroke-miterlimit: 10; }
+
+.thirdStroke {
+  fill: none;
+  stroke: #FFDC00;
+  stroke-width: 5;
+  stroke-miterlimit: 10; }
+
+/*  Paletas */
 /*  SITE BORDER */
 body::before, body::after {
   content: "";
   z-index: 999;
   position: fixed;
-  background: #000000;
+  background: #111111;
   left: 0;
   right: 0;
   height: 10px; }
@@ -17,9 +43,9 @@ body::after {
 
 body {
   font-size: 62.5%;
-  background-color: #FFFFFF;
-  border-left: 10px solid #000000;
-  border-right: 10px solid #000000;
+  background-color: #F4F4F4;
+  border-left: 10px solid #111111;
+  border-right: 10px solid #111111;
   margin: 0px;
   padding-bottom: 50px; }
 
@@ -36,14 +62,14 @@ body {
   zoom: 1; }
 
 ::selection {
-  background: #EED912;
+  background: #FFDC00;
   /* WebKit/Blink Browsers */
-  color: #FFFFFF; }
+  color: #F4F4F4; }
 
 ::-moz-selection {
-  background: #EED912;
+  background: #FFDC00;
   /* Gecko Browsers */
-  color: #FFFFFF; }
+  color: #F4F4F4; }
 
 ::-webkit-scrollbar {
   -webkit-appearance: none;
@@ -53,10 +79,24 @@ body {
   /* for horizontal scrollbars */ }
 
 ::-webkit-scrollbar-track {
-  background: #FFFFFF; }
+  background: #F4F4F4; }
 
 ::-webkit-scrollbar-thumb {
-  background: #EED912; }
+  background: #FFDC00; }
+
+.titleLeft {
+  font-family: Montserrat;
+  text-shadow: 2px 2px #FFDC00;
+  font-size: 4.8em;
+  text-align: left;
+  color: #111111; }
+
+.titleRight {
+  font-family: Montserrat;
+  text-shadow: -2px 2px #FFDC00;
+  font-size: 4.8em;
+  text-align: right;
+  color: #111111; }
 
 /*  HEADER */
 ul {
@@ -68,7 +108,6 @@ ul {
 .menuItem {
   position: relative;
   margin: 50px 2.1% 0px 2.6%;
-  border: 5px solid #000000;
   float: left;
   padding: 5px 15px;
   font-family: Montserrat;
@@ -76,60 +115,45 @@ ul {
   background: transparent;
   z-index: 999; }
 
-.menuItem:hover {
-  background: #000000;
-  color: #FFFFFF; }
-
-a {
-  color: #000000;
-  text-decoration: none; }
-
-.logo {
-  margin: 17px 1% 0px 1%;
-  float: left; }
-
-.logoColor {
-  fill: #000000; }
-
 .navShadow {
   position: absolute;
   margin: 53px 0px 0px 0px;
   background: transparent;
   color: transparent;
   pointer-events: none;
-  border: 5px solid #EED912;
   float: left;
-  padding: 5px 15px;
-  font-family: Montserrat;
-  font-size: 16px;
   background: transparent; }
 
-.navSob {
-  margin-left: 25px; }
+.menuItem:hover {
+  background: #111111;
+  color: #F4F4F4; }
 
-.navQua {
-  margin-left: 159px; }
+a {
+  color: #111111;
+  text-decoration: none; }
+
+.logo {
+  margin: 17px 1% 0px 1%;
+  float: left; }
+
+.navSob {
+  margin-left: 25px;
+  padding: 15px 43px; }
+
+.navExp {
+  margin-left: 159px;
+  padding: 15px 71px; }
 
 .navHab {
-  margin-left: 457px; }
+  margin-left: 456px;
+  padding: 15px 71px; }
 
 .navPor {
-  margin-left: 647px; }
+  margin-left: 645px;
+  padding: 15px 63px; }
 
 /*  CONTENT */
 /*  Sobre */
-.svgFoto {
-  fill: none;
-  stroke: #EED912;
-  stroke-width: 5;
-  stroke-miterlimit: 10; }
-
-.fotoBorder {
-  fill: none;
-  stroke: #000000;
-  stroke-width: 5;
-  overflow: visible; }
-
 .foto {
   width: 170px;
   margin-top: 40px; }
@@ -137,25 +161,16 @@ a {
 .fotoOverflow {
   overflow: visible; }
 
-.svgLinkedin {
-  fill: none;
-  stroke: #000000;
-  stroke-width: 15px;
-  stroke-miterlimit: 10; }
-
-.in {
-  fill: #000000; }
-
 .linkedin {
   width: 40px;
   margin: -25px 0px 0px 120px; }
 
-.linkedinLink:hover > .svgLinkedin {
+.linkedinLink:hover > .secondStroke {
   fill: #0077b5;
   stroke: #0077b5; }
 
-.linkedinLink:hover > .in {
-  fill: #FFFFFF; }
+.linkedinLink:hover > .secondFill {
+  fill: #F4F4F4; }
 
 .sobreInfo {
   display: inline-block;
@@ -163,46 +178,32 @@ a {
   width: 17.08984375%; }
 
 .myName {
-  color: #000000;
+  color: #111111;
   font-family: Montserrat;
   font-size: 3em;
   margin-top: 5px;
   text-align: center; }
-
-.titleLeft {
-  font-family: Montserrat;
-  text-shadow: 2px 2px #EED912;
-  font-size: 4.8em;
-  text-align: left;
-  color: #000000; }
 
 .sobreTitle {
   margin: 0px 0px 0px 30px;
   display: inline-block; }
 
 .sobreText {
-  color: #000000;
+  color: #111111;
   width: 70%;
   margin-left: 50px;
   font-size: 1.4em;
   font-family: Roboto;
-  border: 5px solid #000000;
+  border: 5px solid #111111;
   padding: 20px;
   float: left; }
 
 /*  Experiência */
-.titleRight {
-  font-family: Montserrat;
-  text-shadow: -2px 2px #EED912;
-  font-size: 4.8em;
-  text-align: right;
-  color: #000000; }
-
 .upInfo {
   height: 200px;
   border-style: solid;
   border-width: 0 6px 3px 6px;
-  border-color: transparent transparent #000000 transparent;
+  border-color: transparent transparent #111111 transparent;
   height: 200px;
   margin: 0px auto 0px auto; }
 
@@ -210,20 +211,20 @@ a {
   height: 230px;
   border-style: solid;
   border-width: 3px 6px 0px 6px;
-  border-color: #000000 transparent transparent transparent;
+  border-color: #111111 transparent transparent transparent;
   margin: 0px auto; }
 
 .infoBox {
   width: 180px;
-  border: 4px solid #000000;
+  border: 4px solid #111111;
   position: absolute; }
 
 .infoBox::after {
   content: "";
   position: absolute;
   height: 40px;
-  border-left: 4px #000000 solid;
-  border-right: 21px #FFFFFF solid;
+  border-left: 4px #111111 solid;
+  border-right: 21px #F4F4F4 solid;
   bottom: -15.8px;
   right: -8.3px;
   transform: rotate(45deg); }
@@ -232,8 +233,8 @@ a {
   content: "";
   position: absolute;
   height: 40px;
-  border-right: 4px #000000 solid;
-  border-left: 21px #FFFFFF solid;
+  border-right: 4px #111111 solid;
+  border-left: 21px #F4F4F4 solid;
   top: -15.8px;
   left: -8.4px;
   transform: rotate(45deg); }
@@ -241,7 +242,7 @@ a {
 .infoText {
   font-family: Roboto;
   font-size: 1.4em;
-  color: #000000;
+  color: #111111;
   text-align: center;
   padding: 15px;
   margin: 0px auto 0px auto; }
@@ -249,14 +250,14 @@ a {
 .dateUp {
   font-family: Roboto;
   font-size: 1.4em;
-  color: #000000;
+  color: #111111;
   margin: 5px 0px 0px 5px;
   font-weight: bold; }
 
 .dateDown {
   font-family: Roboto;
   font-size: 1.4em;
-  color: #000000;
+  color: #111111;
   margin: 80px 0px 0px 5px;
   font-weight: bold; }
 
@@ -266,7 +267,7 @@ a {
   position: absolute;
   height: 90px;
   width: 463px;
-  border-left: 4px solid #000000; }
+  border-left: 4px solid #111111; }
 
 .pana::after {
   content: "";
@@ -277,7 +278,7 @@ a {
   height: 0;
   border-style: solid;
   border-width: 0 3.5px 30px 3.5px;
-  border-color: transparent transparent #000000 transparent;
+  border-color: transparent transparent #111111 transparent;
   -webkit-transform: rotate(360deg); }
 
 .panaSvg {
@@ -294,7 +295,7 @@ a {
   position: absolute;
   height: 80px;
   width: 175px;
-  border-left: 4px solid #000000; }
+  border-left: 4px solid #111111; }
 
 .anhe::after {
   content: "";
@@ -305,7 +306,7 @@ a {
   height: 0;
   border-style: solid;
   border-width: 0 3.5px 30px 3.5px;
-  border-color: transparent transparent #000000 transparent;
+  border-color: transparent transparent #111111 transparent;
   -webkit-transform: rotate(360deg); }
 
 .anheSvg {
@@ -321,7 +322,7 @@ a {
   position: absolute;
   height: 100px;
   width: 140px;
-  border-left: 4px solid #000000; }
+  border-left: 4px solid #111111; }
 
 .melies::after {
   content: "";
@@ -332,7 +333,7 @@ a {
   height: 0;
   border-style: solid;
   border-width: 30px 3.5px 0px 3.5px;
-  border-color: #000000 transparent transparent transparent;
+  border-color: #111111 transparent transparent transparent;
   -webkit-transform: rotate(360deg); }
 
 .meliesSvg {
@@ -348,7 +349,7 @@ a {
   position: absolute;
   height: 100px;
   width: 204px;
-  border-left: 4px solid #000000; }
+  border-left: 4px solid #111111; }
 
 .senac::after {
   content: "";
@@ -359,7 +360,7 @@ a {
   height: 0;
   border-style: solid;
   border-width: 30px 3.5px 0px 3.5px;
-  border-color: #000000 transparent transparent transparent;
+  border-color: #111111 transparent transparent transparent;
   -webkit-transform: rotate(360deg); }
 
 .senacSvg {
@@ -367,12 +368,9 @@ a {
   position: absolute;
   bottom: 25.6px; }
 
-.infoColor {
-  fill: #EED912; }
-
 .infoColor2 {
   opacity: 0.7;
-  fill: #000000; }
+  fill: #111111; }
 
 /*  Habilidades */
 .habiAlign {
@@ -381,7 +379,7 @@ a {
 .habiTitle {
   font-family: Roboto;
   font-size: 1.6em;
-  color: #000000;
+  color: #111111;
   margin: 23px 0px 0px 97px;
   text-align: center;
   position: absolute;
@@ -403,24 +401,13 @@ a {
   margin: 20px auto 0px auto;
   display: block; }
 
-.habiColor {
-  fill: none;
-  stroke: #000000;
-  stroke-width: 2px; }
-
-.habiColor2 {
-  fill: #EED912; }
-
-.habiColor3 {
-  fill: #000000; }
-
 .habiInfo {
   position: absolute;
   width: 32px;
   height: 22px;
   margin: -12px 0px 0px 123px;
-  border-left: solid 5px #EED912;
-  border-right: solid 5px #EED912; }
+  border-left: solid 5px #FFDC00;
+  border-right: solid 5px #FFDC00; }
 
 .habiInfo::before,
 .habiInfo::after {
@@ -437,28 +424,28 @@ a {
 
 .habiInfo::before {
   top: -14.84px;
-  border-top: solid 7.0711px #EED912;
-  border-right: solid 7.0711px #EED912; }
+  border-top: solid 7.0711px #FFDC00;
+  border-right: solid 7.0711px #FFDC00; }
 
 .habiInfo::after {
   bottom: -14.98px;
-  border-bottom: solid 7.0711px #EED912;
-  border-left: solid 7.0711px #EED912; }
+  border-bottom: solid 7.0711px #FFDC00;
+  border-left: solid 7.0711px #FFDC00; }
 
 .habiText {
   font-family: Roboto;
   font-size: 1.6em;
-  color: #000000;
+  color: #111111;
   margin-top: 0.5px;
   text-align: center; }
 
 /*  Portfólio */
 .portBox {
   width: 260px;
-  background: #000000;
+  background: #111111;
   position: relative;
   margin-left: 63px;
-  box-shadow: 8px 8px 0 #EED912;
+  box-shadow: 8px 8px 0 #FFDC00;
   float: left;
   position: relative; }
 
@@ -473,36 +460,36 @@ a {
   width: 90px;
   left: -46px;
   top: -46px;
-  background-color: #FFFFFF;
+  background-color: #F4F4F4;
   transform: rotate(45deg); }
 
 .portBox::after {
   content: "";
   position: absolute;
   height: 90px;
-  border-left: 10px #EED912 solid;
-  border-right: 50px #FFFFFF solid;
-  background-color: #FFFFFF;
+  border-left: 10px #FFDC00 solid;
+  border-right: 50px #F4F4F4 solid;
+  background-color: #F4F4F4;
   bottom: -35px;
   right: -20.5px;
   transform: rotate(45deg); }
 
 .portTitle {
-  color: #FFFFFF;
+  color: #F4F4F4;
   font-family: Montserrat;
   font-size: 3em;
   text-align: center;
   margin-top: 35px; }
 
 .portText {
-  color: #FFFFFF;
+  color: #F4F4F4;
   font-family: Roboto;
   font-size: 1.2em;
   margin: 0 auto;
   width: 199px; }
 
 .portAcess {
-  color: #EED912;
+  color: #FFDC00;
   font-family: Montserrat;
   font-size: 2.5em;
   width: auto;
@@ -511,29 +498,16 @@ a {
   margin-bottom: 0px; }
 
 .portAcess:hover {
-  color: #000000;
-  background-color: #EED912; }
+  color: #111111;
+  background-color: #FFDC00; }
 
 .portSvg {
   width: 13.671875%;
   margin-left: 150px; }
 
-.portColor {
-  fill: none;
-  stroke: #EED912;
-  stroke-width: 5; }
+.portLink:hover > .secondStroke {
+  fill: #111111;
+  stroke: #111111; }
 
-.portColor2 {
-  fill: none;
-  stroke: #000000;
-  stroke-width: 5; }
-
-.portColor3 {
-  fill: #000000; }
-
-.portLink:hover > .portColor2 {
-  fill: #000000;
-  stroke: #000000; }
-
-.portLink:hover > .portColor3 {
-  fill: #FFFFFF; }
+.portLink:hover > .secondFill {
+  fill: #F4F4F4; }
