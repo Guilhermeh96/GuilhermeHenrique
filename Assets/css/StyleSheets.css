@@ -715,7 +715,7 @@ a {
   content: "";
   position: absolute;
   right: 0px;
-  top: -1px;
+  top: -2px;
   width: 0;
   height: 0;
   border-style: solid;
@@ -730,9 +730,12 @@ a {
 .senacBox {
   margin-left: 250px; }
 
+.senacDate {
+  margin-top: 17px; }
+
 .senac {
   margin-left: 370px;
-  height: 117px;
+  height: 116px;
   position: relative;
   border-left: 4px solid #111111; }
 
