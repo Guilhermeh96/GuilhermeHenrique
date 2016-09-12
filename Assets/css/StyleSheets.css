@@ -24,6 +24,20 @@
   stroke-width: 5;
   stroke-miterlimit: 10; }
 
+.paletaNav {
+  width: 100px;
+  display: none; }
+
+.paletaSwitch1 {
+  display: block;
+  margin-top: 10px;
+  position: absolute; }
+
+.paletaSwitch2 {
+  display: block;
+  margin-top: 125px;
+  position: absolute; }
+
 /*  Paletas */
 /*  SITE BORDER */
 body::before, body::after {
@@ -105,24 +119,17 @@ ul {
   width: 805px;
   padding: 0px; }
 
+ul li {
+  float: left;
+  margin: 50px 16px 0px 16px; }
+
 .menuItem {
   position: relative;
-  margin: 50px 2.1% 0px 2.6%;
-  float: left;
   padding: 5px 15px;
   font-family: Montserrat;
   font-size: 16px;
   background: transparent;
   z-index: 999; }
-
-.navShadow {
-  position: absolute;
-  margin: 53px 0px 0px 0px;
-  background: transparent;
-  color: transparent;
-  pointer-events: none;
-  float: left;
-  background: transparent; }
 
 .menuItem:hover {
   background: #111111;
@@ -133,8 +140,10 @@ a {
   text-decoration: none; }
 
 .logo {
-  margin: 17px 1% 0px 1%;
-  float: left; }
+  margin-top: -40px; }
+
+.navShadow {
+  position: absolute; }
 
 .navSob {
   margin-left: 25px;
@@ -262,14 +271,15 @@ a {
   margin: 0px 0px 0px 5px;
   font-weight: bold; }
 
-.pana {
+.upMargin {
   margin-left: 50px;
+  position: relative;
   border-left: 4px solid #111111; }
 
-.pana::after {
+.upMargin::after {
   content: "";
   position: absolute;
-  right: 8px;
+  right: 0px;
   bottom: 0px;
   width: 0;
   height: 0;
@@ -281,22 +291,6 @@ a {
 .panaSvg {
   height: 50px; }
 
-.anhe {
-  margin-left: 50px;
-  border-left: 4px solid #111111; }
-
-.anhe::after {
-  content: "";
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 3.5px 30px 3.5px;
-  border-color: transparent transparent #111111 transparent;
-  -webkit-transform: rotate(360deg); }
-
 .anheSvg {
   height: 30px; }
 
@@ -305,13 +299,14 @@ a {
 
 .melies {
   margin-left: 250px;
+  position: relative;
   border-left: 4px solid #111111; }
 
 .melies::after {
   content: "";
   position: absolute;
   right: 0px;
-  top: -1px;
+  top: 0px;
   width: 0;
   height: 0;
   border-style: solid;
@@ -326,7 +321,8 @@ a {
   margin-left: 250px; }
 
 .senac {
-  margin-left: 380px;
+  margin-left: 370px;
+  position: relative;
   border-left: 4px solid #111111; }
 
 .senac::after {

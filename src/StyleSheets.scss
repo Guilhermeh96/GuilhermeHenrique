@@ -3,12 +3,6 @@ $Title-font: Montserrat;
 $Text-font: Roboto;
 
 
-
-
-
-
-
-
 /*  Paletas */
 
 
@@ -47,6 +41,24 @@ $third-color: #FFDC00;
 	stroke-width:5;
 	stroke-miterlimit:10;
 }
+
+.paletaNav {
+	width:100px;
+	display:none;
+}
+
+.paletaSwitch1 {
+	display:block;
+	margin-top: 10px;
+	position: absolute;
+}
+
+.paletaSwitch2 {
+	display:block;
+	margin-top:125px;
+	position: absolute;
+}
+
 
 /*  Paletas */
 
@@ -161,25 +173,18 @@ ul {
 	padding:0px;
 }
 
+ul li {
+	float:left;
+	margin:50px 16px 0px 16px;
+}
+
 .menuItem {
 	position: relative;
-	margin:50px 2.1% 0px 2.6%;
-	float:left;
 	padding: 5px 15px;
 	font-family: $Title-font;
 	font-size: 16px;
 	background: transparent;
 	z-index:999;
-}
-
-.navShadow {
-	position:absolute;
-	margin:53px 0px 0px 0px;
-	background:  rgba(0, 0, 0, 0.0);
-    color: rgba(0, 0, 0, 0.0);
-    pointer-events:none;
-	float:left;
-	background: transparent;
 }
 
 .menuItem:hover {
@@ -194,8 +199,11 @@ a {
 
 
 .logo {
-	margin:17px 1% 0px 1%;	
-	float:left;
+	margin-top:-40px;	
+}
+
+.navShadow {
+	position:absolute;
 }
 
 .navSob {
@@ -372,15 +380,16 @@ a {
 	font-weight: bold;
 }
 
-.pana {	
+.upMargin {	
     margin-left: 50px;
+    position: relative;
     border-left: 4px solid $second-color;
 }
 
-.pana::after {
+.upMargin::after {
 	content: "";
     position: absolute;
-    right: 8px;
+    right: 0px;
     bottom: 0px;
 	width: 0;
 	height: 0;
@@ -394,24 +403,6 @@ a {
     height: 50px;
 }
 
-.anhe {
-	margin-left:50px;
-    border-left: 4px solid $second-color;
-}
-
-.anhe::after {
-	content: "";
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 0 3.5px 30px 3.5px;
-	border-color: transparent transparent $second-color transparent;
-	-webkit-transform:rotate(360deg);
-}
-
 .anheSvg {
     height: 30px;
 }
@@ -422,6 +413,7 @@ a {
 
 .melies {
 	margin-left: 250px;
+	position: relative;
     border-left: 4px solid $second-color;
 }
 
@@ -429,7 +421,7 @@ a {
 	content: "";
     position: absolute;
     right: 0px;
-    top: -1px;
+    top: 0px;
 	width: 0;
 	height: 0;
 	border-style: solid;
@@ -447,7 +439,8 @@ a {
 }
 
 .senac {
-	margin-left: 380px;
+	margin-left: 370px;
+	position: relative;
     border-left: 4px solid $second-color;
 }
 
