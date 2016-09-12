@@ -44,7 +44,12 @@ $third-color: #FFDC00;
 
 .paletaNav {
 	width:100px;
-	display:none;
+	height: 230px;
+	margin-top: 10px;
+	border: 3px solid $second-color;
+	position:absolute;
+	background-color: $main-color;
+	box-shadow: 8px 8px 0 $third-color;
 }
 
 .paletaSwitch1 {
@@ -97,11 +102,6 @@ body {
     margin:0px;
     padding-bottom: 50px;
 }
-
-#Konami {
-	text-align:center; 
-}
-
 
 
 /* OVERALL */
@@ -200,6 +200,13 @@ a {
 
 .logo {
 	margin-top:-40px;	
+}
+
+.logo:hover > .secondFill {
+	fill:none;
+	stroke:$second-color;
+	stroke-width:2;
+	stroke-miterlimit:10;
 }
 
 .navShadow {

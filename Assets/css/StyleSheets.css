@@ -26,7 +26,12 @@
 
 .paletaNav {
   width: 100px;
-  display: none; }
+  height: 230px;
+  margin-top: 10px;
+  border: 3px solid #111111;
+  position: absolute;
+  background-color: #FFFFFF;
+  box-shadow: 8px 8px 0 #FFDC00; }
 
 .paletaSwitch1 {
   display: block;
@@ -62,9 +67,6 @@ body {
   border-right: 10px solid #111111;
   margin: 0px;
   padding-bottom: 50px; }
-
-#Konami {
-  text-align: center; }
 
 /* OVERALL */
 .container {
@@ -141,6 +143,12 @@ a {
 
 .logo {
   margin-top: -40px; }
+
+.logo:hover > .secondFill {
+  fill: none;
+  stroke: #111111;
+  stroke-width: 2;
+  stroke-miterlimit: 10; }
 
 .navShadow {
   position: absolute; }
