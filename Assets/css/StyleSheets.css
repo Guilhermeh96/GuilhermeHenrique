@@ -49,6 +49,14 @@
   100% {
     opacity: 1.0; } }
 
+@keyframes pulsate {
+  0% {
+    opacity: 1.0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1.0; } }
+
 /*Whitepalette*/
 .uiColorWhite {
   background-color: black;
@@ -542,17 +550,19 @@ a {
 
 .logo:hover > .secondFill {
   -webkit-animation: pulsate 2s ease-out;
+  animation: pulsate 2s ease-out;
   animation-iteration-count: infinite; }
 
 .navShadow {
+  margin-top: 42px;
   position: absolute; }
 
 .navSob {
-  margin-left: 25px;
+  margin-left: 20px;
   padding: 15px 43px; }
 
 .navExp {
-  margin-left: 159px;
+  margin-left: 149px;
   padding: 15px 71px; }
 
 .navHab {
@@ -560,7 +570,7 @@ a {
   padding: 15px 71px; }
 
 .navPor {
-  margin-left: 645px;
+  margin-left: 640px;
   padding: 15px 63px; }
 
 /*  CONTENT */
@@ -705,7 +715,7 @@ a {
   content: "";
   position: absolute;
   right: 0px;
-  top: 0px;
+  top: -1px;
   width: 0;
   height: 0;
   border-style: solid;
@@ -715,13 +725,14 @@ a {
 
 .meliesSvg {
   height: 78px;
-  margin-top: -1px; }
+  margin-top: -2px; }
 
 .senacBox {
   margin-left: 250px; }
 
 .senac {
   margin-left: 370px;
+  height: 117px;
   position: relative;
   border-left: 4px solid #111111; }
 
@@ -738,7 +749,8 @@ a {
   -webkit-transform: rotate(360deg); }
 
 .senacSvg {
-  height: 80px; }
+  height: 80px;
+  margin-top: -3px; }
 
 /*  Habilidades */
 .habiAlign {
