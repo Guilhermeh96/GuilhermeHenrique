@@ -1,18 +1,41 @@
 $(document).ready(function() {
 
-	$('.paletaNav').hide();
+	$('.paletteNav').hide();
 
 	$('.dropbtn').click(function() {
-		$('.paletaNav').toggle();
+		$('.paletteNav').toggle();
 	});
 
 	$('html').click(function() {
-  		$('.paletaNav').hide();
+  		$('.paletteNav').hide();
 	});
 
 	$('.dropbtn').click(function(event){
     	event.stopPropagation();
 	});
+
+});
+
+$(document).ready(function() {
+
+    $('.main').click(function(){
+    $('body').removeClass();
+    });
+
+    $('.palette1').click(function(){
+    $('body').removeClass();
+    $('body').addClass('uiColorWhite');
+    });
+
+    $('.palette2').click(function(){
+    $('body').removeClass();
+    $('body').addClass('uiColorTurquoise');
+    });
+
+    $('.palette3').click(function(){
+    $('body').removeClass();
+    $('body').addClass('uiColorBlue');
+    });
 
 });
 

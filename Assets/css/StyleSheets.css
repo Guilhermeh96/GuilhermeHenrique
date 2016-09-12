@@ -1,5 +1,15 @@
 @charset "UTF-8";
-/*  Paletas */
+/*  palettes */
+/*Mainpalette*/
+.paletteColor1 {
+  fill: red; }
+
+.paletteColor2 {
+  fill: #3FB8AF; }
+
+.paletteColor3 {
+  fill: #00B4CC; }
+
 .NavColor {
   border: 5px solid #111111; }
 
@@ -24,26 +34,411 @@
   stroke-width: 5;
   stroke-miterlimit: 10; }
 
-.paletaNav {
-  width: 100px;
-  height: 230px;
-  margin-top: 10px;
+.infoOpacity {
+  opacity: 0.7;
+  fill: #111111; }
+
+.fontColor {
+  color: #111111; }
+
+@-webkit-keyframes pulsate {
+  0% {
+    opacity: 1.0; }
+  50% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1.0; } }
+
+/*Whitepalette*/
+.uiColorWhite {
+  background-color: black;
+  border-left: 10px solid white;
+  border-right: 10px solid white; }
+  .uiColorWhite:before {
+    background: white; }
+  .uiColorWhite:after {
+    background: white; }
+  .uiColorWhite .NavColor {
+    border: 5px solid white; }
+  .uiColorWhite .NavColor2 {
+    border: 5px solid red; }
+  .uiColorWhite .secondFill {
+    fill: white; }
+  .uiColorWhite .thirdFill {
+    fill: red; }
+  .uiColorWhite .secondStroke {
+    stroke: white; }
+  .uiColorWhite .thirdStroke {
+    stroke: red; }
+  .uiColorWhite .fontColor {
+    color: white; }
+  .uiColorWhite .paletteNav {
+    border: 3px solid white; }
+  .uiColorWhite .paletteNav::before {
+    border-right: 3px white solid;
+    border-left: 21px black solid; }
+  .uiColorWhite .paletteNav::after {
+    border-left: 3px white solid;
+    border-right: 21px black solid; }
+  .uiColorWhite ::selection {
+    background: red;
+    /* WebKit/Blink Browsers */
+    color: black; }
+  .uiColorWhite ::-moz-selection {
+    background: red;
+    /* Gecko Browsers */
+    color: black; }
+  .uiColorWhite ::-webkit-scrollbar-track {
+    background: black; }
+  .uiColorWhite ::-webkit-scrollbar-thumb {
+    background: red; }
+  .uiColorWhite .titleLeft {
+    text-shadow: 2px 2px red; }
+  .uiColorWhite .titleRight {
+    text-shadow: -2px 2px red; }
+  .uiColorWhite .menuItem:hover {
+    background: white;
+    color: black; }
+  .uiColorWhite a {
+    color: white; }
+  .uiColorWhite .logo:hover > .secondFill {
+    stroke: white; }
+  .uiColorWhite .linkedinLink:hover > .secondFill {
+    fill: black; }
+  .uiColorWhite .sobreText {
+    border: 5px solid white; }
+  .uiColorWhite .upInfo {
+    border-color: transparent transparent white transparent; }
+  .uiColorWhite .downInfo {
+    border-color: white transparent transparent transparent; }
+  .uiColorWhite .infoBox {
+    border: 4px solid white; }
+  .uiColorWhite .infoBox::before {
+    border-right: 4px white solid;
+    border-left: 21px black solid; }
+  .uiColorWhite .infoBox::after {
+    border-left: 4px white solid;
+    border-right: 21px black solid; }
+  .uiColorWhite .upMargin {
+    border-left: 4px solid white; }
+  .uiColorWhite .upMargin::after {
+    border-color: transparent transparent white transparent; }
+  .uiColorWhite .melies {
+    border-left: 4px solid white; }
+  .uiColorWhite .melies::after {
+    border-color: white transparent transparent transparent; }
+  .uiColorWhite .senac {
+    border-left: 4px solid white; }
+  .uiColorWhite .senac::after {
+    border-color: white transparent transparent transparent; }
+  .uiColorWhite .infoOpacity {
+    opacity: 0.7;
+    fill: white; }
+  .uiColorWhite .habiInfo {
+    border-left: solid 5px red;
+    border-right: solid 5px red; }
+  .uiColorWhite .habiInfo::before {
+    border-top: solid 7.0711px red;
+    border-right: solid 7.0711px red; }
+  .uiColorWhite .habiInfo::after {
+    border-bottom: solid 7.0711px red;
+    border-left: solid 7.0711px red; }
+  .uiColorWhite .portBox {
+    background: white;
+    box-shadow: 8px 8px 0 red; }
+  .uiColorWhite .portBox::before {
+    background-color: black; }
+  .uiColorWhite .portBox::after {
+    border-left: 10px red solid;
+    border-right: 50px black solid;
+    background-color: black; }
+  .uiColorWhite .portTitle {
+    color: black; }
+  .uiColorWhite .portText {
+    color: black; }
+  .uiColorWhite .portAcess {
+    color: red; }
+  .uiColorWhite .portAcess:hover {
+    color: white;
+    background-color: red; }
+  .uiColorWhite .portLink:hover > .secondStroke {
+    fill: white;
+    stroke: white; }
+  .uiColorWhite .portLink:hover > .secondFill {
+    fill: black; }
+
+.uiColorTurquoise {
+  background-color: #1E1E1E;
+  border-left: 10px solid #3FB8AF;
+  border-right: 10px solid #3FB8AF; }
+  .uiColorTurquoise:before {
+    background: #3FB8AF; }
+  .uiColorTurquoise:after {
+    background: #3FB8AF; }
+  .uiColorTurquoise .NavColor {
+    border: 5px solid #3FB8AF; }
+  .uiColorTurquoise .NavColor2 {
+    border: 5px solid #FF3D7F; }
+  .uiColorTurquoise .secondFill {
+    fill: #3FB8AF; }
+  .uiColorTurquoise .thirdFill {
+    fill: #FF3D7F; }
+  .uiColorTurquoise .secondStroke {
+    stroke: #3FB8AF; }
+  .uiColorTurquoise .thirdStroke {
+    stroke: #FF3D7F; }
+  .uiColorTurquoise .fontColor {
+    color: #3FB8AF; }
+  .uiColorTurquoise .paletteNav {
+    border: 3px solid #3FB8AF; }
+  .uiColorTurquoise .paletteNav::before {
+    border-right: 3px #3FB8AF solid;
+    border-left: 21px #1E1E1E solid; }
+  .uiColorTurquoise .paletteNav::after {
+    border-left: 3px #3FB8AF solid;
+    border-right: 21px #1E1E1E solid; }
+  .uiColorTurquoise ::selection {
+    background: #FF3D7F;
+    /* WebKit/Blink Browsers */
+    color: #1E1E1E; }
+  .uiColorTurquoise ::-moz-selection {
+    background: #FF3D7F;
+    /* Gecko Browsers */
+    color: #1E1E1E; }
+  .uiColorTurquoise ::-webkit-scrollbar-track {
+    background: #1E1E1E; }
+  .uiColorTurquoise ::-webkit-scrollbar-thumb {
+    background: #FF3D7F; }
+  .uiColorTurquoise .titleLeft {
+    text-shadow: 2px 2px #FF3D7F; }
+  .uiColorTurquoise .titleRight {
+    text-shadow: -2px 2px #FF3D7F; }
+  .uiColorTurquoise .menuItem:hover {
+    background: #3FB8AF;
+    color: #1E1E1E; }
+  .uiColorTurquoise a {
+    color: #3FB8AF; }
+  .uiColorTurquoise .logo:hover > .secondFill {
+    stroke: #3FB8AF; }
+  .uiColorTurquoise .linkedinLink:hover > .secondFill {
+    fill: #1E1E1E; }
+  .uiColorTurquoise .sobreText {
+    border: 5px solid #3FB8AF; }
+  .uiColorTurquoise .upInfo {
+    border-color: transparent transparent #3FB8AF transparent; }
+  .uiColorTurquoise .downInfo {
+    border-color: #3FB8AF transparent transparent transparent; }
+  .uiColorTurquoise .infoBox {
+    border: 4px solid #3FB8AF; }
+  .uiColorTurquoise .infoBox::before {
+    border-right: 4px #3FB8AF solid;
+    border-left: 21px #1E1E1E solid; }
+  .uiColorTurquoise .infoBox::after {
+    border-left: 4px #3FB8AF solid;
+    border-right: 21px #1E1E1E solid; }
+  .uiColorTurquoise .upMargin {
+    border-left: 4px solid #3FB8AF; }
+  .uiColorTurquoise .upMargin::after {
+    border-color: transparent transparent #3FB8AF transparent; }
+  .uiColorTurquoise .melies {
+    border-left: 4px solid #3FB8AF; }
+  .uiColorTurquoise .melies::after {
+    border-color: #3FB8AF transparent transparent transparent; }
+  .uiColorTurquoise .senac {
+    border-left: 4px solid #3FB8AF; }
+  .uiColorTurquoise .senac::after {
+    border-color: #3FB8AF transparent transparent transparent; }
+  .uiColorTurquoise .infoOpacity {
+    opacity: 0.7;
+    fill: #3FB8AF; }
+  .uiColorTurquoise .habiInfo {
+    border-left: solid 5px #FF3D7F;
+    border-right: solid 5px #FF3D7F; }
+  .uiColorTurquoise .habiInfo::before {
+    border-top: solid 7.0711px #FF3D7F;
+    border-right: solid 7.0711px #FF3D7F; }
+  .uiColorTurquoise .habiInfo::after {
+    border-bottom: solid 7.0711px #FF3D7F;
+    border-left: solid 7.0711px #FF3D7F; }
+  .uiColorTurquoise .portBox {
+    background: #3FB8AF;
+    box-shadow: 8px 8px 0 #FF3D7F; }
+  .uiColorTurquoise .portBox::before {
+    background-color: #1E1E1E; }
+  .uiColorTurquoise .portBox::after {
+    border-left: 10px #FF3D7F solid;
+    border-right: 50px #1E1E1E solid;
+    background-color: #1E1E1E; }
+  .uiColorTurquoise .portTitle {
+    color: #1E1E1E; }
+  .uiColorTurquoise .portText {
+    color: #1E1E1E; }
+  .uiColorTurquoise .portAcess {
+    color: #FF3D7F; }
+  .uiColorTurquoise .portAcess:hover {
+    color: #3FB8AF;
+    background-color: #FF3D7F; }
+  .uiColorTurquoise .portLink:hover > .secondStroke {
+    fill: #3FB8AF;
+    stroke: #3FB8AF; }
+  .uiColorTurquoise .portLink:hover > .secondFill {
+    fill: #1E1E1E; }
+
+.uiColorBlue {
+  background-color: #343838;
+  border-left: 10px solid #00B4CC;
+  border-right: 10px solid #00B4CC; }
+  .uiColorBlue:before {
+    background: #00B4CC; }
+  .uiColorBlue:after {
+    background: #00B4CC; }
+  .uiColorBlue .NavColor {
+    border: 5px solid #00B4CC; }
+  .uiColorBlue .NavColor2 {
+    border: 5px solid #005F6B; }
+  .uiColorBlue .secondFill {
+    fill: #00B4CC; }
+  .uiColorBlue .thirdFill {
+    fill: #005F6B; }
+  .uiColorBlue .secondStroke {
+    stroke: #00B4CC; }
+  .uiColorBlue .thirdStroke {
+    stroke: #005F6B; }
+  .uiColorBlue .fontColor {
+    color: #00B4CC; }
+  .uiColorBlue .paletteNav {
+    border: 3px solid #00B4CC; }
+  .uiColorBlue .paletteNav::before {
+    border-right: 3px #00B4CC solid;
+    border-left: 21px #343838 solid; }
+  .uiColorBlue .paletteNav::after {
+    border-left: 3px #00B4CC solid;
+    border-right: 21px #343838 solid; }
+  .uiColorBlue ::selection {
+    background: #005F6B;
+    /* WebKit/Blink Browsers */
+    color: #343838; }
+  .uiColorBlue ::-moz-selection {
+    background: #005F6B;
+    /* Gecko Browsers */
+    color: #343838; }
+  .uiColorBlue ::-webkit-scrollbar-track {
+    background: #343838; }
+  .uiColorBlue ::-webkit-scrollbar-thumb {
+    background: #005F6B; }
+  .uiColorBlue .titleLeft {
+    text-shadow: 2px 2px #005F6B; }
+  .uiColorBlue .titleRight {
+    text-shadow: -2px 2px #005F6B; }
+  .uiColorBlue .menuItem:hover {
+    background: #00B4CC;
+    color: #343838; }
+  .uiColorBlue a {
+    color: #00B4CC; }
+  .uiColorBlue .logo:hover > .secondFill {
+    stroke: #00B4CC; }
+  .uiColorBlue .linkedinLink:hover > .secondFill {
+    fill: #343838; }
+  .uiColorBlue .sobreText {
+    border: 5px solid #00B4CC; }
+  .uiColorBlue .upInfo {
+    border-color: transparent transparent #00B4CC transparent; }
+  .uiColorBlue .downInfo {
+    border-color: #00B4CC transparent transparent transparent; }
+  .uiColorBlue .infoBox {
+    border: 4px solid #00B4CC; }
+  .uiColorBlue .infoBox::before {
+    border-right: 4px #00B4CC solid;
+    border-left: 21px #343838 solid; }
+  .uiColorBlue .infoBox::after {
+    border-left: 4px #00B4CC solid;
+    border-right: 21px #343838 solid; }
+  .uiColorBlue .upMargin {
+    border-left: 4px solid #00B4CC; }
+  .uiColorBlue .upMargin::after {
+    border-color: transparent transparent #00B4CC transparent; }
+  .uiColorBlue .melies {
+    border-left: 4px solid #00B4CC; }
+  .uiColorBlue .melies::after {
+    border-color: #00B4CC transparent transparent transparent; }
+  .uiColorBlue .senac {
+    border-left: 4px solid #00B4CC; }
+  .uiColorBlue .senac::after {
+    border-color: #00B4CC transparent transparent transparent; }
+  .uiColorBlue .infoOpacity {
+    opacity: 0.7;
+    fill: #00B4CC; }
+  .uiColorBlue .habiInfo {
+    border-left: solid 5px #005F6B;
+    border-right: solid 5px #005F6B; }
+  .uiColorBlue .habiInfo::before {
+    border-top: solid 7.0711px #005F6B;
+    border-right: solid 7.0711px #005F6B; }
+  .uiColorBlue .habiInfo::after {
+    border-bottom: solid 7.0711px #005F6B;
+    border-left: solid 7.0711px #005F6B; }
+  .uiColorBlue .portBox {
+    background: #00B4CC;
+    box-shadow: 8px 8px 0 #005F6B; }
+  .uiColorBlue .portBox::before {
+    background-color: #343838; }
+  .uiColorBlue .portBox::after {
+    border-left: 10px #005F6B solid;
+    border-right: 50px #343838 solid;
+    background-color: #343838; }
+  .uiColorBlue .portTitle {
+    color: #343838; }
+  .uiColorBlue .portText {
+    color: #343838; }
+  .uiColorBlue .portAcess {
+    color: #005F6B; }
+  .uiColorBlue .portAcess:hover {
+    color: #00B4CC;
+    background-color: #005F6B; }
+  .uiColorBlue .portLink:hover > .secondStroke {
+    fill: #00B4CC;
+    stroke: #00B4CC; }
+  .uiColorBlue .portLink:hover > .secondFill {
+    fill: #343838; }
+
+/*  palettes */
+/* palette Menu */
+.paletteNav {
+  width: 140px;
+  margin: 10px auto 0px auto;
+  left: 0;
+  right: 0;
   border: 3px solid #111111;
   position: absolute;
   background-color: #FFFFFF;
-  box-shadow: 8px 8px 0 #FFDC00; }
+  padding: 5px; }
 
-.paletaSwitch1 {
-  display: block;
-  margin-top: 10px;
-  position: absolute; }
+.paletteNav::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  top: -12.2px;
+  left: -14px;
+  border-right: 3px #111111 solid;
+  border-left: 21px #FFFFFF solid;
+  transform: rotate(45deg); }
 
-.paletaSwitch2 {
-  display: block;
-  margin-top: 125px;
-  position: absolute; }
+.paletteNav::after {
+  content: "";
+  position: absolute;
+  height: 20px;
+  bottom: -12.4px;
+  right: -14px;
+  border-left: 3px #111111 solid;
+  border-right: 21px #FFFFFF solid;
+  transform: rotate(45deg); }
 
-/*  Paletas */
+.paletteSwitch {
+  width: 30px;
+  float: left;
+  padding: 2px; }
+
+/* palette Menu*/
 /*  SITE BORDER */
 body::before, body::after {
   content: "";
@@ -104,22 +499,23 @@ body {
   font-family: Montserrat;
   text-shadow: 2px 2px #FFDC00;
   font-size: 4.8em;
-  text-align: left;
-  color: #111111; }
+  text-align: left; }
 
 .titleRight {
   font-family: Montserrat;
   text-shadow: -2px 2px #FFDC00;
   font-size: 4.8em;
-  text-align: right;
-  color: #111111; }
+  text-align: right; }
+
+.noScroll {
+  overflow-y: hidden;
+  overflow-x: hidden; }
 
 /*  HEADER */
 ul {
   list-style-type: none;
   margin: 0 auto;
-  width: 805px;
-  padding: 0px; }
+  width: 805px; }
 
 ul li {
   float: left;
@@ -145,10 +541,8 @@ a {
   margin-top: -40px; }
 
 .logo:hover > .secondFill {
-  fill: none;
-  stroke: #111111;
-  stroke-width: 2;
-  stroke-miterlimit: 10; }
+  -webkit-animation: pulsate 2s ease-out;
+  animation-iteration-count: infinite; }
 
 .navShadow {
   position: absolute; }
@@ -195,7 +589,6 @@ a {
   width: 17.08984375%; }
 
 .myName {
-  color: #111111;
   font-family: Montserrat;
   font-size: 3em;
   margin-top: 5px;
@@ -206,7 +599,6 @@ a {
   display: inline-block; }
 
 .sobreText {
-  color: #111111;
   width: 70%;
   margin-left: 50px;
   font-size: 1.4em;
@@ -260,7 +652,6 @@ a {
   width: 150px;
   font-family: Roboto;
   font-size: 1.4em;
-  color: #111111;
   text-align: center;
   padding: 15px;
   margin: 0px auto 0px auto; }
@@ -268,14 +659,12 @@ a {
 .dateUp {
   font-family: Roboto;
   font-size: 1.4em;
-  color: #111111;
   margin: 0px 0px 0px 5px;
   font-weight: bold; }
 
 .dateDown {
   font-family: Roboto;
   font-size: 1.4em;
-  color: #111111;
   margin: 0px 0px 0px 5px;
   font-weight: bold; }
 
@@ -297,10 +686,12 @@ a {
   -webkit-transform: rotate(360deg); }
 
 .panaSvg {
-  height: 50px; }
+  height: 50px;
+  margin-bottom: -2px; }
 
 .anheSvg {
-  height: 30px; }
+  height: 30px;
+  margin-bottom: -2px; }
 
 .meliesBox {
   margin-left: 200px; }
@@ -323,7 +714,8 @@ a {
   -webkit-transform: rotate(360deg); }
 
 .meliesSvg {
-  height: 78px; }
+  height: 78px;
+  margin-top: -1px; }
 
 .senacBox {
   margin-left: 250px; }
@@ -346,11 +738,7 @@ a {
   -webkit-transform: rotate(360deg); }
 
 .senacSvg {
-  height: 78px; }
-
-.infoOpacity {
-  opacity: 0.7;
-  fill: #111111; }
+  height: 80px; }
 
 /*  Habilidades */
 .habiAlign {
@@ -359,7 +747,6 @@ a {
 .habiTitle {
   font-family: Roboto;
   font-size: 1.6em;
-  color: #111111;
   margin: 23px 0px 0px 97px;
   text-align: center;
   position: absolute;
@@ -415,7 +802,6 @@ a {
 .habiText {
   font-family: Roboto;
   font-size: 1.6em;
-  color: #111111;
   margin-top: 0.5px;
   text-align: center; }
 
@@ -427,10 +813,6 @@ a {
   box-shadow: 8px 8px 0 #FFDC00;
   float: left;
   position: relative; }
-
-.noScroll {
-  overflow-y: hidden;
-  overflow-x: hidden; }
 
 .portBox::before {
   content: "";

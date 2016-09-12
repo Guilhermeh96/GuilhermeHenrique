@@ -1,13 +1,13 @@
 $(document).ready(function() {
 
-	$('.paletaNav').hide();
+	$('.paletteNav').hide();
 
 	$('.dropbtn').click(function() {
-		$('.paletaNav').toggle();
+		$('.paletteNav').toggle();
 	});
 
 	$('html').click(function() {
-  		$('.paletaNav').hide();
+  		$('.paletteNav').hide();
 	});
 
 	$('.dropbtn').click(function(event){
