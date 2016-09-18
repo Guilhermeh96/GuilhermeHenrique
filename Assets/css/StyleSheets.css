@@ -66,6 +66,10 @@
     background: white; }
   .uiColorWhite:after {
     background: white; }
+  .uiColorWhite::-webkit-scrollbar-track {
+    background: black; }
+  .uiColorWhite::-webkit-scrollbar-thumb {
+    background: red; }
   .uiColorWhite .NavColor {
     border: 5px solid white; }
   .uiColorWhite .NavColor2 {
@@ -96,10 +100,6 @@
     background: red;
     /* Gecko Browsers */
     color: black; }
-  .uiColorWhite ::-webkit-scrollbar-track {
-    background: black; }
-  .uiColorWhite ::-webkit-scrollbar-thumb {
-    background: red; }
   .uiColorWhite .titleLeft {
     text-shadow: 2px 2px red; }
   .uiColorWhite .titleRight {
@@ -183,6 +183,10 @@
     background: #3FB8AF; }
   .uiColorTurquoise:after {
     background: #3FB8AF; }
+  .uiColorTurquoise::-webkit-scrollbar-track {
+    background: #1E1E1E; }
+  .uiColorTurquoise::-webkit-scrollbar-thumb {
+    background: #FF3D7F; }
   .uiColorTurquoise .NavColor {
     border: 5px solid #3FB8AF; }
   .uiColorTurquoise .NavColor2 {
@@ -213,10 +217,6 @@
     background: #FF3D7F;
     /* Gecko Browsers */
     color: #1E1E1E; }
-  .uiColorTurquoise ::-webkit-scrollbar-track {
-    background: #1E1E1E; }
-  .uiColorTurquoise ::-webkit-scrollbar-thumb {
-    background: #FF3D7F; }
   .uiColorTurquoise .titleLeft {
     text-shadow: 2px 2px #FF3D7F; }
   .uiColorTurquoise .titleRight {
@@ -300,6 +300,10 @@
     background: #00B4CC; }
   .uiColorBlue:after {
     background: #00B4CC; }
+  .uiColorBlue::-webkit-scrollbar-track {
+    background: #343838; }
+  .uiColorBlue::-webkit-scrollbar-thumb {
+    background: #00B4CC; }
   .uiColorBlue .NavColor {
     border: 5px solid #00B4CC; }
   .uiColorBlue .NavColor2 {
@@ -323,17 +327,13 @@
     border-left: 3px #00B4CC solid;
     border-right: 21px #343838 solid; }
   .uiColorBlue ::selection {
-    background: #005F6B;
+    background: #00B4CC;
     /* WebKit/Blink Browsers */
     color: #343838; }
   .uiColorBlue ::-moz-selection {
     background: #005F6B;
     /* Gecko Browsers */
     color: #343838; }
-  .uiColorBlue ::-webkit-scrollbar-track {
-    background: #343838; }
-  .uiColorBlue ::-webkit-scrollbar-thumb {
-    background: #005F6B; }
   .uiColorBlue .titleLeft {
     text-shadow: 2px 2px #005F6B; }
   .uiColorBlue .titleRight {
@@ -419,7 +419,8 @@
   border: 3px solid #111111;
   position: absolute;
   background-color: #FFFFFF;
-  padding: 5px; }
+  padding: 5px;
+  display: none; }
 
 .paletteNav::before {
   content: "";
@@ -470,13 +471,25 @@ body {
   border-right: 10px solid #111111;
   margin: 0px;
   padding-bottom: 50px; }
+  body::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 10px;
+    /* for vertical scrollbars */
+    height: 10px;
+    /* for horizontal scrollbars */ }
+  body::-webkit-scrollbar-track {
+    background: #FFFFFF; }
+  body::-webkit-scrollbar-thumb {
+    background: #FFDC00; }
 
 /* OVERALL */
 .container {
   margin: 0px auto;
   width: 100%;
   max-width: 1024px;
-  padding-top: 15px;
+  padding-top: 15px; }
+
+.clearfix {
   overflow: auto;
   zoom: 1; }
 
@@ -490,34 +503,19 @@ body {
   /* Gecko Browsers */
   color: #FFFFFF; }
 
-::-webkit-scrollbar {
-  -webkit-appearance: none;
-  width: 10px;
-  /* for vertical scrollbars */
-  height: 10px;
-  /* for horizontal scrollbars */ }
-
-::-webkit-scrollbar-track {
-  background: #FFFFFF; }
-
-::-webkit-scrollbar-thumb {
-  background: #FFDC00; }
-
 .titleLeft {
   font-family: Montserrat;
   text-shadow: 2px 2px #FFDC00;
+  margin: 50px 0px 30px 0px;
   font-size: 4.8em;
   text-align: left; }
 
 .titleRight {
   font-family: Montserrat;
   text-shadow: -2px 2px #FFDC00;
+  margin: 50px 0px 30px 0px;
   font-size: 4.8em;
   text-align: right; }
-
-.noScroll {
-  overflow-y: hidden;
-  overflow-x: hidden; }
 
 /*  HEADER */
 ul {
@@ -554,11 +552,11 @@ a {
   animation-iteration-count: infinite; }
 
 .navShadow {
-  margin-top: 42px;
+  margin-top: 44px;
   position: absolute; }
 
 .navSob {
-  margin-left: 20px;
+  margin-left: 21px;
   padding: 15px 43px; }
 
 .navExp {
@@ -566,11 +564,11 @@ a {
   padding: 15px 71px; }
 
 .navHab {
-  margin-left: 456px;
+  margin-left: 455px;
   padding: 15px 71px; }
 
 .navPor {
-  margin-left: 640px;
+  margin-left: 639px;
   padding: 15px 63px; }
 
 /*  CONTENT */
@@ -611,7 +609,7 @@ a {
 .sobreText {
   width: 70%;
   margin-left: 50px;
-  font-size: 1.4em;
+  font-size: 1.5em;
   font-family: Roboto;
   border: 5px solid #111111;
   padding: 20px;
@@ -622,7 +620,7 @@ a {
   border-style: solid;
   border-width: 0 6px 3px 6px;
   border-color: transparent transparent #111111 transparent;
-  margin: 0px auto 0px auto; }
+  margin: 0px auto; }
 
 .downInfo {
   border-style: solid;
@@ -822,7 +820,7 @@ a {
 
 /*  Portfólio */
 .portBox {
-  width: 260px;
+  width: 270px;
   background: #111111;
   margin-left: 63px;
   box-shadow: 8px 8px 0 #FFDC00;
@@ -860,9 +858,9 @@ a {
 .portText {
   color: #FFFFFF;
   font-family: Roboto;
-  font-size: 1.2em;
-  margin: 0 auto;
-  width: 199px; }
+  font-size: 1.4em;
+  margin: 25px auto;
+  width: 230px; }
 
 .portAcess {
   color: #FFDC00;
@@ -887,3 +885,58 @@ a {
 
 .portLink:hover > .secondFill {
   fill: #FFFFFF; }
+
+/* Firefox margins fix */
+@-moz-document url-prefix() {
+  .navShadow {
+    margin-top: 45px; }
+  .navSob {
+    margin-left: 21px; }
+  .navExp {
+    margin-left: 150px; }
+  .navHab {
+    margin-left: 458px; }
+  .navPor {
+    margin-left: 642px; }
+  .panaSvg {
+    margin-bottom: -4px; }
+  .anheSvg {
+    margin-bottom: -4px; }
+  .meliesSvg {
+    margin-top: -1px; }
+  .senac {
+    height: 118px; }
+  .senacSvg {
+    margin-top: -3px; } }
+
+@media screen and (max-width: 768px) {
+  body::before, body::after {
+    content: none; }
+  body {
+    border: none; } }
+
+@media screen and (max-width: 600px) {
+  body::before, body::after {
+    content: none; }
+  body {
+    border: none; } }
+
+@media screen and (max-width: 480px) {
+  body::before, body::after {
+    content: none; }
+  body {
+    border: none; }
+  ul {
+    list-style-type: none;
+    margin: 0 auto;
+    width: 805px; }
+  ul li {
+    float: left;
+    margin: 50px 16px 0px 16px; }
+  .menuItem {
+    position: relative;
+    padding: 5px 15px;
+    font-family: Montserrat;
+    font-size: 16px;
+    background: transparent;
+    z-index: 999; } }

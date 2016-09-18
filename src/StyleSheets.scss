@@ -3,6 +3,7 @@ $Title-font: Montserrat;
 $Text-font: Roboto;
 
 
+
 /*  palettes */
 
 
@@ -100,6 +101,14 @@ $third-color: #FFDC00;
 	&:after {
 		background: $second-color;
 	}
+
+	&::-webkit-scrollbar-track {  
+		background: $main-color;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: $third-color;
+	}
 	 
 
 	.NavColor {
@@ -152,14 +161,6 @@ $third-color: #FFDC00;
 	::-moz-selection {
 	  background: $third-color; /* Gecko Browsers */
 	  color: $main-color;
-	}
-
-	::-webkit-scrollbar-track {  
-		background: $main-color;
-	}
-
-	::-webkit-scrollbar-thumb {
-		background: $third-color;
 	}
 
 	.titleLeft {
@@ -319,6 +320,13 @@ $third-color: #FFDC00;
 		background: $second-color;
 	}
 	 
+	&::-webkit-scrollbar-track {  
+		background: $main-color;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: $third-color;
+	}
 
 	.NavColor {
 		border: 5px solid $second-color;
@@ -370,14 +378,6 @@ $third-color: #FFDC00;
 	::-moz-selection {
 	  background: $third-color; /* Gecko Browsers */
 	  color: $main-color;
-	}
-
-	::-webkit-scrollbar-track {  
-		background: $main-color;
-	}
-
-	::-webkit-scrollbar-thumb {
-		background: $third-color;
 	}
 
 	.titleLeft {
@@ -538,6 +538,13 @@ $third-color: #FFDC00;
 		background: $second-color;
 	}
 	 
+	&::-webkit-scrollbar-track {  
+		background: $main-color;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: $second-color;
+	}
 
 	.NavColor {
 		border: 5px solid $second-color;
@@ -582,21 +589,13 @@ $third-color: #FFDC00;
 	}
 
 	::selection {
-	  background: $third-color; /* WebKit/Blink Browsers */
+	  background: $second-color; /* WebKit/Blink Browsers */
 	  color: $main-color;
 	}
 
 	::-moz-selection {
 	  background: $third-color; /* Gecko Browsers */
 	  color: $main-color;
-	}
-
-	::-webkit-scrollbar-track {  
-		background: $main-color;
-	}
-
-	::-webkit-scrollbar-thumb {
-		background: $third-color;
 	}
 
 	.titleLeft {
@@ -752,6 +751,7 @@ $third-color: #FFDC00;
 	position:absolute;
 	background-color: $main-color;
 	padding: 5px;
+	display: none;
 }
 
 .paletteNav::before{
@@ -814,17 +814,33 @@ body {
     border-right: 10px solid $second-color;  
     margin:0px;
     padding-bottom: 50px;
+
+	&::-webkit-scrollbar {
+		-webkit-appearance: none;
+		width: 10px;    /* for vertical scrollbars */
+		height: 10px;    /* for horizontal scrollbars */
+	}
+
+	&::-webkit-scrollbar-track {  
+		background: $main-color;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: $third-color;
+	}
 }
 
 
 /* OVERALL */
-
 
 .container {
 	margin: 0px auto;
 	width:100%;
 	max-width:1024px;
 	padding-top:15px;
+}
+
+.clearfix {
 	overflow: auto;
   	zoom: 1;
 }
@@ -839,23 +855,10 @@ body {
   color: $main-color;
 }
 
-::-webkit-scrollbar {
-	-webkit-appearance: none;
-	width: 10px;    /* for vertical scrollbars */
-	height: 10px;    /* for horizontal scrollbars */
-}
-
-::-webkit-scrollbar-track {  
-	background: $main-color;
-}
-
-::-webkit-scrollbar-thumb {
-	background: $third-color;
-}
-
 .titleLeft {
 	font-family: $Title-font;
 	text-shadow: 2px 2px $third-color;
+	margin: 50px 0px 30px 0px;
 	font-size: 4.8em;
     text-align: left;
 }
@@ -863,13 +866,9 @@ body {
 .titleRight {
 	font-family: $Title-font;
 	text-shadow: -2px 2px $third-color;
+	margin: 50px 0px 30px 0px;
 	font-size: 4.8em;
     text-align: right;
-}
-
-.noScroll{
-	overflow-y: hidden;
-	overflow-x:hidden;
 }
 
 
@@ -923,12 +922,12 @@ a {
 }
 
 .navShadow {
-	margin-top: 42px;
+	margin-top: 44px;
 	position:absolute;
 }
 
 .navSob {
-	margin-left: 20px;
+	margin-left: 21px;
 	padding: 15px 43px;
 }
 
@@ -938,12 +937,12 @@ a {
 }
 
 .navHab {
-	margin-left: 456px;
+	margin-left: 455px;
 	padding: 15px 71px;
 }
 
 .navPor {
-	margin-left: 640px;
+	margin-left: 639px;
 	padding: 15px 63px;
 }
 
@@ -1008,7 +1007,7 @@ a {
 .sobreText {
 	width:70%;
 	margin-left: 50px;
-	font-size:1.4em;
+	font-size:1.5em;
 	font-family:$Text-font;
 	border: 5px solid $second-color;
 	padding:20px;
@@ -1031,7 +1030,7 @@ a {
 	border-style: solid;
 	border-width: 0 6px 3px 6px;
 	border-color: transparent transparent $second-color transparent;
-	margin: 0px auto 0px auto;
+	margin: 0px auto;
 }
 
 .downInfo {
@@ -1282,7 +1281,7 @@ a {
 
 
 .portBox {
-	width: 260px;
+	width: 270px;
   	background: $second-color;
   	margin-left: 63px;
   	box-shadow: 8px 8px 0 $third-color;
@@ -1324,9 +1323,9 @@ a {
 .portText {
 	color: $main-color;
 	font-family: $Text-font;
-	font-size: 1.2em;
-	margin: 0 auto;
-	width: 199px;
+	font-size: 1.4em;
+	margin: 25px auto;
+	width: 230px;
 }
 
 .portAcess {
@@ -1356,4 +1355,146 @@ a {
 
 .portLink:hover > .secondFill {
 	fill: $main-color;
+}
+
+/* Firefox margins fix */
+
+@-moz-document url-prefix() { 
+
+	 .navShadow {
+		margin-top: 45px;
+	}
+
+	.navSob {
+		margin-left: 21px;
+	}
+
+	.navExp {
+		margin-left: 150px;
+	}
+
+	.navHab {
+		margin-left: 458px;
+	}
+
+	.navPor {
+		margin-left: 642px;
+	}
+
+	.panaSvg {
+    margin-bottom: -4px;
+	}
+
+	.anheSvg {
+    margin-bottom: -4px;
+	}
+	
+	.meliesSvg {
+    margin-top: -1px;
+	}
+
+	.senac {
+	height: 118px;
+	}
+
+	.senacSvg {
+    margin-top: -3px; 
+	}
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+	body::before, body::after {
+	    content: none;
+	}
+	
+	body {
+		border: none;
+	}
+
+
+}
+
+@media screen and (max-width: 600px) {
+
+	body::before, body::after {
+	    content: none;
+	}
+
+	body {
+		border: none;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+
+	body::before, body::after {
+	    content: none;
+	}
+
+	body {
+		border: none;
+	}
+
+
+	ul {
+		list-style-type: none;
+		margin:0 auto;
+		width:805px;
+	}
+
+	ul li {
+		float:left;
+		margin:50px 16px 0px 16px;
+	}
+
+	.menuItem {
+		position: relative;
+		padding: 5px 15px;
+		font-family: $Title-font;
+		font-size: 16px;
+		background: transparent;
+		z-index:999;
+	}
+
+	.menuItem:hover {
+
+	}
+
+	a {
+
+	}
+
+
+	.logo {
+
+	}
+
+	.logo:hover > .secondFill {
+
+	}
+
+	.navShadow {
+
+	}
+
+	.navSob {
+
+	}
+
+	.navExp {
+
+	}
+
+	.navHab {
+
+	}
+
+	.navPor {
+
+	}
+
 }

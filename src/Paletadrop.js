@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-	$('.paletteNav').hide();
-
 	$('.dropbtn').click(function() {
 		$('.paletteNav').toggle();
 	});
