@@ -56,14 +56,17 @@ $third-color: #FFDC00;
 	stroke-miterlimit:10;
 }
 
-
-.infoOpacity{
-	opacity: 0.7;
+.expOpacity{
+	opacity: 0.8;
 	fill: $second-color;
 }
 
 .fontColor  {
 	color: $second-color;
+}
+
+.spanColor {
+	color: $third-color;
 }
 
 @-webkit-keyframes pulsate {
@@ -127,6 +130,11 @@ $third-color: #FFDC00;
 		fill: $third-color;
 	}
 
+	.expOpacity{
+	opacity: 0.8;
+	fill: $second-color;
+	}	
+
 	.secondStroke {
 		stroke:$second-color;
 	}
@@ -137,6 +145,10 @@ $third-color: #FFDC00;
 
 	.fontColor  {
 		color: $second-color;
+	}
+
+	.spanColor {
+	color: $third-color;
 	}
 
 	.paletteNav {
@@ -180,9 +192,8 @@ $third-color: #FFDC00;
 		color:$second-color;
 	}
 
-	.logo:hover > .secondFill {
-		stroke:$second-color;
-	}
+/*  Sobre */
+
 
 	.linkedinLink:hover > .secondFill {
 		fill: $main-color;
@@ -192,492 +203,35 @@ $third-color: #FFDC00;
 		border: 5px solid $second-color;
 	}
 
-	.upInfo {
-		border-color: transparent transparent $second-color transparent;
-	}
+/*  Experiência */
 
-	.downInfo {
-		border-color: $second-color transparent transparent transparent;	
-	}
 
-	.infoBox{
-	    border: 4px solid $second-color;
-	}
-
-	.infoBox::before{
-	    border-right: 4px $second-color solid;
-	    border-left: 21px $main-color solid;
-	}
-
-	.infoBox::after{
-	    border-left: 4px $second-color solid;
-	    border-right: 21px $main-color solid;
-	}
-
-	.upMargin {	
-	    border-left: 4px solid $second-color;
-	}
-
-	.upMargin::after {
-		border-color: transparent transparent $second-color transparent;
-	}
-
-	.melies {
-	    border-left: 4px solid $second-color;
-	}
-
-	.melies::after {
-		border-color: $second-color transparent transparent transparent;
-	}
-
-	.senac {
-    border-left: 4px solid $second-color;
-	}
-
-	.senac::after {
-	border-color: $second-color transparent transparent transparent;
-	}
-
-	.infoOpacity{
-		opacity: 0.7;
-		fill: $second-color;
-	}
-
-	.habiInfo {
-	  border-left: solid 5px $third-color;
-	  border-right: solid 5px $third-color;
-	}
-
-	.habiInfo::before {
-	  border-top: solid 7.0711px $third-color;
-	  border-right: solid 7.0711px $third-color;
-	}
-
-	.habiInfo::after {
-	  border-bottom: solid 7.0711px $third-color;
-	  border-left: solid 7.0711px $third-color;
-	}
-
-	.portBox {
-	  	background: $second-color;
-	  	box-shadow: 8px 8px 0 $third-color;
-	}
-
-	.portBox::before {
-	    background-color: $main-color;
-	}
-
-	  .portBox::after {
-	    border-left: 10px $third-color solid;
-	    border-right: 50px $main-color solid;
-	    background-color: $main-color;
-	}
-
-	.portTitle {
-		color: $main-color;
-	}
-
-	.portText {
-		color: $main-color;
-	}
-
-	.portAcess {
-		color:$third-color;
-	}
-
-	.portAcess:hover {
-		color: $second-color;
-		background-color:$third-color;
-	}
-
-	.portLink:hover > .secondStroke {
-		fill:$second-color;
-		stroke: $second-color;
-	}
-
-	.portLink:hover > .secondFill {
-		fill: $main-color;
-	}
-
+.expBox {
+	border:4px solid $second-color;
 }
 
-.uiColorTurquoise {
-
-
-	$main-color: #1E1E1E;
-	$second-color: #3FB8AF;
-	$third-color: #FF3D7F;
-
-	background-color: $main-color;
-	border-left: 10px solid $second-color;
-    border-right: 10px solid $second-color; 
-
-    &:before {
-		background: $second-color;
-	}
-
-	&:after {
-		background: $second-color;
-	}
-	 
-	&::-webkit-scrollbar-track {  
-		background: $main-color;
-	}
-
-	&::-webkit-scrollbar-thumb {
-		background: $third-color;
-	}
-
-	.NavColor {
-		border: 5px solid $second-color;
-	}
-
-	.NavColor2{
-		border: 5px solid $third-color;
-	}
-
-	.secondFill {
-		fill: $second-color;
-	}
-
-	.thirdFill {
-		fill: $third-color;
-	}
-
-	.secondStroke {
-		stroke:$second-color;
-	}
-
-	.thirdStroke {
-		stroke:$third-color;
-	}
-
-	.fontColor  {
-		color: $second-color;
-	}
-
-	.paletteNav {
-		border: 3px solid $second-color;
-	}
-
-	.paletteNav::before{
-    border-right: 3px $second-color solid;
-    border-left: 21px $main-color solid;
-	}
-
-	.paletteNav::after{
-    border-left: 3px $second-color solid;
-    border-right: 21px $main-color solid;
-	}
-
-	::selection {
-	  background: $third-color; /* WebKit/Blink Browsers */
-	  color: $main-color;
-	}
-
-	::-moz-selection {
-	  background: $third-color; /* Gecko Browsers */
-	  color: $main-color;
-	}
-
-	.titleLeft {
-		text-shadow: 2px 2px $third-color;
-	}
-
-	.titleRight {
-		text-shadow: -2px 2px $third-color;
-	}
-
-	.menuItem:hover {
-		background: $second-color;
-		color: $main-color;
-	}
-
-	a {
-		color:$second-color;
-	}
-
-	.logo:hover > .secondFill {
-		stroke:$second-color;
-	}
-
-	.linkedinLink:hover > .secondFill {
-		fill: $main-color;
-	}
-
-	.sobreText {
-		border: 5px solid $second-color;
-	}
-
-	.upInfo {
-		border-color: transparent transparent $second-color transparent;
-	}
-
-	.downInfo {
-		border-color: $second-color transparent transparent transparent;	
-	}
-
-	.infoBox{
-	    border: 4px solid $second-color;
-	}
-
-	.infoBox::before{
-	    border-right: 4px $second-color solid;
-	    border-left: 21px $main-color solid;
-	}
-
-	.infoBox::after{
-	    border-left: 4px $second-color solid;
-	    border-right: 21px $main-color solid;
-	}
-
-	.upMargin {	
-	    border-left: 4px solid $second-color;
-	}
-
-	.upMargin::after {
-		border-color: transparent transparent $second-color transparent;
-	}
-
-	.melies {
-	    border-left: 4px solid $second-color;
-	}
-
-	.melies::after {
-		border-color: $second-color transparent transparent transparent;
-	}
-
-	.senac {
-    border-left: 4px solid $second-color;
-	}
-
-	.senac::after {
-	border-color: $second-color transparent transparent transparent;
-	}
-	
-
-	.infoOpacity{
-		opacity: 0.7;
-		fill: $second-color;
-	}
-
-	.habiInfo {
-	  border-left: solid 5px $third-color;
-	  border-right: solid 5px $third-color;
-	}
-
-	.habiInfo::before {
-	  border-top: solid 7.0711px $third-color;
-	  border-right: solid 7.0711px $third-color;
-	}
-
-	.habiInfo::after {
-	  border-bottom: solid 7.0711px $third-color;
-	  border-left: solid 7.0711px $third-color;
-	}
-
-	.portBox {
-	  	background: $second-color;
-	  	box-shadow: 8px 8px 0 $third-color;
-	}
-
-	.portBox::before {
-	    background-color: $main-color;
-	}
-
-	  .portBox::after {
-	    border-left: 10px $third-color solid;
-	    border-right: 50px $main-color solid;
-	    background-color: $main-color;
-	}
-
-	.portTitle {
-		color: $main-color;
-	}
-
-	.portText {
-		color: $main-color;
-	}
-
-	.portAcess {
-		color:$third-color;
-	}
-
-	.portAcess:hover {
-		color: $second-color;
-		background-color:$third-color;
-	}
-
-	.portLink:hover > .secondStroke {
-		fill:$second-color;
-		stroke: $second-color;
-	}
-
-	.portLink:hover > .secondFill {
-		fill: $main-color;
-	}
-
+.expBox:after{
+    border-left: 4px $second-color solid;
+    border-right: 41px $main-color solid;
 }
 
-.uiColorBlue {
+.outerCircle {
+	fill: $third-color;
+}
+
+.innerCircle {
+	fill: $main-color;
+}
+
+.expSvg {
+	border:4px solid $third-color;
+}
 
 
-	$main-color: #343838;
-	$second-color: #00B4CC;
-	$third-color: #005F6B;
 
-	background-color: $main-color;
-	border-left: 10px solid $second-color;
-    border-right: 10px solid $second-color; 
 
-    &:before {
-		background: $second-color;
-	}
 
-	&:after {
-		background: $second-color;
-	}
-	 
-	&::-webkit-scrollbar-track {  
-		background: $main-color;
-	}
-
-	&::-webkit-scrollbar-thumb {
-		background: $second-color;
-	}
-
-	.NavColor {
-		border: 5px solid $second-color;
-	}
-
-	.NavColor2{
-		border: 5px solid $third-color;
-	}
-
-	.secondFill {
-		fill: $second-color;
-	}
-
-	.thirdFill {
-		fill: $third-color;
-	}
-
-	.secondStroke {
-		stroke:$second-color;
-	}
-
-	.thirdStroke {
-		stroke:$third-color;
-	}
-
-	.fontColor  {
-		color: $second-color;
-	}
-
-	.paletteNav {
-		border: 3px solid $second-color;
-	}
-
-	.paletteNav::before{
-    border-right: 3px $second-color solid;
-    border-left: 21px $main-color solid;
-	}
-
-	.paletteNav::after{
-    border-left: 3px $second-color solid;
-    border-right: 21px $main-color solid;
-	}
-
-	::selection {
-	  background: $second-color; /* WebKit/Blink Browsers */
-	  color: $main-color;
-	}
-
-	::-moz-selection {
-	  background: $third-color; /* Gecko Browsers */
-	  color: $main-color;
-	}
-
-	.titleLeft {
-		text-shadow: 2px 2px $third-color;
-	}
-
-	.titleRight {
-		text-shadow: -2px 2px $third-color;
-	}
-
-	.menuItem:hover {
-		background: $second-color;
-		color: $main-color;
-	}
-
-	a {
-		color:$second-color;
-	}
-
-	.logo:hover > .secondFill {
-		stroke:$second-color;
-	}
-
-	.linkedinLink:hover > .secondFill {
-		fill: $main-color;
-	}
-
-	.sobreText {
-		border: 5px solid $second-color;
-	}
-
-	.upInfo {
-		border-color: transparent transparent $second-color transparent;
-	}
-
-	.downInfo {
-		border-color: $second-color transparent transparent transparent;	
-	}
-
-	.infoBox{
-	    border: 4px solid $second-color;
-	}
-
-	.infoBox::before{
-	    border-right: 4px $second-color solid;
-	    border-left: 21px $main-color solid;
-	}
-
-	.infoBox::after{
-	    border-left: 4px $second-color solid;
-	    border-right: 21px $main-color solid;
-	}
-
-	.upMargin {	
-	    border-left: 4px solid $second-color;
-	}
-
-	.upMargin::after {
-		border-color: transparent transparent $second-color transparent;
-	}
-
-	.melies {
-	    border-left: 4px solid $second-color;
-	}
-
-	.melies::after {
-		border-color: $second-color transparent transparent transparent;
-	}
-	
-	.senac {
-    border-left: 4px solid $second-color;
-	}
-
-	.senac::after {
-	border-color: $second-color transparent transparent transparent;
-	}
-	
-
-	.infoOpacity{
-		opacity: 0.7;
-		fill: $second-color;
-	}
+/*  Habilidades */
 
 	.habiInfo {
 	  border-left: solid 5px $third-color;
@@ -693,6 +247,8 @@ $third-color: #FFDC00;
 	  border-bottom: solid 7.0711px $third-color;
 	  border-left: solid 7.0711px $third-color;
 	}
+
+/*  Portfolio */
 
 	.portBox {
 	  	background: $second-color;
@@ -835,14 +391,15 @@ body {
 
 .container {
 	margin: 0px auto;
-	width:100%;
 	max-width:1024px;
 	padding-top:15px;
-}
 
-.clearfix {
-	overflow: auto;
-  	zoom: 1;
+	&:after{
+	content:"";
+    display:block;
+    clear:both;
+
+	}
 }
 
 ::selection {
@@ -858,7 +415,7 @@ body {
 .titleLeft {
 	font-family: $Title-font;
 	text-shadow: 2px 2px $third-color;
-	margin: 50px 0px 30px 0px;
+	margin: 50px 0px 30px 10px;
 	font-size: 4.8em;
     text-align: left;
 }
@@ -866,13 +423,10 @@ body {
 .titleRight {
 	font-family: $Title-font;
 	text-shadow: -2px 2px $third-color;
-	margin: 50px 0px 30px 0px;
+	margin: 50px 10px 30px 0px;
 	font-size: 4.8em;
     text-align: right;
 }
-
-
-
 
 /*  HEADER */
 
@@ -910,6 +464,9 @@ a {
 	text-decoration:none; 
 }
 
+.navIcon  {
+	display:none;
+}
 
 .logo {
 	margin-top:-40px;	
@@ -1026,163 +583,52 @@ a {
 
 
 
-.upInfo {
-	border-style: solid;
-	border-width: 0 6px 3px 6px;
-	border-color: transparent transparent $second-color transparent;
-	margin: 0px auto;
-}
 
-.downInfo {
-	border-style: solid;
-	border-width: 3px 6px 0px 6px;
-	border-color: $second-color transparent transparent transparent;	
-	margin: 0px auto;
-}
-
-.infoContainer {
+.expBox {
+	border:4px solid $second-color;
 	display: inline-block;
-}
-
-.infoBox{
-	display:inline-block;
+	padding: 0px 0px 5px 10px; 
 	position: relative;
-    border: 4px solid $second-color;
+	margin: 10px;
 }
 
-.infoBox::before{
+.expBox:after{
     content: "";
     position: absolute;
-    height: 40px;
-    top:-16px;
-    left:-8px;
-    border-right: 4px $second-color solid;
-    border-left: 21px $main-color solid;
-    transform: rotate(45deg);
-}
-
-.infoBox::after{
-    content: "";
-    position: absolute;
-    height: 40px;
-    bottom:-15.4px;
-    right:-8px;
-    border-left: 4px $second-color solid;
-    border-right: 21px $main-color solid;
-    transform: rotate(45deg);
-}
-
-.infoText {
-	width: 150px;
-	font-family: $Text-font;
-	font-size: 1.4em;
-	text-align: center;
-	padding:15px;
-	margin: 0px auto 0px auto;
-}
-
-.dateUp {
-	font-family: $Text-font;
-    font-size: 1.4em;
-    margin: 0px 0px 0px 5px;
-    font-weight: bold;
-}
-
-.dateDown {
-	font-family: $Text-font;
-	font-size: 1.4em;
-	margin: 0px 0px 0px 5px;
-	font-weight: bold;
-}
-
-.upMargin {	
-    margin-left: 50px;
-    position: relative;
-    border-left: 4px solid $second-color;
-}
-
-.upMargin::after {
-	content: "";
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 0 3.5px 30px 3.5px;
-	border-color: transparent transparent $second-color transparent;
-	-webkit-transform:rotate(360deg);
-}
-
-.panaSvg {
-    height: 50px;
-    margin-bottom: -2px;
-}
-
-.anheSvg {
-    height: 30px;
-    margin-bottom: -2px;
-}
-
-.meliesBox {
-	margin-left:200px;
-}
-
-.melies {
-	margin-left: 250px;
-	position: relative;
-    border-left: 4px solid $second-color;
-}
-
-.melies::after {
-	content: "";
-    position: absolute;
-    right: 0px;
-    top: -2px;
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 30px 3.5px 0px 3.5px;
-	border-color: $second-color transparent transparent transparent;
-	-webkit-transform:rotate(360deg);
-}
-
-.meliesSvg {
-    height: 78px;
-    margin-top: -2px;
-}
-
-.senacBox {
-	margin-left:250px;
-}
-
-.senacDate {
-	margin-top:17px;
-}
-
-.senac {
-	margin-left: 370px;
-	height: 116px;
-	position: relative;
-    border-left: 4px solid $second-color;
-}
-
-.senac::after {
-	content: "";
-    position: absolute;
-    right: 0px;
-    top: -1px;
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 30px 3.5px 0px 3.5px;
-	border-color: $second-color transparent transparent transparent;
-	-webkit-transform:rotate(360deg);
-}
-
-.senacSvg {
     height: 80px;
-    margin-top: -3px; 
+    bottom: -29px;
+    right: -11px;
+    border-left: 4px $second-color solid;
+    border-right: 41px $main-color solid;
+    transform: rotate(45deg);
+}
+
+.expText {
+	display: inline-block;
+	font-size: 1.6em;
+	font-family: $Text-font;
+}
+
+.circle {
+	height: 60px;
+	float: right;
+	padding: 12px;
+}
+
+.outerCircle {
+	fill: $third-color;
+}
+
+.innerCircle {
+	fill: $main-color;
+}
+
+.expSvg {
+	display: block;
+	height: 50px;
+	border:4px solid $third-color;
+	margin-right: 60px;
+	padding-top: 10px;
 }
 
 
@@ -1293,9 +739,9 @@ a {
 	content: "";
     position: absolute;
     height: 90px;
-    width: 90px;
-    left: -46px;
-    top: -46px;
+    width: 45px;
+    left: -7px;
+    top: -30px;
     background-color: $main-color;
     transform: rotate(45deg);
 }
@@ -1343,9 +789,15 @@ a {
 	background-color:$third-color;
 }
 
+.otherPort{
+	display: inline-block;
+	text-align: right;
+	margin-top: 50px;
+}
+
 .portSvg {
-	width: 13.671875%;
-	margin-left: 150px;
+	width: 20%;
+	margin: 40px 10px 0px 10px;
 }
 
 .portLink:hover > .secondStroke {
@@ -1403,98 +855,120 @@ a {
 
 }
 
+/* Mobile */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 810px) {
 
-	body::before, body::after {
-	    content: none;
-	}
-	
-	body {
-		border: none;
-	}
+	html, body{ 
+  		margin:0;
+  		padding:0;
 
-
-}
-
-@media screen and (max-width: 600px) {
-
-	body::before, body::after {
-	    content: none;
 	}
 
-	body {
-		border: none;
+
+
+	/* Header */
+
+	.navShadowUl{
+		display:none;
 	}
-
-}
-
-@media screen and (max-width: 480px) {
-
-	body::before, body::after {
-	    content: none;
-	}
-
-	body {
-		border: none;
-	}
-
 
 	ul {
-		list-style-type: none;
-		margin:0 auto;
-		width:805px;
+	  position:fixed;
+	  top: 0;
+	  left: 0;
+	  z-index: 9999;
+	  margin:0px;
+	  width: 100%;
+	  padding: 0px;
 	}
 
 	ul li {
-		float:left;
-		margin:50px 16px 0px 16px;
+    text-align: center;
+    width: 25%; /* fallback for non-calc() browsers */
+    width: calc(100% / 4);
+    margin: 0px;
 	}
 
 	.menuItem {
-		position: relative;
-		padding: 5px 15px;
-		font-family: $Title-font;
-		font-size: 16px;
-		background: transparent;
-		z-index:999;
+	    display: block;
+	    background-color: $main-color;
 	}
 
-	.menuItem:hover {
-
+	.navLetter {
+		display:none;
 	}
 
-	a {
-
+	.navIcon {
+		display:block;
 	}
 
+	.sobreIcon{
+		width: 40px;
+	}
+
+	.expIcon{
+		width: 70px;
+	}
 
 	.logo {
-
-	}
-
-	.logo:hover > .secondFill {
-
+		display:none;
 	}
 
 	.navShadow {
+		display:none;
+	}
+
+	/* Experiência */
+
+	.expSvg{
+		display: none;
+	}
+
+
+
+	/* Habilidades */
+
+	
+	/* Habilidades */
+
+	.portBox {
+		width: 85%;
+		margin-top: 40px; 
+	  	position: relative;
+	  	margin-left:40px;
+	}
+
+
+
+	.portTitle {
+		text-align: left;
+		margin-top: 35px;
+		margin-left: 50px;
 
 	}
 
-	.navSob {
-
+	.portText {
+		width: 90%;
+		text-align: left;
+		margin: 0px 0px 0px 20px;
 	}
 
-	.navExp {
-
+	.portSvg {
+	margin: 0px 10px 20px 10px;
 	}
 
-	.navHab {
+}
 
-	}
 
-	.navPor {
+@media screen and (max-width: 480px) {
 
-	}
+
+	/* Header */
+
+
+	/* Experiência */
+
+	/* Habilidades */
 
 }

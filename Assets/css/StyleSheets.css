@@ -34,12 +34,15 @@
   stroke-width: 5;
   stroke-miterlimit: 10; }
 
-.infoOpacity {
-  opacity: 0.7;
+.expOpacity {
+  opacity: 0.8;
   fill: #111111; }
 
 .fontColor {
   color: #111111; }
+
+.spanColor {
+  color: #FFDC00; }
 
 @-webkit-keyframes pulsate {
   0% {
@@ -61,7 +64,11 @@
 .uiColorWhite {
   background-color: black;
   border-left: 10px solid white;
-  border-right: 10px solid white; }
+  border-right: 10px solid white;
+  /*  Sobre */
+  /*  Experiência */
+  /*  Habilidades */
+  /*  Portfolio */ }
   .uiColorWhite:before {
     background: white; }
   .uiColorWhite:after {
@@ -78,12 +85,17 @@
     fill: white; }
   .uiColorWhite .thirdFill {
     fill: red; }
+  .uiColorWhite .expOpacity {
+    opacity: 0.8;
+    fill: white; }
   .uiColorWhite .secondStroke {
     stroke: white; }
   .uiColorWhite .thirdStroke {
     stroke: red; }
   .uiColorWhite .fontColor {
     color: white; }
+  .uiColorWhite .spanColor {
+    color: red; }
   .uiColorWhite .paletteNav {
     border: 3px solid white; }
   .uiColorWhite .paletteNav::before {
@@ -109,39 +121,21 @@
     color: black; }
   .uiColorWhite a {
     color: white; }
-  .uiColorWhite .logo:hover > .secondFill {
-    stroke: white; }
   .uiColorWhite .linkedinLink:hover > .secondFill {
     fill: black; }
   .uiColorWhite .sobreText {
     border: 5px solid white; }
-  .uiColorWhite .upInfo {
-    border-color: transparent transparent white transparent; }
-  .uiColorWhite .downInfo {
-    border-color: white transparent transparent transparent; }
-  .uiColorWhite .infoBox {
+  .uiColorWhite .expBox {
     border: 4px solid white; }
-  .uiColorWhite .infoBox::before {
-    border-right: 4px white solid;
-    border-left: 21px black solid; }
-  .uiColorWhite .infoBox::after {
+  .uiColorWhite .expBox:after {
     border-left: 4px white solid;
-    border-right: 21px black solid; }
-  .uiColorWhite .upMargin {
-    border-left: 4px solid white; }
-  .uiColorWhite .upMargin::after {
-    border-color: transparent transparent white transparent; }
-  .uiColorWhite .melies {
-    border-left: 4px solid white; }
-  .uiColorWhite .melies::after {
-    border-color: white transparent transparent transparent; }
-  .uiColorWhite .senac {
-    border-left: 4px solid white; }
-  .uiColorWhite .senac::after {
-    border-color: white transparent transparent transparent; }
-  .uiColorWhite .infoOpacity {
-    opacity: 0.7;
-    fill: white; }
+    border-right: 41px black solid; }
+  .uiColorWhite .outerCircle {
+    fill: red; }
+  .uiColorWhite .innerCircle {
+    fill: black; }
+  .uiColorWhite .expSvg {
+    border: 4px solid red; }
   .uiColorWhite .habiInfo {
     border-left: solid 5px red;
     border-right: solid 5px red; }
@@ -174,240 +168,6 @@
     stroke: white; }
   .uiColorWhite .portLink:hover > .secondFill {
     fill: black; }
-
-.uiColorTurquoise {
-  background-color: #1E1E1E;
-  border-left: 10px solid #3FB8AF;
-  border-right: 10px solid #3FB8AF; }
-  .uiColorTurquoise:before {
-    background: #3FB8AF; }
-  .uiColorTurquoise:after {
-    background: #3FB8AF; }
-  .uiColorTurquoise::-webkit-scrollbar-track {
-    background: #1E1E1E; }
-  .uiColorTurquoise::-webkit-scrollbar-thumb {
-    background: #FF3D7F; }
-  .uiColorTurquoise .NavColor {
-    border: 5px solid #3FB8AF; }
-  .uiColorTurquoise .NavColor2 {
-    border: 5px solid #FF3D7F; }
-  .uiColorTurquoise .secondFill {
-    fill: #3FB8AF; }
-  .uiColorTurquoise .thirdFill {
-    fill: #FF3D7F; }
-  .uiColorTurquoise .secondStroke {
-    stroke: #3FB8AF; }
-  .uiColorTurquoise .thirdStroke {
-    stroke: #FF3D7F; }
-  .uiColorTurquoise .fontColor {
-    color: #3FB8AF; }
-  .uiColorTurquoise .paletteNav {
-    border: 3px solid #3FB8AF; }
-  .uiColorTurquoise .paletteNav::before {
-    border-right: 3px #3FB8AF solid;
-    border-left: 21px #1E1E1E solid; }
-  .uiColorTurquoise .paletteNav::after {
-    border-left: 3px #3FB8AF solid;
-    border-right: 21px #1E1E1E solid; }
-  .uiColorTurquoise ::selection {
-    background: #FF3D7F;
-    /* WebKit/Blink Browsers */
-    color: #1E1E1E; }
-  .uiColorTurquoise ::-moz-selection {
-    background: #FF3D7F;
-    /* Gecko Browsers */
-    color: #1E1E1E; }
-  .uiColorTurquoise .titleLeft {
-    text-shadow: 2px 2px #FF3D7F; }
-  .uiColorTurquoise .titleRight {
-    text-shadow: -2px 2px #FF3D7F; }
-  .uiColorTurquoise .menuItem:hover {
-    background: #3FB8AF;
-    color: #1E1E1E; }
-  .uiColorTurquoise a {
-    color: #3FB8AF; }
-  .uiColorTurquoise .logo:hover > .secondFill {
-    stroke: #3FB8AF; }
-  .uiColorTurquoise .linkedinLink:hover > .secondFill {
-    fill: #1E1E1E; }
-  .uiColorTurquoise .sobreText {
-    border: 5px solid #3FB8AF; }
-  .uiColorTurquoise .upInfo {
-    border-color: transparent transparent #3FB8AF transparent; }
-  .uiColorTurquoise .downInfo {
-    border-color: #3FB8AF transparent transparent transparent; }
-  .uiColorTurquoise .infoBox {
-    border: 4px solid #3FB8AF; }
-  .uiColorTurquoise .infoBox::before {
-    border-right: 4px #3FB8AF solid;
-    border-left: 21px #1E1E1E solid; }
-  .uiColorTurquoise .infoBox::after {
-    border-left: 4px #3FB8AF solid;
-    border-right: 21px #1E1E1E solid; }
-  .uiColorTurquoise .upMargin {
-    border-left: 4px solid #3FB8AF; }
-  .uiColorTurquoise .upMargin::after {
-    border-color: transparent transparent #3FB8AF transparent; }
-  .uiColorTurquoise .melies {
-    border-left: 4px solid #3FB8AF; }
-  .uiColorTurquoise .melies::after {
-    border-color: #3FB8AF transparent transparent transparent; }
-  .uiColorTurquoise .senac {
-    border-left: 4px solid #3FB8AF; }
-  .uiColorTurquoise .senac::after {
-    border-color: #3FB8AF transparent transparent transparent; }
-  .uiColorTurquoise .infoOpacity {
-    opacity: 0.7;
-    fill: #3FB8AF; }
-  .uiColorTurquoise .habiInfo {
-    border-left: solid 5px #FF3D7F;
-    border-right: solid 5px #FF3D7F; }
-  .uiColorTurquoise .habiInfo::before {
-    border-top: solid 7.0711px #FF3D7F;
-    border-right: solid 7.0711px #FF3D7F; }
-  .uiColorTurquoise .habiInfo::after {
-    border-bottom: solid 7.0711px #FF3D7F;
-    border-left: solid 7.0711px #FF3D7F; }
-  .uiColorTurquoise .portBox {
-    background: #3FB8AF;
-    box-shadow: 8px 8px 0 #FF3D7F; }
-  .uiColorTurquoise .portBox::before {
-    background-color: #1E1E1E; }
-  .uiColorTurquoise .portBox::after {
-    border-left: 10px #FF3D7F solid;
-    border-right: 50px #1E1E1E solid;
-    background-color: #1E1E1E; }
-  .uiColorTurquoise .portTitle {
-    color: #1E1E1E; }
-  .uiColorTurquoise .portText {
-    color: #1E1E1E; }
-  .uiColorTurquoise .portAcess {
-    color: #FF3D7F; }
-  .uiColorTurquoise .portAcess:hover {
-    color: #3FB8AF;
-    background-color: #FF3D7F; }
-  .uiColorTurquoise .portLink:hover > .secondStroke {
-    fill: #3FB8AF;
-    stroke: #3FB8AF; }
-  .uiColorTurquoise .portLink:hover > .secondFill {
-    fill: #1E1E1E; }
-
-.uiColorBlue {
-  background-color: #343838;
-  border-left: 10px solid #00B4CC;
-  border-right: 10px solid #00B4CC; }
-  .uiColorBlue:before {
-    background: #00B4CC; }
-  .uiColorBlue:after {
-    background: #00B4CC; }
-  .uiColorBlue::-webkit-scrollbar-track {
-    background: #343838; }
-  .uiColorBlue::-webkit-scrollbar-thumb {
-    background: #00B4CC; }
-  .uiColorBlue .NavColor {
-    border: 5px solid #00B4CC; }
-  .uiColorBlue .NavColor2 {
-    border: 5px solid #005F6B; }
-  .uiColorBlue .secondFill {
-    fill: #00B4CC; }
-  .uiColorBlue .thirdFill {
-    fill: #005F6B; }
-  .uiColorBlue .secondStroke {
-    stroke: #00B4CC; }
-  .uiColorBlue .thirdStroke {
-    stroke: #005F6B; }
-  .uiColorBlue .fontColor {
-    color: #00B4CC; }
-  .uiColorBlue .paletteNav {
-    border: 3px solid #00B4CC; }
-  .uiColorBlue .paletteNav::before {
-    border-right: 3px #00B4CC solid;
-    border-left: 21px #343838 solid; }
-  .uiColorBlue .paletteNav::after {
-    border-left: 3px #00B4CC solid;
-    border-right: 21px #343838 solid; }
-  .uiColorBlue ::selection {
-    background: #00B4CC;
-    /* WebKit/Blink Browsers */
-    color: #343838; }
-  .uiColorBlue ::-moz-selection {
-    background: #005F6B;
-    /* Gecko Browsers */
-    color: #343838; }
-  .uiColorBlue .titleLeft {
-    text-shadow: 2px 2px #005F6B; }
-  .uiColorBlue .titleRight {
-    text-shadow: -2px 2px #005F6B; }
-  .uiColorBlue .menuItem:hover {
-    background: #00B4CC;
-    color: #343838; }
-  .uiColorBlue a {
-    color: #00B4CC; }
-  .uiColorBlue .logo:hover > .secondFill {
-    stroke: #00B4CC; }
-  .uiColorBlue .linkedinLink:hover > .secondFill {
-    fill: #343838; }
-  .uiColorBlue .sobreText {
-    border: 5px solid #00B4CC; }
-  .uiColorBlue .upInfo {
-    border-color: transparent transparent #00B4CC transparent; }
-  .uiColorBlue .downInfo {
-    border-color: #00B4CC transparent transparent transparent; }
-  .uiColorBlue .infoBox {
-    border: 4px solid #00B4CC; }
-  .uiColorBlue .infoBox::before {
-    border-right: 4px #00B4CC solid;
-    border-left: 21px #343838 solid; }
-  .uiColorBlue .infoBox::after {
-    border-left: 4px #00B4CC solid;
-    border-right: 21px #343838 solid; }
-  .uiColorBlue .upMargin {
-    border-left: 4px solid #00B4CC; }
-  .uiColorBlue .upMargin::after {
-    border-color: transparent transparent #00B4CC transparent; }
-  .uiColorBlue .melies {
-    border-left: 4px solid #00B4CC; }
-  .uiColorBlue .melies::after {
-    border-color: #00B4CC transparent transparent transparent; }
-  .uiColorBlue .senac {
-    border-left: 4px solid #00B4CC; }
-  .uiColorBlue .senac::after {
-    border-color: #00B4CC transparent transparent transparent; }
-  .uiColorBlue .infoOpacity {
-    opacity: 0.7;
-    fill: #00B4CC; }
-  .uiColorBlue .habiInfo {
-    border-left: solid 5px #005F6B;
-    border-right: solid 5px #005F6B; }
-  .uiColorBlue .habiInfo::before {
-    border-top: solid 7.0711px #005F6B;
-    border-right: solid 7.0711px #005F6B; }
-  .uiColorBlue .habiInfo::after {
-    border-bottom: solid 7.0711px #005F6B;
-    border-left: solid 7.0711px #005F6B; }
-  .uiColorBlue .portBox {
-    background: #00B4CC;
-    box-shadow: 8px 8px 0 #005F6B; }
-  .uiColorBlue .portBox::before {
-    background-color: #343838; }
-  .uiColorBlue .portBox::after {
-    border-left: 10px #005F6B solid;
-    border-right: 50px #343838 solid;
-    background-color: #343838; }
-  .uiColorBlue .portTitle {
-    color: #343838; }
-  .uiColorBlue .portText {
-    color: #343838; }
-  .uiColorBlue .portAcess {
-    color: #005F6B; }
-  .uiColorBlue .portAcess:hover {
-    color: #00B4CC;
-    background-color: #005F6B; }
-  .uiColorBlue .portLink:hover > .secondStroke {
-    fill: #00B4CC;
-    stroke: #00B4CC; }
-  .uiColorBlue .portLink:hover > .secondFill {
-    fill: #343838; }
 
 /*  palettes */
 /* palette Menu */
@@ -485,13 +245,12 @@ body {
 /* OVERALL */
 .container {
   margin: 0px auto;
-  width: 100%;
   max-width: 1024px;
   padding-top: 15px; }
-
-.clearfix {
-  overflow: auto;
-  zoom: 1; }
+  .container:after {
+    content: "";
+    display: block;
+    clear: both; }
 
 ::selection {
   background: #FFDC00;
@@ -506,14 +265,14 @@ body {
 .titleLeft {
   font-family: Montserrat;
   text-shadow: 2px 2px #FFDC00;
-  margin: 50px 0px 30px 0px;
+  margin: 50px 0px 30px 10px;
   font-size: 4.8em;
   text-align: left; }
 
 .titleRight {
   font-family: Montserrat;
   text-shadow: -2px 2px #FFDC00;
-  margin: 50px 0px 30px 0px;
+  margin: 50px 10px 30px 0px;
   font-size: 4.8em;
   text-align: right; }
 
@@ -542,6 +301,9 @@ ul li {
 a {
   color: #111111;
   text-decoration: none; }
+
+.navIcon {
+  display: none; }
 
 .logo {
   margin-top: -40px; }
@@ -616,142 +378,45 @@ a {
   float: left; }
 
 /*  Experiência */
-.upInfo {
-  border-style: solid;
-  border-width: 0 6px 3px 6px;
-  border-color: transparent transparent #111111 transparent;
-  margin: 0px auto; }
-
-.downInfo {
-  border-style: solid;
-  border-width: 3px 6px 0px 6px;
-  border-color: #111111 transparent transparent transparent;
-  margin: 0px auto; }
-
-.infoContainer {
-  display: inline-block; }
-
-.infoBox {
+.expBox {
+  border: 4px solid #111111;
   display: inline-block;
+  padding: 0px 0px 5px 10px;
   position: relative;
-  border: 4px solid #111111; }
+  margin: 10px; }
 
-.infoBox::before {
+.expBox:after {
   content: "";
   position: absolute;
-  height: 40px;
-  top: -16px;
-  left: -8px;
-  border-right: 4px #111111 solid;
-  border-left: 21px #FFFFFF solid;
-  transform: rotate(45deg); }
-
-.infoBox::after {
-  content: "";
-  position: absolute;
-  height: 40px;
-  bottom: -15.4px;
-  right: -8px;
-  border-left: 4px #111111 solid;
-  border-right: 21px #FFFFFF solid;
-  transform: rotate(45deg); }
-
-.infoText {
-  width: 150px;
-  font-family: Roboto;
-  font-size: 1.4em;
-  text-align: center;
-  padding: 15px;
-  margin: 0px auto 0px auto; }
-
-.dateUp {
-  font-family: Roboto;
-  font-size: 1.4em;
-  margin: 0px 0px 0px 5px;
-  font-weight: bold; }
-
-.dateDown {
-  font-family: Roboto;
-  font-size: 1.4em;
-  margin: 0px 0px 0px 5px;
-  font-weight: bold; }
-
-.upMargin {
-  margin-left: 50px;
-  position: relative;
-  border-left: 4px solid #111111; }
-
-.upMargin::after {
-  content: "";
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 3.5px 30px 3.5px;
-  border-color: transparent transparent #111111 transparent;
-  -webkit-transform: rotate(360deg); }
-
-.panaSvg {
-  height: 50px;
-  margin-bottom: -2px; }
-
-.anheSvg {
-  height: 30px;
-  margin-bottom: -2px; }
-
-.meliesBox {
-  margin-left: 200px; }
-
-.melies {
-  margin-left: 250px;
-  position: relative;
-  border-left: 4px solid #111111; }
-
-.melies::after {
-  content: "";
-  position: absolute;
-  right: 0px;
-  top: -2px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 30px 3.5px 0px 3.5px;
-  border-color: #111111 transparent transparent transparent;
-  -webkit-transform: rotate(360deg); }
-
-.meliesSvg {
-  height: 78px;
-  margin-top: -2px; }
-
-.senacBox {
-  margin-left: 250px; }
-
-.senacDate {
-  margin-top: 17px; }
-
-.senac {
-  margin-left: 370px;
-  height: 116px;
-  position: relative;
-  border-left: 4px solid #111111; }
-
-.senac::after {
-  content: "";
-  position: absolute;
-  right: 0px;
-  top: -1px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 30px 3.5px 0px 3.5px;
-  border-color: #111111 transparent transparent transparent;
-  -webkit-transform: rotate(360deg); }
-
-.senacSvg {
   height: 80px;
-  margin-top: -3px; }
+  bottom: -29px;
+  right: -11px;
+  border-left: 4px #111111 solid;
+  border-right: 41px #FFFFFF solid;
+  transform: rotate(45deg); }
+
+.expText {
+  display: inline-block;
+  font-size: 1.6em;
+  font-family: Roboto; }
+
+.circle {
+  height: 60px;
+  float: right;
+  padding: 12px; }
+
+.outerCircle {
+  fill: #FFDC00; }
+
+.innerCircle {
+  fill: #FFFFFF; }
+
+.expSvg {
+  display: block;
+  height: 50px;
+  border: 4px solid #FFDC00;
+  margin-right: 60px;
+  padding-top: 10px; }
 
 /*  Habilidades */
 .habiAlign {
@@ -831,9 +496,9 @@ a {
   content: "";
   position: absolute;
   height: 90px;
-  width: 90px;
-  left: -46px;
-  top: -46px;
+  width: 45px;
+  left: -7px;
+  top: -30px;
   background-color: #FFFFFF;
   transform: rotate(45deg); }
 
@@ -875,9 +540,14 @@ a {
   color: #111111;
   background-color: #FFDC00; }
 
+.otherPort {
+  display: inline-block;
+  text-align: right;
+  margin-top: 50px; }
+
 .portSvg {
-  width: 13.671875%;
-  margin-left: 150px; }
+  width: 20%;
+  margin: 40px 10px 0px 10px; }
 
 .portLink:hover > .secondStroke {
   fill: #111111;
@@ -909,34 +579,65 @@ a {
   .senacSvg {
     margin-top: -3px; } }
 
-@media screen and (max-width: 768px) {
-  body::before, body::after {
-    content: none; }
-  body {
-    border: none; } }
-
-@media screen and (max-width: 600px) {
-  body::before, body::after {
-    content: none; }
-  body {
-    border: none; } }
+/* Mobile */
+@media screen and (max-width: 810px) {
+  html, body {
+    margin: 0;
+    padding: 0; }
+  /* Header */
+  .navShadowUl {
+    display: none; }
+  ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    margin: 0px;
+    width: 100%;
+    padding: 0px; }
+  ul li {
+    text-align: center;
+    width: 25%;
+    /* fallback for non-calc() browsers */
+    width: calc(100% / 4);
+    margin: 0px; }
+  .menuItem {
+    display: block;
+    background-color: #FFFFFF; }
+  .navLetter {
+    display: none; }
+  .navIcon {
+    display: block; }
+  .sobreIcon {
+    width: 40px; }
+  .expIcon {
+    width: 70px; }
+  .logo {
+    display: none; }
+  .navShadow {
+    display: none; }
+  /* Experiência */
+  .expSvg {
+    display: none; }
+  /* Habilidades */
+  /* Habilidades */
+  .portBox {
+    width: 85%;
+    margin-top: 40px;
+    position: relative;
+    margin-left: 40px; }
+  .portTitle {
+    text-align: left;
+    margin-top: 35px;
+    margin-left: 50px; }
+  .portText {
+    width: 90%;
+    text-align: left;
+    margin: 0px 0px 0px 20px; }
+  .portSvg {
+    margin: 0px 10px 20px 10px; } }
 
 @media screen and (max-width: 480px) {
-  body::before, body::after {
-    content: none; }
-  body {
-    border: none; }
-  ul {
-    list-style-type: none;
-    margin: 0 auto;
-    width: 805px; }
-  ul li {
-    float: left;
-    margin: 50px 16px 0px 16px; }
-  .menuItem {
-    position: relative;
-    padding: 5px 15px;
-    font-family: Montserrat;
-    font-size: 16px;
-    background: transparent;
-    z-index: 999; } }
+  /* Header */
+  /* Experiência */
+  /* Habilidades */ }
