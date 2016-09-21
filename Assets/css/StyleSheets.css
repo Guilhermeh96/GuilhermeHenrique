@@ -10,11 +10,14 @@
 .paletteColor3 {
   fill: #00B4CC; }
 
-.NavColor {
+.navColor {
   border: 5px solid #111111; }
 
-.NavColor2 {
+.navColor2 {
   border: 5px solid #FFDC00; }
+
+.mainFill {
+  fill: #FFFFFF; }
 
 .secondFill {
   fill: #111111; }
@@ -77,9 +80,9 @@
     background: black; }
   .uiColorWhite::-webkit-scrollbar-thumb {
     background: red; }
-  .uiColorWhite .NavColor {
+  .uiColorWhite .navColor {
     border: 5px solid white; }
-  .uiColorWhite .NavColor2 {
+  .uiColorWhite .navColor2 {
     border: 5px solid red; }
   .uiColorWhite .secondFill {
     fill: white; }
@@ -98,12 +101,12 @@
     color: red; }
   .uiColorWhite .paletteNav {
     border: 3px solid white; }
-  .uiColorWhite .paletteNav::before {
-    border-right: 3px white solid;
-    border-left: 21px black solid; }
-  .uiColorWhite .paletteNav::after {
-    border-left: 3px white solid;
-    border-right: 21px black solid; }
+    .uiColorWhite .paletteNav:before {
+      border-right: 3px white solid;
+      border-left: 21px black solid; }
+    .uiColorWhite .paletteNav:after {
+      border-left: 3px white solid;
+      border-right: 21px black solid; }
   .uiColorWhite ::selection {
     background: red;
     /* WebKit/Blink Browsers */
@@ -113,9 +116,9 @@
     /* Gecko Browsers */
     color: black; }
   .uiColorWhite .titleLeft {
-    text-shadow: 2px 2px red; }
+    text-shadow: 3px 3px red; }
   .uiColorWhite .titleRight {
-    text-shadow: -2px 2px red; }
+    text-shadow: -3px 3px red; }
   .uiColorWhite .menuItem:hover {
     background: white;
     color: black; }
@@ -139,12 +142,12 @@
   .uiColorWhite .habiInfo {
     border-left: solid 5px red;
     border-right: solid 5px red; }
-  .uiColorWhite .habiInfo::before {
-    border-top: solid 7.0711px red;
-    border-right: solid 7.0711px red; }
-  .uiColorWhite .habiInfo::after {
-    border-bottom: solid 7.0711px red;
-    border-left: solid 7.0711px red; }
+    .uiColorWhite .habiInfo:before {
+      border-top: solid 7.0711px red;
+      border-right: solid 7.0711px red; }
+    .uiColorWhite .habiInfo:after {
+      border-bottom: solid 7.0711px red;
+      border-left: solid 7.0711px red; }
   .uiColorWhite .portBox {
     background: white;
     box-shadow: 8px 8px 0 red; }
@@ -209,6 +212,9 @@
 
 /* palette Menu*/
 /*  SITE BORDER */
+html {
+  overflow-x: hidden; }
+
 body::before, body::after {
   content: "";
   z-index: 999;
@@ -230,7 +236,8 @@ body {
   border-left: 10px solid #111111;
   border-right: 10px solid #111111;
   margin: 0px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  overflow-x: hidden; }
   body::-webkit-scrollbar {
     -webkit-appearance: none;
     width: 10px;
@@ -264,14 +271,14 @@ body {
 
 .titleLeft {
   font-family: Montserrat;
-  text-shadow: 2px 2px #FFDC00;
-  margin: 50px 0px 30px 10px;
+  text-shadow: 3px 3px #FFDC00;
+  margin: 50px 0px 30px 15px;
   font-size: 4.8em;
   text-align: left; }
 
 .titleRight {
   font-family: Montserrat;
-  text-shadow: -2px 2px #FFDC00;
+  text-shadow: -3px 3px #FFDC00;
   margin: 50px 10px 30px 0px;
   font-size: 4.8em;
   text-align: right; }
@@ -286,17 +293,68 @@ ul li {
   float: left;
   margin: 50px 16px 0px 16px; }
 
+.dropMenu ul li:nth-child(4) span {
+  letter-spacing: 4px; }
+
+.dropMenu ul li:nth-child(5) span {
+  letter-spacing: 4px; }
+
+.dropMenu ul li:nth-child(4) {
+  margin-left: 85px; }
+
+.dropMenu ul {
+  margin: 0 auto;
+  text-align: center; }
+
+.dropMenu ul li {
+  display: inline-block;
+  margin: 50px 13px 0px 14px; }
+
+.dropMenu ul li .logo {
+  position: absolute;
+  width: 70px;
+  margin-top: -28px; }
+
 .menuItem {
   position: relative;
   padding: 5px 15px;
   font-family: Montserrat;
   font-size: 16px;
   background: transparent;
-  z-index: 999; }
+  z-index: 9; }
 
 .menuItem:hover {
   background: #111111;
   color: #FFFFFF; }
+
+.dropMenu {
+  position: fixed;
+  background-color: #FFFFFF;
+  z-index: 99;
+  padding-top: 10px;
+  padding-bottom: 2px;
+  border-left: 10px solid #111111;
+  border-right: 10px solid #111111;
+  border-bottom: 4px solid #111111;
+  left: 0;
+  width: 100%;
+  transition: 0.5s ease-in-out; }
+
+.navUp {
+  -ms-transform: translateY(-92px);
+  /* IE 9 */
+  -webkit-transform: translateY(-92px);
+  /* Chrome, Safari, Opera */
+  transform: translateY(-92px);
+  -webkit-backface-visibility: hidden; }
+
+.navDown {
+  -ms-transform: translateY(0px);
+  /* IE 9 */
+  -webkit-transform: translateY(0px);
+  /* Chrome, Safari, Opera */
+  transform: translateY(0px);
+  -webkit-backface-visibility: hidden; }
 
 a {
   color: #111111;
@@ -305,10 +363,15 @@ a {
 .navIcon {
   display: none; }
 
-.logo {
-  margin-top: -40px; }
+a .logo {
+  cursor: pointer;
+  cursor: hand; }
 
-.logo:hover > .secondFill {
+.logo {
+  margin-top: -40px;
+  width: 100px; }
+
+a .logo:hover > .secondFill {
   -webkit-animation: pulsate 2s ease-out;
   animation: pulsate 2s ease-out;
   animation-iteration-count: infinite; }
@@ -317,19 +380,19 @@ a {
   margin-top: 44px;
   position: absolute; }
 
-.navSob {
+.navShadow:nth-child(1) {
   margin-left: 21px;
   padding: 15px 43px; }
 
-.navExp {
+.navShadow:nth-child(2) {
   margin-left: 149px;
   padding: 15px 71px; }
 
-.navHab {
-  margin-left: 455px;
+.navShadow:nth-child(3) {
+  margin-left: 456px;
   padding: 15px 71px; }
 
-.navPor {
+.navShadow:nth-child(4) {
   margin-left: 639px;
   padding: 15px 63px; }
 
@@ -356,7 +419,7 @@ a {
 .sobreInfo {
   display: inline-block;
   float: left;
-  width: 17.08984375%; }
+  width: 175px; }
 
 .myName {
   font-family: Montserrat;
@@ -403,7 +466,7 @@ a {
 .circle {
   height: 60px;
   float: right;
-  padding: 12px; }
+  padding: 3px 12px 12px 12px; }
 
 .outerCircle {
   fill: #FFDC00; }
@@ -545,6 +608,10 @@ a {
   text-align: right;
   margin-top: 50px; }
 
+.portSvg:first-child {
+  padding-right: 25px;
+  border-right: 5px solid #FFDC00; }
+
 .portSvg {
   width: 20%;
   margin: 40px 10px 0px 10px; }
@@ -580,17 +647,30 @@ a {
     margin-top: -3px; } }
 
 /* Mobile */
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 950px) {
   html, body {
-    margin: 0;
     padding: 0; }
+  .titleLeft {
+    font-size: 3.8em; }
+  .titleRight {
+    font-size: 3.8em; }
+  .container:first-child {
+    padding-top: 0px; }
   /* Header */
+  .dropMenu {
+    display: none; }
+  .paletteNav {
+    margin: -100px auto 0px auto; }
+    .paletteNav:before {
+      content: none; }
+    .paletteNav:after {
+      content: none; }
   .navShadowUl {
     display: none; }
   ul {
     position: fixed;
-    top: 0;
-    left: 0;
+    bottom: 0;
+    left: 0px;
     z-index: 9999;
     margin: 0px;
     width: 100%;
@@ -603,9 +683,15 @@ a {
     margin: 0px; }
   .menuItem {
     display: block;
-    background-color: #FFFFFF; }
+    background-color: #FFFFFF;
+    box-shadow: 0px -3px 0 #FFDC00; }
   .navLetter {
     display: none; }
+  .menuItem:hover .secondFill {
+    fill: #FFFFFF; }
+  .navColor {
+    border-right: 2px solid #111111;
+    border-left: 2px solid #111111; }
   .navIcon {
     display: block; }
   .sobreIcon {
@@ -613,29 +699,50 @@ a {
   .expIcon {
     width: 70px; }
   .logo {
-    display: none; }
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    max-width: 105px;
+    min-width: 65px;
+    left: 0;
+    right: 0;
+    z-index: 999999; }
   .navShadow {
     display: none; }
+  /* Sobre */
+  .sobreInfo {
+    float: none;
+    display: block;
+    margin: 0 auto; }
+  .sobreText {
+    float: none;
+    margin: 0 auto; }
   /* Experiência */
   .expSvg {
     display: none; }
-  /* Habilidades */
+  .circle {
+    float: none; }
   /* Habilidades */
   .portBox {
+    float: none;
     width: 85%;
-    margin-top: 40px;
-    position: relative;
-    margin-left: 40px; }
+    padding-top: 10px;
+    margin: 45px auto 0px auto;
+    position: relative; }
   .portTitle {
     text-align: left;
     margin-top: 35px;
-    margin-left: 50px; }
+    margin-left: 30px; }
   .portText {
     width: 90%;
     text-align: left;
     margin: 0px 0px 0px 20px; }
   .portSvg {
-    margin: 0px 10px 20px 10px; } }
+    margin: 0px 10px 110px 10px; } }
+
+@media screen and (max-width: 620px) {
+  /* Header */ }
 
 @media screen and (max-width: 480px) {
   /* Header */
