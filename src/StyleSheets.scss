@@ -12,7 +12,7 @@ $second-color: #111111;
 $third-color: #FFDC00;
 
 
-/*Mainpalette*/
+/*MainTheme*/
 
 .paletteColor1 {
 	fill: red;
@@ -53,6 +53,13 @@ $third-color: #FFDC00;
 	stroke-miterlimit:10;
 }
 
+.secondStrokeIcon {
+	fill:$main-color;
+	stroke:$second-color;
+	stroke-width:1;
+	stroke-miterlimit:10;
+}
+
 .thirdStroke {
 	fill:none;
 	stroke:$third-color;
@@ -85,218 +92,252 @@ $third-color: #FFDC00;
     100% {opacity: 1.0;}
 }
 
-/*Whitepalette*/
+/*Themes*/
 
 
+@mixin theme($name, $main-color, $second-color, $third-color) {
 
+	.#{$name} {
 
-.uiColorWhite {
+		background-color: $main-color;
+		border-left: 10px solid $second-color;
+	    border-right: 10px solid $second-color; 
 
-
-	$main-color: black;
-	$second-color: white;
-	$third-color: red;
-
-	background-color: $main-color;
-	border-left: 10px solid $second-color;
-    border-right: 10px solid $second-color; 
-
-    &:before {
-		background: $second-color;
-	}
-
-	&:after {
-		background: $second-color;
-	}
-
-	&::-webkit-scrollbar-track {  
-		background: $main-color;
-	}
-
-	&::-webkit-scrollbar-thumb {
-		background: $third-color;
-	}
-	 
-
-	.navColor {
-		border: 5px solid $second-color;
-	}
-
-	.navColor2{
-		border: 5px solid $third-color;
-	}
-
-	.secondFill {
-		fill: $second-color;
-	}
-
-	.thirdFill {
-		fill: $third-color;
-	}
-
-	.expOpacity{
-	opacity: 0.8;
-	fill: $second-color;
-	}	
-
-	.secondStroke {
-		stroke:$second-color;
-	}
-
-	.thirdStroke {
-		stroke:$third-color;
-	}
-
-	.fontColor  {
-		color: $second-color;
-	}
-
-	.spanColor {
-	color: $third-color;
-	}
-
-	.paletteNav {
-		border: 3px solid $second-color;
-
-		&:before{
-		    border-right: 3px $second-color solid;
-		    border-left: 21px $main-color solid;
-		}
-
-		&:after{
-		    border-left: 3px $second-color solid;
-		    border-right: 21px $main-color solid;
-		}
-
-	}
-
-	::selection {
-	  background: $third-color; /* WebKit/Blink Browsers */
-	  color: $main-color;
-	}
-
-	::-moz-selection {
-	  background: $third-color; /* Gecko Browsers */
-	  color: $main-color;
-	}
-
-	.titleLeft {
-		text-shadow: 3px 3px $third-color;
-	}
-
-	.titleRight {
-		text-shadow: -3px 3px $third-color;
-	}
-
-	.menuItem:hover {
-		background: $second-color;
-		color: $main-color;
-	}
-
-	a {
-		color:$second-color;
-	}
-
-/*  Sobre */
-
-
-	.linkedinLink:hover > .secondFill {
-		fill: $main-color;
-	}
-
-	.sobreText {
-		border: 5px solid $second-color;
-	}
-
-/*  Experiência */
-
-
-.expBox {
-	border:4px solid $second-color;
-}
-
-.expBox:after{
-    border-left: 4px $second-color solid;
-    border-right: 41px $main-color solid;
-}
-
-.outerCircle {
-	fill: $third-color;
-}
-
-.innerCircle {
-	fill: $main-color;
-}
-
-.expSvg {
-	border:4px solid $third-color;
-}
-
-
-
-
-
-/*  Habilidades */
-
-	.habiInfo {
-	  border-left: solid 5px $third-color;
-	  border-right: solid 5px $third-color;
-	
-		&:before {
-		  border-top: solid 7.0711px $third-color;
-		  border-right: solid 7.0711px $third-color;
+	    &:before {
+			background: $second-color;
 		}
 
 		&:after {
-		  border-bottom: solid 7.0711px $third-color;
-		  border-left: solid 7.0711px $third-color;
+			background: $second-color;
 		}
+
+		&::-webkit-scrollbar-track {  
+			background: $main-color;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background: $third-color;
+		}
+		 
+
+		.navColor {
+			border: 5px solid $second-color;
+		}
+
+		.navColor2{
+			border: 5px solid $third-color;
+		}
+
+		.mainFill {
+			fill:$main-color;
+		}
+
+		.secondFill {
+			fill: $second-color;
+		}
+
+		.thirdFill {
+			fill: $third-color;
+		}
+
+		.expOpacity{
+		opacity: 0.8;
+		fill: $second-color;
+		}
+		.secondStroke {
+			stroke:$second-color;
+		}
+
+		.secondStrokeIcon {
+			fill:$main-color;
+			stroke:$second-color;
+		}
+
+		.thirdStroke {
+			stroke:$third-color;
+		}
+
+		.fontColor  {
+			color: $second-color;
+		}
+
+		.spanColor {
+		color: $third-color;
+		}
+
+		.paletteNav {
+			border: 3px solid $second-color;
+
+			&:before{
+			    border-right: 3px $second-color solid;
+			    border-left: 21px $main-color solid;
+			}
+
+			&:after{
+			    border-left: 3px $second-color solid;
+			    border-right: 21px $main-color solid;
+			}
+
+		}
+
+		::selection {
+		  background: $third-color; /* WebKit/Blink Browsers */
+		  color: $main-color;
+		}
+
+		::-moz-selection {
+		  background: $third-color; /* Gecko Browsers */
+		  color: $main-color;
+		}
+
+		.titleLeft {
+			text-shadow: 3px 3px $third-color;
+		}
+
+		.titleRight {
+			text-shadow: -3px 3px $third-color;
+		}
+
+		.menuItem:hover {
+			background: $second-color;
+			color: $main-color;
+		}
+
+		.dropMenu {
+			background-color: $main-color;
+			border-left: 10px solid $second-color;
+			border-right: 10px solid $second-color;
+			border-bottom: 4px solid $second-color;
+		}
+
+		a {
+			color:$second-color;
+		}
+
+	/*  Sobre */
+
+
+		.linkedinLink:hover > .secondFill {
+			fill: $main-color;
+		}
+
+		.sobreText {
+			border: 5px solid $second-color;
+		}
+
+	/*  Experiência */
+
+
+	.expBox {
+		border:4px solid $second-color;
 	}
 
-/*  Portfolio */
-
-	.portBox {
-	  	background: $second-color;
-	  	box-shadow: 8px 8px 0 $third-color;
+	.expBox:after{
+	    border-left: 4px $second-color solid;
+	    border-right: 41px $main-color solid;
 	}
 
-	.portBox::before {
-	    background-color: $main-color;
+	.outerCircle {
+		fill: $third-color;
 	}
 
-	  .portBox::after {
-	    border-left: 10px $third-color solid;
-	    border-right: 50px $main-color solid;
-	    background-color: $main-color;
-	}
-
-	.portTitle {
-		color: $main-color;
-	}
-
-	.portText {
-		color: $main-color;
-	}
-
-	.portAcess {
-		color:$third-color;
-	}
-
-	.portAcess:hover {
-		color: $second-color;
-		background-color:$third-color;
-	}
-
-	.portLink:hover > .secondStroke {
-		fill:$second-color;
-		stroke: $second-color;
-	}
-
-	.portLink:hover > .secondFill {
+	.innerCircle {
 		fill: $main-color;
 	}
 
+	.expSvg {
+		border:4px solid $third-color;
+	}
+
+
+
+
+
+	/*  Habilidades */
+
+		.habiInfo {
+		  border-left: solid 5px $third-color;
+		  border-right: solid 5px $third-color;
+		
+			&:before {
+			  border-top: solid 7.0711px $third-color;
+			  border-right: solid 7.0711px $third-color;
+			}
+
+			&:after {
+			  border-bottom: solid 7.0711px $third-color;
+			  border-left: solid 7.0711px $third-color;
+			}
+		}
+
+	/*  Portfolio */
+
+		.portBox {
+		  	background: $second-color;
+		  	box-shadow: 8px 8px 0 $third-color;
+		}
+
+		.portBox::before {
+		    background-color: $main-color;
+		}
+
+		  .portBox::after {
+		    border-left: 10px $third-color solid;
+		    border-right: 50px $main-color solid;
+		    background-color: $main-color;
+		}
+
+		.portTitle {
+			color: $main-color;
+		}
+
+		.portText {
+			color: $main-color;
+		}
+
+		.portAcess {
+			color:$third-color;
+		}
+
+		.portAcess:hover {
+			color: $second-color;
+			background-color:$third-color;
+		}
+
+		.portLink:hover > .secondStroke {
+			fill:$second-color;
+			stroke: $second-color;
+		}
+
+		.portLink:hover > .secondFill {
+			fill: $main-color;
+		}
+
+		.portSvg:first-child {
+			border-right: 5px solid $third-color;
+		}
+
+		@media screen and (max-width: 950px) {
+				.menuItem {
+				    background-color: $main-color;
+				    box-shadow: 0px -3px 0 $third-color;
+				}
+
+				.navColor {
+					border-top: 5px solid $second-color;
+					border-right: none;
+					border-left: none;
+				}  
+
+		}
+
+	}
+
 }
+
+@include theme(uiColorWhite, black, white, red);
+@include theme(uiColorTurquoise, #1E1E1E, #3FB8AF, #FF3D7F);
+@include theme(uiColorBlue, #343838, #00B4CC, #005F6B);
 
 /*  palettes */
 
@@ -304,7 +345,7 @@ $third-color: #FFDC00;
 /* palette Menu */
 
 .paletteNav {
-	width:140px;
+	width:136px;
 	margin: 10px auto 0px auto;
 	left:0;
 	right:0;
@@ -464,7 +505,7 @@ ul li {
 }
 
 .dropMenu ul li:nth-child(4) {
-	margin-left: 85px;
+	margin-left: 80px;
 }
 
 .dropMenu ul{
@@ -474,7 +515,7 @@ ul li {
 
 .dropMenu ul li{
 	display: inline-block;
-	margin:50px 13px 0px 14px;
+	margin:50px 18px 0px 14px;
 }
 
 .dropMenu ul li .logo {
@@ -509,6 +550,9 @@ ul li {
     left: 0;
 	width: 100%;
 	transition:0.5s ease-in-out;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .navUp {
@@ -962,7 +1006,8 @@ a .logo:hover > .secondFill {
 	}
 
 	.paletteNav {
-		margin: -100px auto 0px auto;
+		margin: -120px auto 0px auto;
+		width:219px;
 
 		&:before {
 			content: none;
@@ -971,6 +1016,10 @@ a .logo:hover > .secondFill {
 		&:after {
 			content: none;
 		}
+	}
+
+	.paletteSwitch {
+		width:50px;
 	}
 
 	.navShadowUl{
@@ -997,32 +1046,30 @@ a .logo:hover > .secondFill {
 	.menuItem {
 	    display: block;
 	    background-color: $main-color;
-	    box-shadow: 0px -3px 0 $third-color;
+	    box-shadow: 0px -5px 0 $third-color;
+	}
+
+	.menuItem:hover .secondFill{
+		fill: $main-color;
 	}
 
 	.navLetter {
 		display:none;
 	}
 
-	.menuItem:hover .secondFill {
-		fill: $main-color;
-	}
-
 	.navColor {
-		border-right: 2px solid $second-color;
-		border-left: 2px solid $second-color;
-	} 
+		border-top: 5px solid $second-color;
+		border-right: none;
+		border-left: none;
+	}  
+
+	.iconSvg {
+		width: 70px;
+		margin-top: 5px;
+	}
 
 	.navIcon {
 		display:block;
-	}
-
-	.sobreIcon{
-		width: 40px;
-	}
-
-	.expIcon{
-		width: 70px;
 	}
 
 	.logo {
@@ -1091,7 +1138,7 @@ a .logo:hover > .secondFill {
 	}
 
 	.portSvg {
-	margin: 0px 10px 110px 10px;
+	margin: 0px 10px 160px 10px;
 	}
 
 }

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*  palettes */
-/*Mainpalette*/
+/*MainTheme*/
 .paletteColor1 {
   fill: red; }
 
@@ -29,6 +29,12 @@
   fill: none;
   stroke: #111111;
   stroke-width: 5;
+  stroke-miterlimit: 10; }
+
+.secondStrokeIcon {
+  fill: #FFFFFF;
+  stroke: #111111;
+  stroke-width: 1;
   stroke-miterlimit: 10; }
 
 .thirdStroke {
@@ -63,7 +69,7 @@
   100% {
     opacity: 1.0; } }
 
-/*Whitepalette*/
+/*Themes*/
 .uiColorWhite {
   background-color: black;
   border-left: 10px solid white;
@@ -84,6 +90,8 @@
     border: 5px solid white; }
   .uiColorWhite .navColor2 {
     border: 5px solid red; }
+  .uiColorWhite .mainFill {
+    fill: black; }
   .uiColorWhite .secondFill {
     fill: white; }
   .uiColorWhite .thirdFill {
@@ -92,6 +100,9 @@
     opacity: 0.8;
     fill: white; }
   .uiColorWhite .secondStroke {
+    stroke: white; }
+  .uiColorWhite .secondStrokeIcon {
+    fill: black;
     stroke: white; }
   .uiColorWhite .thirdStroke {
     stroke: red; }
@@ -122,6 +133,11 @@
   .uiColorWhite .menuItem:hover {
     background: white;
     color: black; }
+  .uiColorWhite .dropMenu {
+    background-color: black;
+    border-left: 10px solid white;
+    border-right: 10px solid white;
+    border-bottom: 4px solid white; }
   .uiColorWhite a {
     color: white; }
   .uiColorWhite .linkedinLink:hover > .secondFill {
@@ -171,11 +187,277 @@
     stroke: white; }
   .uiColorWhite .portLink:hover > .secondFill {
     fill: black; }
+  .uiColorWhite .portSvg:first-child {
+    border-right: 5px solid red; }
+  @media screen and (max-width: 950px) {
+    .uiColorWhite .menuItem {
+      background-color: black;
+      box-shadow: 0px -3px 0 red; }
+    .uiColorWhite .navColor {
+      border-top: 5px solid white;
+      border-right: none;
+      border-left: none; } }
+
+.uiColorTurquoise {
+  background-color: #1E1E1E;
+  border-left: 10px solid #3FB8AF;
+  border-right: 10px solid #3FB8AF;
+  /*  Sobre */
+  /*  Experiência */
+  /*  Habilidades */
+  /*  Portfolio */ }
+  .uiColorTurquoise:before {
+    background: #3FB8AF; }
+  .uiColorTurquoise:after {
+    background: #3FB8AF; }
+  .uiColorTurquoise::-webkit-scrollbar-track {
+    background: #1E1E1E; }
+  .uiColorTurquoise::-webkit-scrollbar-thumb {
+    background: #FF3D7F; }
+  .uiColorTurquoise .navColor {
+    border: 5px solid #3FB8AF; }
+  .uiColorTurquoise .navColor2 {
+    border: 5px solid #FF3D7F; }
+  .uiColorTurquoise .mainFill {
+    fill: #1E1E1E; }
+  .uiColorTurquoise .secondFill {
+    fill: #3FB8AF; }
+  .uiColorTurquoise .thirdFill {
+    fill: #FF3D7F; }
+  .uiColorTurquoise .expOpacity {
+    opacity: 0.8;
+    fill: #3FB8AF; }
+  .uiColorTurquoise .secondStroke {
+    stroke: #3FB8AF; }
+  .uiColorTurquoise .secondStrokeIcon {
+    fill: #1E1E1E;
+    stroke: #3FB8AF; }
+  .uiColorTurquoise .thirdStroke {
+    stroke: #FF3D7F; }
+  .uiColorTurquoise .fontColor {
+    color: #3FB8AF; }
+  .uiColorTurquoise .spanColor {
+    color: #FF3D7F; }
+  .uiColorTurquoise .paletteNav {
+    border: 3px solid #3FB8AF; }
+    .uiColorTurquoise .paletteNav:before {
+      border-right: 3px #3FB8AF solid;
+      border-left: 21px #1E1E1E solid; }
+    .uiColorTurquoise .paletteNav:after {
+      border-left: 3px #3FB8AF solid;
+      border-right: 21px #1E1E1E solid; }
+  .uiColorTurquoise ::selection {
+    background: #FF3D7F;
+    /* WebKit/Blink Browsers */
+    color: #1E1E1E; }
+  .uiColorTurquoise ::-moz-selection {
+    background: #FF3D7F;
+    /* Gecko Browsers */
+    color: #1E1E1E; }
+  .uiColorTurquoise .titleLeft {
+    text-shadow: 3px 3px #FF3D7F; }
+  .uiColorTurquoise .titleRight {
+    text-shadow: -3px 3px #FF3D7F; }
+  .uiColorTurquoise .menuItem:hover {
+    background: #3FB8AF;
+    color: #1E1E1E; }
+  .uiColorTurquoise .dropMenu {
+    background-color: #1E1E1E;
+    border-left: 10px solid #3FB8AF;
+    border-right: 10px solid #3FB8AF;
+    border-bottom: 4px solid #3FB8AF; }
+  .uiColorTurquoise a {
+    color: #3FB8AF; }
+  .uiColorTurquoise .linkedinLink:hover > .secondFill {
+    fill: #1E1E1E; }
+  .uiColorTurquoise .sobreText {
+    border: 5px solid #3FB8AF; }
+  .uiColorTurquoise .expBox {
+    border: 4px solid #3FB8AF; }
+  .uiColorTurquoise .expBox:after {
+    border-left: 4px #3FB8AF solid;
+    border-right: 41px #1E1E1E solid; }
+  .uiColorTurquoise .outerCircle {
+    fill: #FF3D7F; }
+  .uiColorTurquoise .innerCircle {
+    fill: #1E1E1E; }
+  .uiColorTurquoise .expSvg {
+    border: 4px solid #FF3D7F; }
+  .uiColorTurquoise .habiInfo {
+    border-left: solid 5px #FF3D7F;
+    border-right: solid 5px #FF3D7F; }
+    .uiColorTurquoise .habiInfo:before {
+      border-top: solid 7.0711px #FF3D7F;
+      border-right: solid 7.0711px #FF3D7F; }
+    .uiColorTurquoise .habiInfo:after {
+      border-bottom: solid 7.0711px #FF3D7F;
+      border-left: solid 7.0711px #FF3D7F; }
+  .uiColorTurquoise .portBox {
+    background: #3FB8AF;
+    box-shadow: 8px 8px 0 #FF3D7F; }
+  .uiColorTurquoise .portBox::before {
+    background-color: #1E1E1E; }
+  .uiColorTurquoise .portBox::after {
+    border-left: 10px #FF3D7F solid;
+    border-right: 50px #1E1E1E solid;
+    background-color: #1E1E1E; }
+  .uiColorTurquoise .portTitle {
+    color: #1E1E1E; }
+  .uiColorTurquoise .portText {
+    color: #1E1E1E; }
+  .uiColorTurquoise .portAcess {
+    color: #FF3D7F; }
+  .uiColorTurquoise .portAcess:hover {
+    color: #3FB8AF;
+    background-color: #FF3D7F; }
+  .uiColorTurquoise .portLink:hover > .secondStroke {
+    fill: #3FB8AF;
+    stroke: #3FB8AF; }
+  .uiColorTurquoise .portLink:hover > .secondFill {
+    fill: #1E1E1E; }
+  .uiColorTurquoise .portSvg:first-child {
+    border-right: 5px solid #FF3D7F; }
+  @media screen and (max-width: 950px) {
+    .uiColorTurquoise .menuItem {
+      background-color: #1E1E1E;
+      box-shadow: 0px -3px 0 #FF3D7F; }
+    .uiColorTurquoise .navColor {
+      border-top: 5px solid #3FB8AF;
+      border-right: none;
+      border-left: none; } }
+
+.uiColorBlue {
+  background-color: #343838;
+  border-left: 10px solid #00B4CC;
+  border-right: 10px solid #00B4CC;
+  /*  Sobre */
+  /*  Experiência */
+  /*  Habilidades */
+  /*  Portfolio */ }
+  .uiColorBlue:before {
+    background: #00B4CC; }
+  .uiColorBlue:after {
+    background: #00B4CC; }
+  .uiColorBlue::-webkit-scrollbar-track {
+    background: #343838; }
+  .uiColorBlue::-webkit-scrollbar-thumb {
+    background: #005F6B; }
+  .uiColorBlue .navColor {
+    border: 5px solid #00B4CC; }
+  .uiColorBlue .navColor2 {
+    border: 5px solid #005F6B; }
+  .uiColorBlue .mainFill {
+    fill: #343838; }
+  .uiColorBlue .secondFill {
+    fill: #00B4CC; }
+  .uiColorBlue .thirdFill {
+    fill: #005F6B; }
+  .uiColorBlue .expOpacity {
+    opacity: 0.8;
+    fill: #00B4CC; }
+  .uiColorBlue .secondStroke {
+    stroke: #00B4CC; }
+  .uiColorBlue .secondStrokeIcon {
+    fill: #343838;
+    stroke: #00B4CC; }
+  .uiColorBlue .thirdStroke {
+    stroke: #005F6B; }
+  .uiColorBlue .fontColor {
+    color: #00B4CC; }
+  .uiColorBlue .spanColor {
+    color: #005F6B; }
+  .uiColorBlue .paletteNav {
+    border: 3px solid #00B4CC; }
+    .uiColorBlue .paletteNav:before {
+      border-right: 3px #00B4CC solid;
+      border-left: 21px #343838 solid; }
+    .uiColorBlue .paletteNav:after {
+      border-left: 3px #00B4CC solid;
+      border-right: 21px #343838 solid; }
+  .uiColorBlue ::selection {
+    background: #005F6B;
+    /* WebKit/Blink Browsers */
+    color: #343838; }
+  .uiColorBlue ::-moz-selection {
+    background: #005F6B;
+    /* Gecko Browsers */
+    color: #343838; }
+  .uiColorBlue .titleLeft {
+    text-shadow: 3px 3px #005F6B; }
+  .uiColorBlue .titleRight {
+    text-shadow: -3px 3px #005F6B; }
+  .uiColorBlue .menuItem:hover {
+    background: #00B4CC;
+    color: #343838; }
+  .uiColorBlue .dropMenu {
+    background-color: #343838;
+    border-left: 10px solid #00B4CC;
+    border-right: 10px solid #00B4CC;
+    border-bottom: 4px solid #00B4CC; }
+  .uiColorBlue a {
+    color: #00B4CC; }
+  .uiColorBlue .linkedinLink:hover > .secondFill {
+    fill: #343838; }
+  .uiColorBlue .sobreText {
+    border: 5px solid #00B4CC; }
+  .uiColorBlue .expBox {
+    border: 4px solid #00B4CC; }
+  .uiColorBlue .expBox:after {
+    border-left: 4px #00B4CC solid;
+    border-right: 41px #343838 solid; }
+  .uiColorBlue .outerCircle {
+    fill: #005F6B; }
+  .uiColorBlue .innerCircle {
+    fill: #343838; }
+  .uiColorBlue .expSvg {
+    border: 4px solid #005F6B; }
+  .uiColorBlue .habiInfo {
+    border-left: solid 5px #005F6B;
+    border-right: solid 5px #005F6B; }
+    .uiColorBlue .habiInfo:before {
+      border-top: solid 7.0711px #005F6B;
+      border-right: solid 7.0711px #005F6B; }
+    .uiColorBlue .habiInfo:after {
+      border-bottom: solid 7.0711px #005F6B;
+      border-left: solid 7.0711px #005F6B; }
+  .uiColorBlue .portBox {
+    background: #00B4CC;
+    box-shadow: 8px 8px 0 #005F6B; }
+  .uiColorBlue .portBox::before {
+    background-color: #343838; }
+  .uiColorBlue .portBox::after {
+    border-left: 10px #005F6B solid;
+    border-right: 50px #343838 solid;
+    background-color: #343838; }
+  .uiColorBlue .portTitle {
+    color: #343838; }
+  .uiColorBlue .portText {
+    color: #343838; }
+  .uiColorBlue .portAcess {
+    color: #005F6B; }
+  .uiColorBlue .portAcess:hover {
+    color: #00B4CC;
+    background-color: #005F6B; }
+  .uiColorBlue .portLink:hover > .secondStroke {
+    fill: #00B4CC;
+    stroke: #00B4CC; }
+  .uiColorBlue .portLink:hover > .secondFill {
+    fill: #343838; }
+  .uiColorBlue .portSvg:first-child {
+    border-right: 5px solid #005F6B; }
+  @media screen and (max-width: 950px) {
+    .uiColorBlue .menuItem {
+      background-color: #343838;
+      box-shadow: 0px -3px 0 #005F6B; }
+    .uiColorBlue .navColor {
+      border-top: 5px solid #00B4CC;
+      border-right: none;
+      border-left: none; } }
 
 /*  palettes */
 /* palette Menu */
 .paletteNav {
-  width: 140px;
+  width: 136px;
   margin: 10px auto 0px auto;
   left: 0;
   right: 0;
@@ -300,7 +582,7 @@ ul li {
   letter-spacing: 4px; }
 
 .dropMenu ul li:nth-child(4) {
-  margin-left: 85px; }
+  margin-left: 80px; }
 
 .dropMenu ul {
   margin: 0 auto;
@@ -308,7 +590,7 @@ ul li {
 
 .dropMenu ul li {
   display: inline-block;
-  margin: 50px 13px 0px 14px; }
+  margin: 50px 18px 0px 14px; }
 
 .dropMenu ul li .logo {
   position: absolute;
@@ -338,7 +620,10 @@ ul li {
   border-bottom: 4px solid #111111;
   left: 0;
   width: 100%;
-  transition: 0.5s ease-in-out; }
+  transition: 0.5s ease-in-out;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
 .navUp {
   -ms-transform: translateY(-92px);
@@ -660,11 +945,14 @@ a .logo:hover > .secondFill {
   .dropMenu {
     display: none; }
   .paletteNav {
-    margin: -100px auto 0px auto; }
+    margin: -120px auto 0px auto;
+    width: 219px; }
     .paletteNav:before {
       content: none; }
     .paletteNav:after {
       content: none; }
+  .paletteSwitch {
+    width: 50px; }
   .navShadowUl {
     display: none; }
   ul {
@@ -684,20 +972,20 @@ a .logo:hover > .secondFill {
   .menuItem {
     display: block;
     background-color: #FFFFFF;
-    box-shadow: 0px -3px 0 #FFDC00; }
-  .navLetter {
-    display: none; }
+    box-shadow: 0px -5px 0 #FFDC00; }
   .menuItem:hover .secondFill {
     fill: #FFFFFF; }
+  .navLetter {
+    display: none; }
   .navColor {
-    border-right: 2px solid #111111;
-    border-left: 2px solid #111111; }
+    border-top: 5px solid #111111;
+    border-right: none;
+    border-left: none; }
+  .iconSvg {
+    width: 70px;
+    margin-top: 5px; }
   .navIcon {
     display: block; }
-  .sobreIcon {
-    width: 40px; }
-  .expIcon {
-    width: 70px; }
   .logo {
     position: absolute;
     margin-left: auto;
@@ -739,7 +1027,7 @@ a .logo:hover > .secondFill {
     text-align: left;
     margin: 0px 0px 0px 20px; }
   .portSvg {
-    margin: 0px 10px 110px 10px; } }
+    margin: 0px 10px 160px 10px; } }
 
 @media screen and (max-width: 620px) {
   /* Header */ }
