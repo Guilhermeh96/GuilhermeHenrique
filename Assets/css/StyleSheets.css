@@ -1030,9 +1030,33 @@ a .logo:hover > .secondFill {
     margin: 0px 10px 160px 10px; } }
 
 @media screen and (max-width: 620px) {
-  /* Header */ }
-
-@media screen and (max-width: 480px) {
-  /* Header */
-  /* Experiência */
-  /* Habilidades */ }
+  .secondStroke {
+    stroke-width: 2; }
+  .iconSvg {
+    width: 40px; }
+  .habiBox {
+    width: 90px;
+    margin-top: 20px; }
+  .habiSvg {
+    width: 80px;
+    margin: 20px auto 0px auto; }
+  .habiInfo {
+    width: 25px;
+    height: 19px;
+    margin: 0px 0px 0px 60px; }
+  .habiInfo::before,
+  .habiInfo::after {
+    width: 18px;
+    height: 18px;
+    left: 0px; }
+  .habiInfo::before {
+    top: -12.84px; }
+  .habiInfo::after {
+    bottom: -12.98px; }
+  .habiText {
+    font-size: 1.2em;
+    margin-top: 0.95px; }
+  .habiTitle {
+    font-family: Roboto;
+    font-size: 1.2em;
+    margin: 20px 0px 0px 47px; } }
