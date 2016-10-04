@@ -323,11 +323,41 @@ $third-color: #FFDC00;
 				    box-shadow: 0px -3px 0 $third-color;
 				}
 
+				.menuItem:hover{
+					background: $main-color;
+				}
+
+				.menuItem:active {
+					background: $second-color;
+				}
+
+				.menuItem:active .secondFill{
+					fill: $main-color;
+				}
+
 				.navColor {
 					border-top: 5px solid $second-color;
 					border-right: none;
 					border-left: none;
 				}  
+
+				.linkedinLink:hover > .secondStroke {
+					fill: none;
+			    	stroke: $second-color;
+				}
+
+				.linkedinLink:hover > .secondFill {
+					fill: $second-color;
+				}
+
+				.linkedinLink:active > .secondStroke {
+					fill:#0077b5;
+					stroke:#0077b5;
+				}
+
+				.linkedinLink:active > .secondFill {
+					fill: $main-color;
+				}
 
 		}
 
@@ -938,19 +968,19 @@ a .logo:hover > .secondFill {
 		margin-top: 45px;
 	}
 
-	.navSob {
+	.navShadow:nth-child(1) {
 		margin-left: 21px;
 	}
 
-	.navExp {
+	.navShadow:nth-child(2) {
 		margin-left: 150px;
 	}
 
-	.navHab {
+	.navShadow:nth-child(3) {
 		margin-left: 458px;
 	}
 
-	.navPor {
+	.navShadow:nth-child(4) {
 		margin-left: 642px;
 	}
 
@@ -1049,7 +1079,16 @@ a .logo:hover > .secondFill {
 	    box-shadow: 0px -5px 0 $third-color;
 	}
 
-	.menuItem:hover .secondFill{
+
+	.menuItem:hover{
+		background: $main-color;
+	}
+
+	.menuItem:active {
+		background: $second-color;
+	}
+
+	.menuItem:active .secondFill{
 		fill: $main-color;
 	}
 
@@ -1099,6 +1138,24 @@ a .logo:hover > .secondFill {
 	.sobreText {
 		float: none;
 		margin: 0 auto;	
+	}
+
+	.linkedinLink:hover > .secondStroke {
+		fill: none;
+    	stroke: #111111;
+	}
+
+	.linkedinLink:hover > .secondFill {
+		fill: $second-color;
+	}
+
+	.linkedinLink:active > .secondStroke {
+		fill:#0077b5;
+		stroke:#0077b5;
+	}
+
+	.linkedinLink:active > .secondFill {
+		fill: $main-color;
 	}
 
 	/* Experiência */
@@ -1194,8 +1251,21 @@ a .logo:hover > .secondFill {
 	.habiTitle {
 		font-family: $Text-font;
 		font-size:1.2em;
-		margin: 20px 0px 0px 47px;
+		margin: 20px 0px 0px 45px;
 	}
 
+
+}
+
+@media screen and (max-width: 740px)
+ 			  and (orientation : landscape) {
+
+	ul {
+		display: none;
+	}
+
+	.portSvg {
+		margin: 0px 10px 30px 10px;
+	}
 
 }

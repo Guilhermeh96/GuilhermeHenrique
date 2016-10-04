@@ -193,10 +193,26 @@
     .uiColorWhite .menuItem {
       background-color: black;
       box-shadow: 0px -3px 0 red; }
+    .uiColorWhite .menuItem:hover {
+      background: black; }
+    .uiColorWhite .menuItem:active {
+      background: white; }
+    .uiColorWhite .menuItem:active .secondFill {
+      fill: black; }
     .uiColorWhite .navColor {
       border-top: 5px solid white;
       border-right: none;
-      border-left: none; } }
+      border-left: none; }
+    .uiColorWhite .linkedinLink:hover > .secondStroke {
+      fill: none;
+      stroke: white; }
+    .uiColorWhite .linkedinLink:hover > .secondFill {
+      fill: white; }
+    .uiColorWhite .linkedinLink:active > .secondStroke {
+      fill: #0077b5;
+      stroke: #0077b5; }
+    .uiColorWhite .linkedinLink:active > .secondFill {
+      fill: black; } }
 
 .uiColorTurquoise {
   background-color: #1E1E1E;
@@ -321,10 +337,26 @@
     .uiColorTurquoise .menuItem {
       background-color: #1E1E1E;
       box-shadow: 0px -3px 0 #FF3D7F; }
+    .uiColorTurquoise .menuItem:hover {
+      background: #1E1E1E; }
+    .uiColorTurquoise .menuItem:active {
+      background: #3FB8AF; }
+    .uiColorTurquoise .menuItem:active .secondFill {
+      fill: #1E1E1E; }
     .uiColorTurquoise .navColor {
       border-top: 5px solid #3FB8AF;
       border-right: none;
-      border-left: none; } }
+      border-left: none; }
+    .uiColorTurquoise .linkedinLink:hover > .secondStroke {
+      fill: none;
+      stroke: #3FB8AF; }
+    .uiColorTurquoise .linkedinLink:hover > .secondFill {
+      fill: #3FB8AF; }
+    .uiColorTurquoise .linkedinLink:active > .secondStroke {
+      fill: #0077b5;
+      stroke: #0077b5; }
+    .uiColorTurquoise .linkedinLink:active > .secondFill {
+      fill: #1E1E1E; } }
 
 .uiColorBlue {
   background-color: #343838;
@@ -449,10 +481,26 @@
     .uiColorBlue .menuItem {
       background-color: #343838;
       box-shadow: 0px -3px 0 #005F6B; }
+    .uiColorBlue .menuItem:hover {
+      background: #343838; }
+    .uiColorBlue .menuItem:active {
+      background: #00B4CC; }
+    .uiColorBlue .menuItem:active .secondFill {
+      fill: #343838; }
     .uiColorBlue .navColor {
       border-top: 5px solid #00B4CC;
       border-right: none;
-      border-left: none; } }
+      border-left: none; }
+    .uiColorBlue .linkedinLink:hover > .secondStroke {
+      fill: none;
+      stroke: #00B4CC; }
+    .uiColorBlue .linkedinLink:hover > .secondFill {
+      fill: #00B4CC; }
+    .uiColorBlue .linkedinLink:active > .secondStroke {
+      fill: #0077b5;
+      stroke: #0077b5; }
+    .uiColorBlue .linkedinLink:active > .secondFill {
+      fill: #343838; } }
 
 /*  palettes */
 /* palette Menu */
@@ -912,13 +960,13 @@ a .logo:hover > .secondFill {
 @-moz-document url-prefix() {
   .navShadow {
     margin-top: 45px; }
-  .navSob {
+  .navShadow:nth-child(1) {
     margin-left: 21px; }
-  .navExp {
+  .navShadow:nth-child(2) {
     margin-left: 150px; }
-  .navHab {
+  .navShadow:nth-child(3) {
     margin-left: 458px; }
-  .navPor {
+  .navShadow:nth-child(4) {
     margin-left: 642px; }
   .panaSvg {
     margin-bottom: -4px; }
@@ -973,7 +1021,11 @@ a .logo:hover > .secondFill {
     display: block;
     background-color: #FFFFFF;
     box-shadow: 0px -5px 0 #FFDC00; }
-  .menuItem:hover .secondFill {
+  .menuItem:hover {
+    background: #FFFFFF; }
+  .menuItem:active {
+    background: #111111; }
+  .menuItem:active .secondFill {
     fill: #FFFFFF; }
   .navLetter {
     display: none; }
@@ -1006,6 +1058,16 @@ a .logo:hover > .secondFill {
   .sobreText {
     float: none;
     margin: 0 auto; }
+  .linkedinLink:hover > .secondStroke {
+    fill: none;
+    stroke: #111111; }
+  .linkedinLink:hover > .secondFill {
+    fill: #111111; }
+  .linkedinLink:active > .secondStroke {
+    fill: #0077b5;
+    stroke: #0077b5; }
+  .linkedinLink:active > .secondFill {
+    fill: #FFFFFF; }
   /* Experiência */
   .expSvg {
     display: none; }
@@ -1059,4 +1121,10 @@ a .logo:hover > .secondFill {
   .habiTitle {
     font-family: Roboto;
     font-size: 1.2em;
-    margin: 20px 0px 0px 47px; } }
+    margin: 20px 0px 0px 45px; } }
+
+@media screen and (max-width: 740px) and (orientation: landscape) {
+  ul {
+    display: none; }
+  .portSvg {
+    margin: 0px 10px 30px 10px; } }
